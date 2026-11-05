@@ -1,0 +1,9 @@
+import {render,screen,fireEvent,cleanup} from '@testing-library/react';
+import {afterEach,it,expect,vi} from 'vitest';
+import {FleetGuide} from '../components/FleetGuide';
+const open=vi.fn(),enquire=vi.fn();
+vi.mock('../components/TruckExperience',()=>({useTruckDetails:()=>open}));
+vi.mock('../components/Enquiry',()=>({useEnquiry:()=>enquire}));
+afterEach(()=>{cleanup();open.mockClear();enquire.mockClear()});
+it('switches between actual local applications with working specification and enquiry actions',()=>{render(<FleetGuide/>);expect(screen.getByRole('heading',{name:'Distance work. A defined driveline.'})).toBeVisible();fireEvent.click(screen.getByRole('tab',{name:'03 HOWO Tapa'}));expect(screen.getByText(/27 T GVW is a vehicle-weight rating, not a payload figure/)).toBeVisible();fireEvent.click(screen.getByRole('button',{name:'View HOWO Tapa specifications'}));expect(open).toHaveBeenCalledWith('howo-tapa',expect.any(HTMLElement));fireEvent.click(screen.getByRole('button',{name:'Discuss HOWO Tapa'}));expect(enquire).toHaveBeenCalledWith('HOWO Tapa',expect.any(HTMLElement));fireEvent.click(screen.getByRole('tab',{name:'04 HOWO MAX'}));expect(screen.getByText(/Published reference configuration/)).toBeVisible();expect(screen.getByText(/HW16-HD27/)).toBeVisible();expect(screen.getByText(/not a specification or availability commitment/)).toBeVisible()});
+it('does not expose competitor contacts or links and supports arrow-key tab selection',()=>{const {container}=render(<FleetGuide/>);fireEvent.keyDown(screen.getByRole('tab',{name:'01 SITRAK G7H'}),{key:'ArrowRight'});expect(screen.getByRole('tab',{name:'02 SITRAK G7S'})).toHaveAttribute('aria-selected','true');expect(container.textContent).not.toMatch(/dealer|Cape Town|Malalane|011.?206|launch price/i);expect(container.querySelector('a[href*="dealer"]')).toBeNull()});

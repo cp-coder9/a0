@@ -1,0 +1,37 @@
+# EditorConfig — repository-root line-ending and encoding policy.
+# Owner: Brett (architecture / cross-cutting policy). Proposed by Tyler, ruled and written by Brett.
+#
+# WHY THIS FILE EXISTS: supplied-models.ts oscillated between two valid digests
+# (5608 B CRLF / 1d7c57a7... and 5553 B LF / 1667ee4a...) with NO content difference,
+# because nothing in this tree canonicalised line endings. Python text-mode writes emit
+# CRLF on Windows; Node and most formatters emit LF. A file round-tripped through both
+# flips by exactly its line count. That cost an incident over 55 bytes.
+#
+# LIMIT, stated here so nobody trusts this file further than it goes: EditorConfig binds
+# EDITORS, not scripts. Python `open(path,'w')` still writes CRLF on Windows regardless of
+# this file. Scripted writers must specify the newline explicitly (see .gitattributes note
+# and components/showroom/SUPPLIED-MODELS-WRITE-LOG.md). Policy at the editor is necessary
+# and not sufficient; the binding constraint is at the write call.
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{md,markdown}]
+# Markdown: trailing double-space is a line break; do not strip it.
+trim_trailing_whitespace = false
+
+[*.{glb,png,jpg,jpeg,webp,ktx2,wasm,zip,ico}]
+# Binary artefacts: must never be normalised, and must never gain a final newline.
+end_of_line = unset
+insert_final_newline = false
+trim_trailing_whitespace = false
+charset = unset
+
+[*.json]
+# JSON is generated in places; keep formatting stable but allow trailing newline.
+insert_final_newline = true

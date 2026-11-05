@@ -1,0 +1,17 @@
+.brand-logo{display:block;object-fit:contain;background:transparent}
+.site-header .wordmark{flex-shrink:0;justify-content:center}
+.site-header .header-brand-logo{width:auto;height:60px;max-width:150px;object-position:left center}
+.brand-logo.footer-logo{width:248px;max-width:100%;height:auto;max-height:none;object-position:left center;margin-bottom:20px}
+@media(max-width:768px){.site-header .header-brand-logo{height:56px;max-width:126px}.brand-logo.footer-logo{width:226px}}
+
+/* Footer wordmark: larger, filling the left column, rendered in a brushed-silver metallic finish. */
+.brand-logo.footer-logo{
+ width:clamp(300px,26vw,460px);
+ max-width:100%;
+ height:auto;
+ margin-bottom:20px;
+ -webkit-mask:url("/intro/sitrak-truk-afrik-white.png") left center/contain no-repeat;
+ mask:url("/intro/sitrak-truk-afrik-white.png") left center/contain no-repeat;
+ background:linear-gradient(152deg,#ffffff 0%,#d9e0e5 16%,#99a3ab 33%,#eef3f6 47%,#7f888f 62%,#cdd4da 78%,#f4f7f9 90%,#aeb6bd 100%);
+}
+@media(max-width:768px){.brand-logo.footer-logo{width:clamp(220px,64vw,300px)}}

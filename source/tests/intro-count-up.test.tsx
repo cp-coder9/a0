@@ -1,0 +1,5 @@
+import {render,screen,act,cleanup} from '@testing-library/react';
+import {it,expect,vi,afterEach} from 'vitest';
+import {CountUp} from '../components/CountUp';
+afterEach(()=>{cleanup();delete document.documentElement.dataset.trukIntro;vi.unstubAllGlobals()});
+it('waits until the intro finishes before starting visible hero counters',()=>{document.documentElement.dataset.trukIntro='active';vi.stubGlobal('matchMedia',()=>({matches:false,addEventListener:vi.fn(),removeEventListener:vi.fn()}));let enter:(entries:{isIntersecting:boolean}[])=>void=()=>{};vi.stubGlobal('IntersectionObserver',class{constructor(cb:typeof enter){enter=cb}observe(){}disconnect(){}});const frame=vi.fn();vi.stubGlobal('requestAnimationFrame',frame);vi.stubGlobal('cancelAnimationFrame',vi.fn());render(<CountUp value={480}/>);act(()=>enter([{isIntersecting:true}]));expect(frame).not.toHaveBeenCalled();expect(screen.getByTestId('count-up')).toHaveTextContent('0');act(()=>{delete document.documentElement.dataset.trukIntro;document.dispatchEvent(new Event('trukafrik:intro-complete'))});expect(frame).toHaveBeenCalledOnce()});

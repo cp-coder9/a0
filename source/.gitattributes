@@ -1,0 +1,43 @@
+# Git attributes — canonical checkout/commit line endings and binary handling.
+# Owner: Brett (architecture / cross-cutting policy). Ruled and written by Brett at Tyler's proposal.
+#
+# There is no git repository in this tree today (checked 2026-10-30). This file is written now
+# for two reasons: it documents the policy beside .editorconfig, and it makes the policy
+# enforceable by construction the moment a repository exists, instead of relying on memory.
+#
+# WHY: supplied-models.ts oscillated between 5608 B CRLF (1d7c57a7...) and 5553 B LF
+# (1667ee4a...) with identical content, because two runtimes wrote two conventions and nothing
+# canonicalised them. See .editorconfig for the full note and its stated limit.
+#
+# The limit applies here too: git attributes govern GIT's checkout/commit filters, not arbitrary
+# scripted writes. A Python `open(path,'w')` on Windows still emits CRLF. Scripted writers must
+# pass newline='\n' (Python) or write LF-normalised text (Node).
+
+* text=auto eol=lf
+
+# Text artefacts that are cited by hash: LF only, so a digest identifies content and not encoding.
+*.ts   text eol=lf
+*.tsx  text eol=lf
+*.mjs  text eol=lf
+*.js   text eol=lf
+*.css  text eol=lf
+*.scss text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+
+# Binary artefacts: never diffed, never normalised, never line-ending converted.
+*.glb  binary
+*.gltf binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.webp binary
+*.ktx2 binary
+*.basis binary
+*.wasm binary
+*.zip  binary
+*.ico  binary
+*.woff binary
+*.woff2 binary

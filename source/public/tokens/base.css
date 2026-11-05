@@ -1,0 +1,17 @@
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{margin:0;background:var(--surface-page);color:var(--text-body);font:var(--type-body);text-wrap:pretty}
+h1,h2,h3,h4{margin:0;color:var(--text-heading);font-family:var(--font-display);line-height:var(--leading-heading);text-wrap:balance}
+h1{font:var(--type-hero)}
+h2{font:var(--type-section)}
+h3{font:var(--type-sub)}
+h4{font:var(--type-card-title)}
+p{margin:0 0 var(--space-4)}
+a{color:var(--text-link);text-decoration:none;transition:var(--transition-ui)}
+a:hover{color:var(--text-link-hover)}
+strong{font-weight:600;color:var(--ta-white)}
+code,kbd{font-family:var(--font-mono)}
+.ta-label{font:var(--type-caption);letter-spacing:var(--track-label);text-transform:uppercase;color:var(--text-muted)}
+.ta-spec{font:var(--type-spec);letter-spacing:var(--track-mono);text-transform:uppercase;color:var(--ta-chrome)}
+.ta-chrome-text{background:var(--grad-chrome);-webkit-background-clip:text;background-clip:text;color:transparent}
+::selection{background:var(--ta-gold-light);color:var(--ta-deep-navy)}

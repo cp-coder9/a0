@@ -1,0 +1,14 @@
+/* Full-bleed photographic bands: the page's visual rhythm between dark text sections. */
+.photo-band{position:relative;min-height:clamp(320px,46vw,560px);display:flex;align-items:flex-end;overflow:hidden;background:var(--ta-black);border-top:1px solid rgba(240,160,32,.2);border-bottom:1px solid rgba(240,160,32,.2)}
+.photo-band-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.92) contrast(1.04)}
+.photo-band-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,11,20,.15) 0%,rgba(5,11,20,.55) 45%,rgba(5,11,20,.92) 100%),linear-gradient(90deg,rgba(5,11,20,.72) 0%,rgba(5,11,20,.1) 62%)}
+.photo-band-inner{position:relative;width:100%;max-width:var(--container-max);margin:0 auto;padding:clamp(28px,5vw,64px) var(--gutter)}
+.photo-band h2{font:900 clamp(32px,4.6vw,62px)/.98 var(--font-display);letter-spacing:-.015em;text-transform:uppercase;color:var(--ta-white);margin:10px 0 0;max-width:20ch;text-wrap:balance}
+.photo-band-copy{max-width:52ch;margin:16px 0 0;color:var(--ta-chrome);font:var(--type-body-lg);text-wrap:pretty}
+.photo-band-link{display:inline-flex;align-items:center;gap:10px;margin-top:22px;font:700 13px/1 var(--font-display);letter-spacing:.1em;text-transform:uppercase;color:var(--ta-gold-light);text-decoration:none;border-bottom:1px solid rgba(240,160,32,.45);padding-bottom:6px;transition:color .2s,border-color .2s}
+.photo-band-link:hover{color:var(--ta-white);border-color:var(--ta-white)}
+@supports (animation-timeline: view()){
+ .photo-band-image{animation:photoDrift linear both;animation-timeline:view();animation-range:entry 0% exit 100%}
+}
+@keyframes photoDrift{from{transform:scale(1.08) translateY(-1.5%)}to{transform:scale(1.08) translateY(1.5%)}}
+@media(prefers-reduced-motion:reduce){.photo-band-image{animation:none!important;transform:none!important}}

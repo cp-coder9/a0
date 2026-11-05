@@ -1,0 +1,23 @@
+import {afterEach,expect,it,vi} from 'vitest';
+import {Vector3,type Scene,type PerspectiveCamera,type Mesh} from 'three';
+const spies=vi.hoisted(()=>({render:vi.fn(),setSize:vi.fn(),dispose:vi.fn(),lose:vi.fn()}));
+vi.mock('three',async importOriginal=>{const actual=await importOriginal<typeof import('three')>();return {...actual,WebGLRenderer:class {domElement=document.createElement('canvas');setPixelRatio=vi.fn();setSize=spies.setSize;render=spies.render;dispose=spies.dispose;forceContextLoss=spies.lose}}});
+import {mountCabinPanorama} from '../lib/cabin-panorama-renderer';
+afterEach(()=>{vi.clearAllMocks();vi.unstubAllGlobals()});
+it('renders from inside a sphere, applies camera rotation and zoom, and releases the renderer',()=>{
+ const disconnect=vi.fn();vi.stubGlobal('ResizeObserver',class {observe=vi.fn();disconnect=disconnect});
+ const host=document.createElement('div');Object.defineProperties(host,{clientWidth:{value:600},clientHeight:{value:400}});
+ const image=document.createElement('img');const lost=vi.fn();
+ const renderer=mountCabinPanorama(host,image,{yaw:0,pitch:0,fov:75},lost);
+ expect(host.querySelector('canvas')).toHaveAttribute('data-projection','spherical-360');
+ expect(spies.setSize).toHaveBeenCalledWith(600,400,false);
+ const [scene,camera]=spies.render.mock.calls[0] as [Scene,PerspectiveCamera];
+ expect((scene.children[0] as Mesh).geometry.type).toBe('SphereGeometry');
+ expect(camera.position.toArray()).toEqual([0,0,0]);
+ renderer.update({yaw:90,pitch:0,fov:45});
+ expect(camera.fov).toBe(45);expect(camera.aspect).toBe(1.5);
+ const direction=camera.getWorldDirection(new Vector3());expect(direction.x).toBeCloseTo(0);expect(direction.z).toBeCloseTo(-1);
+ expect(host.querySelector('canvas')).toHaveAttribute('data-yaw','90');
+ host.querySelector('canvas')!.dispatchEvent(new Event('webglcontextlost',{cancelable:true}));expect(lost).toHaveBeenCalledOnce();
+ renderer.dispose();renderer.dispose();expect(disconnect).toHaveBeenCalledOnce();expect(spies.dispose).toHaveBeenCalledOnce();expect(spies.lose).toHaveBeenCalledOnce();expect(host.querySelector('canvas')).toBeNull();
+});

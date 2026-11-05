@@ -1,0 +1,47 @@
+/* CompareRange — supplied four-model comparison.
+   Dark navy band; the first column stays pinned while the model columns scroll sideways on
+   narrow viewports. Every rule is scoped to .compare-* so the section can sit anywhere. */
+.compare-range{position:relative;overflow-x:clip;padding:var(--section-pad-y) 0;background:var(--ta-deep-navy);border-top:1px solid rgba(197,216,232,.18);scroll-margin-top:88px}
+.compare-inner{min-width:0;max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter)}
+.compare-heading{display:grid;grid-template-columns:1.25fr 1fr;gap:var(--space-3) var(--space-7);align-items:end;margin-bottom:var(--space-6)}
+.compare-heading>.eyebrow{grid-column:1/-1;margin:0 0 var(--space-1)}
+.compare-heading h2{margin:0;color:var(--ta-white);font:700 clamp(40px,5vw,72px)/.98 var(--font-display);text-transform:uppercase;letter-spacing:-.02em}
+.compare-lead{max-width:48ch;margin:0;color:var(--ta-chrome);font:var(--type-body-lg)}
+/* Scrollport: the only horizontally scrolling element, so the page itself never overflows. */
+.compare-scroll{max-width:100%;overflow-x:auto;overflow-y:hidden;background:var(--ta-navy-700);border:1px solid rgba(197,216,232,.18);scrollbar-width:thin;scrollbar-color:var(--ta-gold) rgba(197,216,232,.12);-webkit-overflow-scrolling:touch;outline-offset:4px}
+.compare-scroll:focus-visible{outline:3px solid var(--ta-sky);outline-offset:4px}
+.compare-scroll::-webkit-scrollbar{height:8px}
+.compare-scroll::-webkit-scrollbar-track{background:rgba(197,216,232,.08)}
+.compare-scroll::-webkit-scrollbar-thumb{background:var(--ta-gold);border-radius:999px}
+.compare-table{width:100%;min-width:900px;border-collapse:collapse;border-spacing:0;color:var(--ta-chrome);font:var(--type-body-sm)/1.5 var(--font-body)}
+.compare-caption{caption-side:top;padding:12px 18px;text-align:left;background:var(--ta-navy-700);border-bottom:1px solid rgba(197,216,232,.18);color:var(--ta-lion-silver);font:var(--type-caption);letter-spacing:var(--track-label);text-transform:uppercase}
+.compare-table th,.compare-table td{text-align:left;vertical-align:top}
+.compare-table thead th{padding:16px 18px 14px;background:var(--ta-navy-700);border-bottom:2px solid var(--ta-gold)}
+/* Pinned first column: the corner header plus every row label. */
+.compare-corner{position:sticky;left:0;z-index:3;width:190px;min-width:190px;background:var(--ta-navy-700);box-shadow:1px 0 0 rgba(197,216,232,.18);color:var(--ta-gold-light);font:var(--type-caption);letter-spacing:var(--track-label);text-transform:uppercase}
+.compare-label{position:sticky;left:0;z-index:2;width:190px;min-width:190px;padding:13px 18px;background:var(--ta-navy-700);border-bottom:1px solid rgba(197,216,232,.14);box-shadow:1px 0 0 rgba(197,216,232,.18);color:var(--ta-chrome);font:600 12px/1.35 var(--font-body);letter-spacing:.08em;text-transform:uppercase}
+.compare-model{min-width:180px;color:var(--ta-white);font:700 22px/1.05 var(--font-display);text-transform:uppercase;letter-spacing:.01em}
+.compare-model-name{display:block}
+.compare-model-config{display:block;margin-top:6px;color:var(--ta-chrome);font:var(--type-caption);letter-spacing:.06em;text-transform:uppercase}
+.compare-value{padding:13px 18px;border-bottom:1px solid rgba(197,216,232,.14);border-left:3px solid transparent;transition:background-color var(--dur-fast) var(--ease-standard),border-color var(--dur-fast) var(--ease-standard)}
+.compare-value.is-different{border-left-color:var(--ta-gold);background:rgba(200,135,10,.09)}
+.compare-value.is-missing{color:var(--ta-lion-silver);font-family:var(--font-mono);letter-spacing:.06em}
+.compare-row:hover .compare-value{background:rgba(197,216,232,.05)}
+.compare-row:hover .compare-value.is-different{background:rgba(200,135,10,.14)}
+.compare-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;padding:0;border:0;margin:-1px}
+.compare-hint{display:none;margin:var(--space-3) 0 0;color:var(--ta-gold-light);font:var(--type-caption);letter-spacing:var(--track-mono);text-transform:uppercase}
+.compare-note{margin:var(--space-3) 0 0;color:var(--ta-lion-silver);font:var(--type-caption);letter-spacing:.04em}
+@media(max-width:900px){
+ .compare-heading{grid-template-columns:1fr}
+ .compare-hint{display:block}
+}
+@media(max-width:600px){
+ .compare-caption{padding:10px 14px}
+ .compare-table{min-width:820px}
+ .compare-corner,.compare-label{width:150px;min-width:150px}
+ .compare-table thead th,.compare-label,.compare-value{padding-left:14px;padding-right:14px}
+ .compare-model{min-width:160px;font-size:19px}
+}
+@media(prefers-reduced-motion:reduce){
+ .compare-value{transition:none}
+}

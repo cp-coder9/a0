@@ -1,0 +1,17 @@
+/* Editorial polish: section watermarks, rules that draw in, magnetic buttons, hero drift. */
+.has-watermark{position:relative;isolation:isolate}
+.has-watermark::before{content:attr(data-watermark);position:absolute;right:clamp(8px,4vw,60px);top:clamp(6px,2vw,26px);z-index:0;font:900 clamp(90px,16vw,220px)/.8 var(--font-display);letter-spacing:-.04em;color:rgba(197,216,232,.045);pointer-events:none;user-select:none}
+.hairline{height:1px;width:100%;background:linear-gradient(90deg,var(--ta-gold) 0%,rgba(240,160,32,.25) 45%,transparent 100%);transform-origin:left center}
+.has-rules .hairline{margin:clamp(18px,3vw,34px) 0}
+@supports (animation-timeline: view()){
+ .hairline{animation:ruleGrow linear both;animation-timeline:view();animation-range:entry 0% cover 30%}
+}
+@keyframes ruleGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.button.is-magnetic{transition:transform .16s cubic-bezier(.22,.61,.36,1),background .2s,box-shadow .2s}
+@media(prefers-reduced-motion:reduce){.button.is-magnetic{transition:none!important}.hairline{animation:none!important}}
+/* Slow drift on the hero photograph; content above it stays still. */
+@supports (animation-timeline: scroll()){
+ .hero-visual{animation:heroDrift linear both;animation-timeline:scroll(root);animation-range:0 900px}
+}
+@keyframes heroDrift{from{transform:translateY(0) scale(1.02)}to{transform:translateY(48px) scale(1.06)}}
+@media(prefers-reduced-motion:reduce){.hero-visual{animation:none!important;transform:none!important}}

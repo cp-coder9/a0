@@ -1,0 +1,67 @@
+:root{
+  /* ---- Brand palette (SITRAK Visual Branding System — mandatory, no substitutions) ---- */
+  --ta-deep-navy:#0C2340;   /* Primary · Authority */
+  --ta-steel-blue:#1A4B7A;  /* Secondary · Structure */
+  --ta-sitrak-blue:#1E6DB5; /* Brand core */
+  --ta-gold:#C8870A;        /* Accent · Trust */
+  --ta-gold-light:#F0A020;  /* CTA · Highlights */
+  --ta-sky:#4A9FD4;         /* Sub-headings */
+  --ta-lion-silver:#8CAEC8; /* Captions · Muted */
+  --ta-chrome:#C5D8E8;      /* Body on dark */
+  --ta-white:#F2F6FA;       /* Light BG · Print */
+
+  /* ---- Extended neutrals (derived; for UI depth only, never as brand colour) ---- */
+  --ta-black:#050B14;       /* pure-dark marketing / social ground */
+  --ta-navy-900:#071729;
+  --ta-navy-800:#0C2340;
+  --ta-navy-700:#12314F;
+  --ta-navy-600:#1A4B7A;
+  --ta-ink:#0A1420;         /* text on light surfaces */
+  --ta-ash:#5A6B7C;         /* secondary text on light */
+  --ta-hairline:#D6E1EC;    /* light-surface rules */
+
+  /* ---- Semantic surfaces ---- */
+  --surface-page:var(--ta-deep-navy);
+  --surface-page-dark:var(--ta-black);
+  --surface-page-light:var(--ta-white);
+  --surface-card:var(--ta-navy-700);
+  --surface-card-light:#FFFFFF;
+  --surface-raised:rgba(255,255,255,.06);
+  --surface-sunken:rgba(5,11,20,.45);
+  --surface-glass:rgba(12,35,64,.72);
+
+  /* ---- Semantic text ---- */
+  --text-display:var(--ta-white);
+  --text-heading:var(--ta-white);
+  --text-subheading:var(--ta-sky);
+  --text-body:var(--ta-chrome);
+  --text-muted:var(--ta-lion-silver);
+  --text-accent:var(--ta-gold-light);
+  --text-on-light:var(--ta-ink);
+  --text-on-light-muted:var(--ta-ash);
+  --text-link:var(--ta-sky);
+  --text-link-hover:var(--ta-gold-light);
+
+  /* ---- Borders & rules ---- */
+  --border-hairline:1px solid rgba(197,216,232,.18); /* @kind other */
+  --border-strong:1px solid rgba(197,216,232,.34); /* @kind other */
+  --border-accent:2px solid var(--ta-gold); /* @kind other */
+  --border-light:1px solid var(--ta-hairline); /* @kind other */
+  --rule-chrome:linear-gradient(90deg,transparent,rgba(197,216,232,.55),transparent); /* @kind other */
+
+  /* ---- Interaction ---- */
+  --action-primary:var(--ta-gold-light);
+  --action-primary-hover:var(--ta-gold);
+  --action-primary-text:var(--ta-deep-navy);
+  --action-secondary:var(--ta-sitrak-blue);
+  --action-secondary-hover:#2A82CE;
+  --action-secondary-text:var(--ta-white);
+  --focus-ring:0 0 0 2px var(--ta-deep-navy),0 0 0 4px var(--ta-sky); /* @kind other */
+
+  /* ---- Metallic / brand gradients (chrome + navy depth) ---- */
+  --grad-chrome:linear-gradient(180deg,#FFFFFF 0%,#C5D8E8 38%,#8CAEC8 52%,#EDF4FA 68%,#9FBBD2 100%); /* @kind other */
+  --grad-navy-depth:linear-gradient(160deg,#12314F 0%,#0C2340 55%,#071729 100%); /* @kind other */
+  --grad-blue-spot:radial-gradient(60% 120% at 50% 120%,rgba(30,109,181,.55) 0%,rgba(12,35,64,0) 70%); /* @kind other */
+  --grad-gold:linear-gradient(180deg,#F0A020 0%,#C8870A 100%); /* @kind other */
+  --grad-protect:linear-gradient(90deg,rgba(5,11,20,.92) 0%,rgba(5,11,20,.65) 45%,rgba(5,11,20,0) 100%); /* @kind other */
+}

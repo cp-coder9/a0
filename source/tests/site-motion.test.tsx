@@ -1,0 +1,6 @@
+import {render,act,cleanup} from '@testing-library/react';
+import {it,expect,vi,afterEach} from 'vitest';
+import {SiteMotion} from '../components/SiteMotion';
+afterEach(()=>{cleanup();vi.unstubAllGlobals();document.documentElement.classList.remove('motion-ready')});
+it('reveals content on intersection without hiding content before JS initializes',()=>{let notify:(entries:{target:Element;isIntersecting:boolean}[])=>void=()=>{};vi.stubGlobal('matchMedia',()=>({matches:false,addEventListener:vi.fn(),removeEventListener:vi.fn()}));vi.stubGlobal('IntersectionObserver',class{constructor(cb:typeof notify){notify=cb}observe(){}unobserve(){}disconnect(){}});const {container}=render(<><main><section id="the-specs"><div className="section-header">Truck specifications</div></section></main><SiteMotion/></>);const content=container.querySelector('.section-header')!;expect(content.classList.contains('reveal')).toBe(true);act(()=>notify([{target:content,isIntersecting:true}]));expect(content.classList.contains('is-visible')).toBe(true)});
+it('does not add reveal effects for reduced motion',()=>{vi.stubGlobal('matchMedia',()=>({matches:true,addEventListener:vi.fn(),removeEventListener:vi.fn()}));const {container}=render(<><main><div className="section-header">Truck specifications</div></main><SiteMotion/></>);expect(container.querySelector('.reveal')).toBeNull()});

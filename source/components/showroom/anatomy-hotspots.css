@@ -1,0 +1,106 @@
+/* AnatomyHotspots — the supplied C7H image as an annotated band.
+   Hotspot coordinates are percentages over the square figure; the detail card below it is a
+   polite live region. Targets stay at least 44px tall, and the image never overflows. */
+.anatomy-band{position:relative;overflow:hidden;padding:var(--section-pad-y) 0;background:var(--ta-black);border-top:1px solid rgba(197,216,232,.14);scroll-margin-top:88px}
+.anatomy-inner{max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter)}
+.anatomy-heading{max-width:780px;margin:0 auto var(--space-6);text-align:center}
+.anatomy-heading>.eyebrow{margin:0 0 var(--space-3)}
+.anatomy-heading h2{margin:0 0 var(--space-4);color:var(--ta-white);font:700 clamp(40px,5vw,72px)/.98 var(--font-display);text-transform:uppercase;letter-spacing:-.02em}
+.anatomy-lead{margin:0;color:var(--ta-chrome);font:var(--type-body-lg)}
+.anatomy-stage{display:grid;justify-items:center;gap:var(--space-5)}
+.anatomy-figure{position:relative;width:100%;max-width:720px;margin:0;aspect-ratio:1}
+.anatomy-figure img{display:block;width:100%;height:100%;max-width:100%;object-fit:contain}
+.anatomy-hotspots{position:absolute;inset:0}
+/* The button is a 44px-tall pill. translate(-22px) keeps the gold dot centre exactly on the
+   percentage coordinate; .is-end flips the pill so it grows to the left of the dot instead. */
+.anatomy-hotspot{position:absolute;display:inline-flex;align-items:center;gap:8px;height:44px;min-height:44px;min-width:44px;padding:0 14px 0 0;transform:translate(-22px,-50%);border:1px solid var(--ta-gold);border-radius:999px;background:rgba(5,11,20,.82);color:var(--ta-white);white-space:nowrap;cursor:pointer;transition:background-color var(--dur-fast) var(--ease-standard),border-color var(--dur-fast) var(--ease-standard),box-shadow var(--dur-fast) var(--ease-standard)}
+.anatomy-hotspot.is-end{flex-direction:row-reverse;padding:0 0 0 14px;transform:translate(calc(-100% + 22px),-50%)}
+.anatomy-hotspot-dot{display:grid;flex:0 0 42px;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--ta-gold);color:var(--ta-black);font:700 12px/1 var(--font-mono);letter-spacing:.04em}
+.anatomy-hotspot-label{font:600 12px/1 var(--font-body);letter-spacing:.05em;text-transform:uppercase}
+.anatomy-hotspot:hover{border-color:var(--ta-gold-light);background:rgba(200,135,10,.24)}
+.anatomy-hotspot[aria-expanded="true"]{border-color:var(--ta-gold-light);background:var(--ta-gold);color:var(--ta-black);box-shadow:var(--glow-gold)}
+.anatomy-hotspot[aria-expanded="true"] .anatomy-hotspot-dot{background:var(--ta-black);color:var(--ta-gold-light)}
+.anatomy-hotspot:focus-visible{outline:3px solid var(--ta-sky);outline-offset:4px}
+.anatomy-detail{display:grid;align-content:start;gap:6px;width:100%;max-width:720px;min-height:132px;padding:18px 22px 20px;background:var(--ta-navy-700);border:1px solid rgba(197,216,232,.18);border-left:3px solid var(--ta-gold);box-shadow:var(--shadow-card)}
+.anatomy-detail-eyebrow{margin:0;color:var(--ta-gold-light);font:var(--type-caption);letter-spacing:var(--track-label);text-transform:uppercase}
+.anatomy-detail-value{margin:0;color:var(--ta-white);font:700 32px/1 var(--font-display)}
+.anatomy-detail-copy{max-width:56ch;margin:0;color:var(--ta-chrome);font:var(--type-body-sm)/1.5 var(--font-body)}
+.anatomy-disclaimer{max-width:720px;margin:var(--space-4) auto 0;text-align:center;color:var(--ta-lion-silver);font:var(--type-caption);letter-spacing:.04em}
+@media(max-width:720px){
+ .anatomy-hotspot{gap:6px;padding-right:10px}
+ .anatomy-hotspot.is-end{padding-left:10px}
+ .anatomy-hotspot-label{font-size:10.5px;letter-spacing:.02em}
+ .anatomy-detail{min-height:0;padding:16px 18px}
+}
+/* Narrow phones: keep the dot targets, hide the pill text (the accessible name and the detail
+   card still carry the figure) so five markers never collide over a small image. */
+@media(max-width:560px){
+ .anatomy-hotspot{padding:0;border:0;background:transparent;box-shadow:none}
+ .anatomy-hotspot[aria-expanded="true"]{background:transparent;box-shadow:none}
+ .anatomy-hotspot[aria-expanded="true"] .anatomy-hotspot-dot{background:var(--ta-gold-light);color:var(--ta-black)}
+ .anatomy-hotspot-dot{width:44px;height:44px;flex-basis:44px}
+ .anatomy-hotspot-label{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+ .anatomy-hotspot{transition:none}
+}
+
+/* Carousel: arrows flank the annotated figure; each truck keeps its own aspect ratio. */
+.anatomy-carousel{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:clamp(6px,1.6vw,20px);width:100%;max-width:980px;justify-self:center}
+.anatomy-figure{width:100%;max-width:760px;justify-self:center;margin:0}
+.anatomy-arrow{display:grid;place-items:center;width:52px;height:52px;flex:0 0 auto;border-radius:50%;border:2px solid var(--ta-gold);background:rgba(5,11,20,.72);color:var(--ta-gold-light);font:400 22px/1 var(--font-display);cursor:pointer;transition:background-color var(--dur-fast) var(--ease-standard),border-color var(--dur-fast) var(--ease-standard),transform var(--dur-fast) var(--ease-standard)}
+.anatomy-arrow:hover{background:var(--ta-gold);color:var(--ta-black);border-color:var(--ta-gold-light);transform:scale(1.05)}
+.anatomy-arrow:focus-visible{outline:3px solid var(--ta-sky);outline-offset:4px}
+.anatomy-position{margin:0;text-align:center;color:var(--ta-lion-silver);font:var(--type-caption);letter-spacing:var(--track-label);text-transform:uppercase}
+@media(max-width:640px){
+ .anatomy-carousel{display:block;position:relative}
+ .anatomy-arrow{position:absolute;top:42%;transform:translateY(-50%);z-index:3;width:46px;height:46px;background:rgba(5,11,20,.86)}
+ .anatomy-arrow:hover{transform:translateY(-50%) scale(1.04)}
+ .anatomy-arrow.is-prev{left:2px}
+ .anatomy-arrow.is-next{right:2px}
+}
+@media(prefers-reduced-motion:reduce){
+ .anatomy-arrow{transition:none}
+}
+
+
+/* Animated gold leader line + anchored description card (desktop). The card sits outside the
+   figure in the side gutter, so it never covers the truck; the line draws from the hotspot. */
+.anatomy-leader{position:absolute;z-index:1;height:2px;pointer-events:none;background:linear-gradient(90deg,rgba(240,160,32,.95),rgba(240,160,32,.4));box-shadow:0 0 10px rgba(240,160,32,.45);transform:translateY(-50%)}
+.anatomy-leader.is-left{left:-12px;width:calc(12px + var(--hotspot-x));transform-origin:left center;animation:leaderDraw .45s cubic-bezier(.4,0,.2,1) forwards}
+.anatomy-leader.is-right{right:-12px;width:calc(100% - var(--hotspot-x) + 12px);transform-origin:right center;animation:leaderDraw .45s cubic-bezier(.4,0,.2,1) forwards}
+@keyframes leaderDraw{from{transform:translateY(-50%) scaleX(0)}to{transform:translateY(-50%) scaleX(1)}}
+.anatomy-hotspots{z-index:3}
+.anatomy-callout{position:absolute;z-index:4;width:216px;padding:14px 16px;background:rgba(7,23,41,.97);border:1px solid rgba(240,160,32,.55);border-left:3px solid var(--ta-gold);border-radius:10px;box-shadow:0 18px 40px rgba(0,0,0,.45);transform:translateY(-50%);pointer-events:none;animation:anatomyCallout .28s cubic-bezier(.2,.7,.2,1) .2s both}
+.anatomy-callout.is-left{right:calc(100% + 12px);--from-x:8px}
+.anatomy-callout.is-right{left:calc(100% + 12px);--from-x:-8px}
+@keyframes anatomyCallout{from{opacity:0;transform:translateY(-50%) translateX(var(--from-x,0))}to{opacity:1;transform:translateY(-50%) translateX(0)}}
+.anatomy-callout-eyebrow{margin:0 0 4px;color:var(--ta-gold-light);font:700 10px/1.2 var(--font-mono);letter-spacing:.12em;text-transform:uppercase}
+.anatomy-callout-value{margin:0 0 6px;color:var(--ta-white);font:700 clamp(16px,1.4vw,20px)/1.15 var(--font-display)}
+.anatomy-callout-copy{margin:0;color:var(--ta-chrome);font:12px/1.45 var(--font-body)}
+@media(min-width:1101px){
+ .anatomy-carousel{max-width:1240px}
+ .anatomy-figure{max-width:640px}
+ .anatomy-detail{display:none}
+}
+@media(max-width:1100px){
+ .anatomy-callout,.anatomy-leader{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+ .anatomy-leader{animation:none!important}
+ .anatomy-callout{animation:none}
+}
+
+/* Responsive: the annotated truck fills the available panel width, and the section clears the
+   mobile enquiry bar. */
+.anatomy-band{padding-bottom:calc(var(--section-pad-y) + 76px)}
+.anatomy-figure{max-width:min(760px,62vh,92vw)}
+.anatomy-carousel{max-width:min(1240px,96vw)}
+@media(min-width:1600px){
+ .anatomy-figure{max-width:min(920px,66vh,60vw)}
+}
+@media(max-width:640px){
+ .anatomy-band{padding-bottom:calc(var(--section-pad-y) + 96px)}
+ .anatomy-figure{max-width:min(100%,86vw)}
+ .anatomy-heading{max-width:100%}
+}

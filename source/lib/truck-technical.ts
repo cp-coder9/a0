@@ -1,0 +1,6 @@
+export const technicalDescriptions:Record<string,{heading:string;lead:string;tags:string[]}>= {
+ 'g7h':{heading:'480 horses. 65 tonnes.',lead:'The upgraded flagship long-haul tractor: a 12.419-litre MC13,48, a ZF 12-speed AMT and a 65-tonne gross combination mass. Published SINOTRUK dealer specification for the G7H 64480.',tags:['6×4 Tractor','Long haul','AMT','480 hp','65 T GCM','ZF 12TX2621']},
+ 'g7s':{heading:'480 horses. Air suspension.',lead:'The G7S 64480: a 12.419-litre MC13,48 under 480 hp and 2300 Nm through a ZF 12-speed AMT, on air suspension and rated to an 80,000 kg gross combination mass. Published SINOTRUK dealer specification.',tags:['6×4 Tractor','Long haul','Air suspension','480 hp','80,000 kg GCM','ZF 12TX2621']},
+ 'howo-tapa':{heading:'Specified for the work.',lead:'The mining and construction workhorse: a Hardox 450 body as standard fitment on a 6×4 tipper chassis. 290hp, 1160Nm and 27T gross vehicle weight.',tags:['6×4 Tipper','Mining & construction','Hardox 450','290hp','27T GVW']},
+ 'howo-max':{heading:'Go the distance.',lead:'The HOWO MAX 64480 6×4 tractor: 480 hp, 2300 Nm and a 16-speed AMT, published by SINOTRUK dealer for long-haul work.',tags:['6×4 Tractor','Long haul','AMT','480 hp','65,000 kg GCM']},
+};

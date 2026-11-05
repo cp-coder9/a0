@@ -1,0 +1,32 @@
+.floating-socials{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:35;display:flex;flex-direction:column;gap:9px}.floating-social{position:relative;display:grid;place-items:center;width:48px;height:48px;border:1px solid #d7af5c70;border-radius:50%;color:#f4e2b8;background:#0c2340ed;box-shadow:0 4px 18px #050b1459;text-decoration:none;transition:color .22s ease,background .22s ease,border-color .22s ease,transform .22s ease,box-shadow .22s ease}.floating-social svg{display:block;width:25px;height:25px}.floating-social--facebook{color:#98a3ad}.floating-social--instagram{color:#98a3ad}.floating-social--whatsapp{color:#98a3ad}.floating-social:hover{transform:translateX(-3px) scale(1.06);box-shadow:0 6px 22px rgba(5,11,20,.55)}.floating-social--whatsapp:hover{background:#106c38;border-color:#55e18e}.floating-social.is-placeholder{opacity:.68;cursor:default}.floating-social:focus-visible{outline:3px solid #d7af5c;outline-offset:4px}.floating-social-tooltip{position:absolute;right:calc(100% + 10px);top:50%;transform:translateY(-50%);padding:8px 11px;background:#071320;border:1px solid #d7af5c66;color:#f4e2b8;border-radius:3px;white-space:nowrap;font:12px/1.3 var(--font-body,Arial,sans-serif);opacity:0;visibility:hidden;pointer-events:none}.floating-social:hover .floating-social-tooltip,.floating-social:focus-visible .floating-social-tooltip{opacity:1;visibility:visible}[inert] .floating-socials{visibility:hidden;pointer-events:none}@media(max-width:768px){.floating-socials{right:12px;top:auto;bottom:calc(104px + env(safe-area-inset-bottom));transform:none;gap:8px}.floating-social{width:44px;height:44px}.floating-social svg{width:23px;height:23px}}.floating-social--tiktok{color:#98a3ad}body:has([role="dialog"][aria-modal="true"]) .floating-socials,body:has(#truck-menu-trigger[aria-expanded="true"]) .floating-socials,body:has(#primary-nav.is-open) .floating-socials{visibility:hidden;pointer-events:none}@media(max-height:540px){.floating-socials{right:12px;top:auto;bottom:calc(104px + env(safe-area-inset-bottom));transform:none;flex-direction:row;gap:8px}.floating-social{width:44px;height:44px}.floating-social svg{width:23px;height:23px}.floating-social-tooltip{top:auto;bottom:calc(100% + 10px);right:0;transform:none}}@media(prefers-reduced-motion:reduce){.floating-social{transition:none}.floating-social:hover{transform:none}}
+.floating-whatsapp{position:relative;display:flex}
+.floating-whatsapp>button.floating-social{padding:0;font:inherit;cursor:pointer;appearance:none}
+.floating-whatsapp-panel{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);display:grid;gap:8px;min-width:186px;padding:12px;background:#071320f2;border:1px solid #d7af5c66;border-radius:4px;box-shadow:0 10px 30px #050b1499;z-index:1}
+.floating-whatsapp-panel[hidden]{display:none}
+.floating-whatsapp-title{margin:0;font:600 12px/1.3 var(--font-body,Arial,sans-serif);letter-spacing:.08em;text-transform:uppercase;color:#e5c780}
+.floating-whatsapp-number{display:flex;align-items:center;min-height:44px;padding:0 12px;border:1px solid #d7af5c59;border-radius:3px;background:#0c2340;color:#f4e2b8;text-decoration:none;font:600 15px/1.2 var(--font-body,Arial,sans-serif);white-space:nowrap}
+.floating-whatsapp-number:hover,.floating-whatsapp-number:focus-visible{background:#173857;border-color:#e5c780;color:#fff}
+.floating-whatsapp-number:focus-visible{outline:3px solid #d7af5c;outline-offset:3px}
+@media(max-width:768px){.floating-whatsapp-panel{right:0;top:auto;bottom:calc(100% + 10px);transform:none}}
+@media(max-height:540px){.floating-whatsapp-panel{right:0;top:auto;bottom:calc(100% + 10px);transform:none}}
+@media(prefers-reduced-motion:reduce){.floating-whatsapp-panel{transition:none}}
+
+/* Corporate-colour hover: icons rest grey, then animate to their brand colour on hover. */
+.floating-social--facebook:hover{color:#1877F2;background:rgba(24,119,242,.16);border-color:#1877F2}
+.floating-social--instagram:hover{color:#E1306C;background:rgba(225,48,108,.16);border-color:#E1306C}
+.floating-social--tiktok:hover{color:#25F4EE;background:rgba(37,244,238,.16);border-color:#25F4EE}
+.floating-social--whatsapp:hover{color:#25D366;background:rgba(37,211,102,.18);border-color:#25D366}
+@media(prefers-reduced-motion:reduce){.floating-social:hover{transform:none;box-shadow:none}}
+/* RESERVED GUTTER (Ruth/Leo: rail must not sit over content; rail is preserved, not removed).
+   Desktop: reserve a right gutter the width of the rail so no column can run underneath it.
+   Mobile: dock the rail as a horizontal row directly above the sticky enquiry bar so it reads
+   as chrome rather than floating over body text, and reserve the space it occupies. */
+@media(min-width:769px){body:has(.floating-socials){padding-right:84px}}
+@media(max-width:768px){
+ .floating-socials{left:12px;right:12px;top:auto;bottom:calc(78px + env(safe-area-inset-bottom));transform:none;flex-direction:row;justify-content:flex-end;gap:8px}
+ .floating-social .floating-social-tooltip{right:0;top:auto;bottom:calc(100% + 8px);transform:none}
+ footer{padding-bottom:calc(150px + env(safe-area-inset-bottom))}
+}
+
+/* The floating social rail overlaps page content on phones; hide it below tablet width. */
+@media(max-width:768px){.floating-socials{display:none!important}}

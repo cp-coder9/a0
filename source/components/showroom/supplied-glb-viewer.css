@@ -1,0 +1,7 @@
+.supplied-glb{display:grid;gap:10px}.supplied-glb-stage{position:relative;width:100%;aspect-ratio:16/10;min-height:220px;background:#0a1626;border:1px solid #c5d8e82b}.supplied-glb-stage:focus-visible,.supplied-glb-controls>button:focus-visible{outline:3px solid #d7af5c;outline-offset:3px}.supplied-glb-status{margin:0;font:14px/1.6 var(--font-body,Arial,sans-serif);color:#cfe0ee}.supplied-glb-detail{margin:0;font-size:12px;color:#8da7bb}.supplied-glb-controls{display:flex;flex-wrap:wrap;gap:8px}.supplied-glb-controls>button{min-height:44px;padding:0 14px;border:1px solid #c5d8e833;background:#0c2340;color:var(--ta-chrome,#e8eef4);font:600 13px var(--font-display,Arial,sans-serif);cursor:pointer}.supplied-glb-controls>button:hover{border-color:#e5c780;color:#e5c780}.supplied-glb-note{margin:0;font-size:12px;color:#8da7bb}@media(max-width:768px){.supplied-glb-stage{aspect-ratio:4/3}}@media(prefers-reduced-motion:reduce){.supplied-glb-controls>button{transition:none}}
+.supplied-glb-measured{margin-top:10px;padding:12px 14px;border-left:2px solid #d7af5c;background:#0a1626;color:#cfe0ee;font:13px/1.6 var(--font-body,Arial,sans-serif)}.supplied-glb-measured p{margin:0}
+
+/* Keep the WebGL canvas inside the stage box: clip overflow and stack any canvas absolutely so a
+   racing/cancelled load can never push the visible model below the stage. */
+.supplied-glb-stage{overflow:hidden}
+.supplied-glb-stage>canvas{position:absolute;inset:0;width:100%;height:100%;display:block}

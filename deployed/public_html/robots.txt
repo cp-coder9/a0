@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Host: https://www.trukafrik.com
+Sitemap: https://www.trukafrik.com/sitemap.xml

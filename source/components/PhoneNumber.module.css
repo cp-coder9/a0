@@ -1,0 +1,5 @@
+.label{display:inline-flex;align-items:center;justify-content:center;gap:.6em;max-width:100%;vertical-align:middle;text-align:inherit;line-height:1.25}
+.lines{display:flex;flex-direction:column;min-width:0;gap:.15em}
+.digits{display:block;font-size:.8em;font-weight:500;letter-spacing:.02em;white-space:nowrap}
+.arrow{flex:none;align-self:center}
+@media(max-width:380px){.label{gap:.35em}.digits{font-size:.75em;letter-spacing:0}}

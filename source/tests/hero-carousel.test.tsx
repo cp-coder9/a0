@@ -1,0 +1,30 @@
+import {render,screen,fireEvent,cleanup,act} from '@testing-library/react';
+import {it,expect,afterEach,beforeEach,vi} from 'vitest';
+import {Hero} from '../components/Hero';
+import {EnquiryExperience} from '../components/Enquiry';
+beforeEach(()=>vi.stubGlobal('matchMedia',()=>({matches:true,addEventListener:vi.fn(),removeEventListener:vi.fn()})));
+afterEach(()=>{cleanup();vi.useRealTimers();vi.unstubAllGlobals()});
+it('auto-rotates when visible and stops after manual selection',()=>{
+ vi.useFakeTimers();
+ vi.stubGlobal('matchMedia',()=>({matches:false,addEventListener:vi.fn(),removeEventListener:vi.fn()}));
+ let intersect:(entries:{isIntersecting:boolean}[])=>void=()=>{};
+ vi.stubGlobal('IntersectionObserver',class{constructor(callback:typeof intersect){intersect=callback}observe(){}unobserve(){}disconnect(){}});
+ render(<EnquiryExperience><Hero/></EnquiryExperience>);
+ act(()=>intersect([{isIntersecting:true}]));
+ act(()=>vi.advanceTimersByTime(7200));
+ expect(screen.getByRole('button',{name:'Show SITRAK G7S'}).getAttribute('aria-pressed')).toBe('true');
+ fireEvent.click(screen.getByRole('button',{name:'Show HOWO MAX'}));
+ act(()=>vi.advanceTimersByTime(15000));
+ expect(screen.getByRole('button',{name:'Show HOWO MAX'}).getAttribute('aria-pressed')).toBe('true');
+ expect(screen.getByRole('button',{name:'Play truck slideshow'})).toBeTruthy();
+});
+it('switches image and specifications together and carries the selected model into an enquiry',()=>{
+ const {container}=render(<EnquiryExperience><Hero/></EnquiryExperience>);
+ fireEvent.click(screen.getByRole('button',{name:'Show HOWO TX 64330'}));
+ expect(screen.getByLabelText('330 hp — Rated power')).toBeTruthy();
+ expect(screen.getByLabelText('12 m³ — Tipper body')).toBeTruthy();
+ expect(container.querySelector('.hero-image.is-active')?.getAttribute('src')).toBe('/assets/trucks/howo-64330-tipper.webp');
+ expect(screen.queryByLabelText('480 hp — Rated power')).toBeNull();
+ fireEvent.click(screen.getByRole('button',{name:/Book a test drive/}));
+ expect((screen.getByRole('combobox') as HTMLSelectElement).value).toBe('HOWO TX 64330 Tipper');
+});

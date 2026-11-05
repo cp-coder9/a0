@@ -1,0 +1,11 @@
+.env
+.env.*
+**/.env
+**/.env.*
+**/node_modules/
+**/.next/
+**/.next-*/
+**/backups/
+**/enquiry-config.php
+*.bak*
+prepare_backup.py

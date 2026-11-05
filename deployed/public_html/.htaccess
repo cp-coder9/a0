@@ -1,0 +1,166 @@
+# Truk Afrik — PHP shared-hosting build (2026-11-02T12-45-05)
+# Static Next.js export + PHP enquiry endpoint. Do not serve source or private files.
+Options -Indexes
+DirectoryIndex index.html
+<IfModule mod_dir.c>
+  # Export output contains sibling directories (RSC payloads) for every page; without this Apache
+  # would 301 /about to /about/ instead of serving about.html.
+  DirectorySlash Off
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# 1. Canonical host: apex and http both 301 to https://www.trukafrik.com
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^trukafrik\.com$ [NC]
+RewriteRule ^(.*)$ https://www.trukafrik.com/$1 [R=301,L]
+
+# 2. Enquiry endpoint (the client still POSTs to /api/enquiries)
+RewriteRule ^api/enquiries/?$ api/enquiries.php [L]
+
+# 3. Legacy URLs recovered from three previous site generations (see docs/redirects/301-map.md)
+RewriteRule ^home/?$ / [R=301,L,NE]
+RewriteRule ^news/?$ /#find-us [R=301,L,NE]
+RewriteRule ^buy/?$ /#find-us [R=301,L,NE]
+RewriteRule ^rent/?$ /#find-us [R=301,L,NE]
+RewriteRule ^contact/?$ /#find-us [R=301,L,NE]
+RewriteRule ^models/sitrak-c7h/?$ /models/g7h [R=301,L,NE]
+RewriteRule ^models/howo-7/?$ /models/howo-tapa [R=301,L,NE]
+RewriteRule ^new-trucks/?$ /#the-range [R=301,L,NE]
+RewriteRule ^new-trucks---nelspruit/?$ /#the-range [R=301,L,NE]
+RewriteRule ^services/?$ /#the-range [R=301,L,NE]
+RewriteRule ^pre---new-trucks-benoni/?$ /pre-owned [R=301,L,NE]
+RewriteRule ^copy-of-pre---new-trucks-nelspruit/?$ /pre-owned [R=301,L,NE]
+RewriteRule ^parts---nelspruit/?$ /parts [R=301,L,NE]
+RewriteRule ^shantui790f761d/?$ /parts [R=301,L,NE]
+RewriteRule ^services1f9c85ac/?$ /#backed-by-service [R=301,L,NE]
+RewriteRule ^services---nelspruit/?$ /#backed-by-service [R=301,L,NE]
+RewriteRule ^services---benoni/?$ /#backed-by-service [R=301,L,NE]
+RewriteRule ^shantui/?$ / [R=301,L,NE]
+RewriteRule ^shantui--nelspruit/?$ / [R=301,L,NE]
+RewriteRule ^news64c190ed/?$ / [R=301,L,NE]
+RewriteRule ^most-expensive-cars-ever-sold-at-auction/?$ / [R=301,L,NE]
+RewriteRule ^recording-breaking-car-sales/?$ / [R=301,L,NE]
+RewriteRule ^could-this-be-the-vehicle-of-the-future/?$ / [R=301,L,NE]
+RewriteRule ^a-busy-year-in-racing/?$ / [R=301,L,NE]
+RewriteRule ^feed/rss2/?$ / [R=301,L,NE]
+RewriteRule ^feed/atom/?$ / [R=301,L,NE]
+RewriteRule ^about-us/?$ /about [R=301,L,NE]
+RewriteRule ^contact-us/?$ /#find-us [R=301,L,NE]
+RewriteRule ^contacts/?$ /#find-us [R=301,L,NE]
+RewriteRule ^finance-your-truck/?$ /finance [R=301,L,NE]
+RewriteRule ^howo-trucks/?$ /#the-range [R=301,L,NE]
+RewriteRule ^sitrak-trucks-new/?$ /#the-range [R=301,L,NE]
+RewriteRule ^pre-owned-trucks/?$ /pre-owned [R=301,L,NE]
+RewriteRule ^products/?$ /#the-range [R=301,L,NE]
+RewriteRule ^services-nelspruit/?$ /#backed-by-service [R=301,L,NE]
+RewriteRule ^portuguese/?$ / [R=301,L,NE]
+RewriteRule ^pyrolysis/?$ / [R=301,L,NE]
+RewriteRule ^santui/?$ / [R=301,L,NE]
+RewriteRule ^shop/?$ / [R=301,L,NE]
+RewriteRule ^cart/?$ / [R=301,L,NE]
+RewriteRule ^checkout/?$ / [R=301,L,NE]
+RewriteRule ^my-account/?$ / [R=301,L,NE]
+RewriteRule ^face-the-challenges-of-increasing-chain-complexity/?$ / [R=301,L,NE]
+RewriteRule ^tianjin-port-came-to-a-halt-after-explosions/?$ / [R=301,L,NE]
+RewriteRule ^the-importance-of-regular-truck-maintenance/?$ / [R=301,L,NE]
+RewriteRule ^bananaworld/?$ / [R=301,L,NE]
+RewriteRule ^debunking-trucking-myths/?$ / [R=301,L,NE]
+RewriteRule ^debunking-truck-myths-2-the-interior-space/?$ / [R=301,L,NE]
+RewriteRule ^give-the-truck-a-brake/?$ / [R=301,L,NE]
+RewriteRule ^truk-afrik-sinotruk/?$ / [R=301,L,NE]
+RewriteRule ^sinotruk-sitrak-trukafrik/?$ / [R=301,L,NE]
+RewriteRule ^imperial-crown-trading/?$ / [R=301,L,NE]
+RewriteRule ^sample-page/?$ / [R=301,L,NE]
+RewriteRule ^sample-page-2/?$ / [R=301,L,NE]
+RewriteRule ^typography/?$ / [R=301,L,NE]
+RewriteRule ^shortcodes/?$ / [R=301,L,NE]
+RewriteRule ^home-boxed/?$ / [R=301,L,NE]
+RewriteRule ^gallery-grid/?$ / [R=301,L,NE]
+RewriteRule ^gallery-masonry/?$ / [R=301,L,NE]
+RewriteRule ^our-team-list/?$ / [R=301,L,NE]
+RewriteRule ^our-team-grid/?$ / [R=301,L,NE]
+RewriteRule ^track-your-shipment/?$ / [R=301,L,NE]
+RewriteRule ^vacancies/?$ / [R=301,L,NE]
+RewriteRule ^services/(.*)$ /#backed-by-service [R=301,L,NE]
+RewriteRule ^staff/(.*)$ /#find-us [R=301,L,NE]
+RewriteRule ^testimonials/(.*)$ / [R=301,L,NE]
+RewriteRule ^stm_gallery/(.*)$ / [R=301,L,NE]
+RewriteRule ^careers_archive/(.*)$ / [R=301,L,NE]
+RewriteRule ^vc_sidebar/(.*)$ / [R=301,L,NE]
+RewriteRule ^category/(.*)$ / [R=301,L,NE]
+RewriteRule ^tag/(.*)$ / [R=301,L,NE]
+RewriteRule ^author/(.*)$ / [R=301,L,NE]
+RewriteRule ^stm_gallery_category/(.*)$ / [R=301,L,NE]
+RewriteRule ^stm_testimonials_category/(.*)$ / [R=301,L,NE]
+
+# 4. Canonical URLs: no trailing slash (the RSC payload directories are removed)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# 5. Static export: /about -> /about.html, /models/g7h -> /models/g7h.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+</IfModule>
+
+ErrorDocument 404 /404.html
+
+# Never serve the private configuration or deploy notes
+<FilesMatch "(^|/)(enquiry-config\.php|enquiry-config\.sample\.php|deployment-manifest\.json|README\.md|DEPLOYMENT\.md)$">
+  Require all denied
+</FilesMatch>
+RedirectMatch 404 /(private|php)/
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  <FilesMatch "\.(png|jpe?g|webp|avif|svg|glb|gltf|ktx2|hdr|exr|mp4|webm|pdf|woff2?)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+AddType application/javascript .js .mjs
+AddType application/wasm .wasm
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php8_module>
+   php_flag display_errors Off
+   php_value max_execution_time 300
+   php_value max_input_time 300
+   php_value max_input_vars 10000
+   php_value memory_limit 2G
+   php_value post_max_size 512M
+   php_value session.gc_maxlifetime 14400
+   php_value session.save_path "/tmp"
+   php_value upload_max_filesize 256M
+   php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+   php_flag display_errors Off
+   php_value max_execution_time 300
+   php_value max_input_time 300
+   php_value max_input_vars 10000
+   php_value memory_limit 2G
+   php_value post_max_size 512M
+   php_value session.gc_maxlifetime 14400
+   php_value session.save_path "/tmp"
+   php_value upload_max_filesize 256M
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit

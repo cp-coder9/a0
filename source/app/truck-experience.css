@@ -1,0 +1,149 @@
+/* Shared truck menu, range galleries and model-aware enquiry popups. */
+.truck-menu{position:relative}
+.truck-menu-trigger{display:flex;align-items:center;gap:8px;min-height:44px;padding:0;border:0;background:none;color:var(--ta-chrome);font:700 15px/1 var(--font-display);letter-spacing:.06em;text-transform:uppercase}
+.truck-menu-trigger:hover,.truck-menu-trigger[aria-expanded=true]{color:var(--ta-gold-light)}
+.truck-menu-trigger>span{transition:transform .2s}
+.truck-menu-trigger[aria-expanded=true]>span{transform:rotate(180deg)}
+.truck-menu-panel{position:absolute;top:100%;right:-20px;width:380px;padding:20px;background:#091d31;border:1px solid #c5d8e82b;border-top:2px solid var(--ta-gold-light);box-shadow:0 24px 70px #020810b3;z-index:65;animation:hero-in .2s var(--motion-ease) both}
+.truck-menu-panel[hidden]{display:none!important}
+.truck-menu-panel>.eyebrow{font-size:10px;margin-bottom:14px}
+.truck-menu-panel>button{display:flex;align-items:center;gap:14px;width:100%;min-height:76px;padding:12px 0;background:transparent;border:0;border-bottom:1px solid #c5d8e81a;color:var(--ta-chrome);text-align:left}
+.truck-menu-panel>button:hover{color:var(--ta-gold-light)}
+.truck-menu-panel>button>img{width:76px;height:50px;object-fit:cover;border-radius:2px;flex-shrink:0}
+.truck-menu-panel>button>span:nth-child(2){flex:1;min-width:0}
+.truck-menu-panel strong{display:block;font:700 22px/1.2 var(--font-display);color:inherit}
+.truck-menu-panel small{display:block;margin-top:5px;font:12px/1.5 var(--font-body);color:#8da7bb}
+.truck-menu-panel>a{display:flex;align-items:center;justify-content:space-between;min-height:44px;padding-top:14px;color:var(--ta-gold-light);font:600 14px var(--font-display);text-transform:uppercase;letter-spacing:.06em}
+.header-enquiry{display:inline-flex}
+.truck-gallery{background:#081a2c;min-width:0;touch-action:pan-y pinch-zoom}
+.gallery-open{display:block;position:relative;width:100%;height:230px;padding:0;overflow:hidden;border:0;background:#071729;text-align:left}
+.gallery-display{cursor:default}
+.gallery-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.025);transition:opacity .8s var(--motion-ease),transform 4.8s linear;pointer-events:none}
+.gallery-image.is-active{opacity:1;transform:scale(1)}
+.gallery-open:focus-visible{outline-offset:-4px}
+.gallery-open-hint{position:absolute;bottom:12px;right:12px;display:flex;align-items:center;gap:16px;min-height:34px;padding:8px 12px;background:#061323dc;color:#e4edf5;border:1px solid #c5d8e833;font:600 12px/1 var(--font-display);letter-spacing:.07em;text-transform:uppercase;pointer-events:none}
+.gallery-open:hover .gallery-open-hint{color:var(--ta-gold-light);border-color:#f0a02077}
+.gallery-toolbar{display:flex;align-items:center;gap:4px;padding:0 10px;min-height:44px;border-bottom:1px solid #c5d8e812}
+.gallery-arrow,.gallery-play{display:grid;place-items:center;flex-shrink:0;min-width:36px;min-height:44px;padding:0;border:0;background:transparent;color:#bdd0df;font:18px/1 var(--font-body)}
+.gallery-arrow:hover,.gallery-play:hover{color:var(--ta-gold-light)}
+.gallery-play{min-width:28px;font-size:12px}
+.gallery-dots{display:flex;align-items:center;justify-content:center;flex:1;min-width:0}
+.gallery-dots>button{display:grid;place-items:center;min-height:44px;width:28px;padding:0;border:0;background:transparent}
+.gallery-dots>button>span{display:block;width:5px;height:5px;border-radius:50%;background:#68879e;transition:width .25s,background .25s}
+.gallery-dots>button[aria-pressed=true]>span{width:18px;border-radius:1px;background:var(--ta-gold-light)}
+.gallery-count{min-width:34px;text-align:center;color:#8da7bb;font:10px/1 var(--font-mono);font-variant-numeric:tabular-nums}
+.gallery-caption{min-height:34px;margin:0;padding:9px 16px 8px;color:#8da7bb;font:10px/1.5 var(--font-mono);text-wrap:pretty}
+.truck-card-actions{display:grid;gap:16px;margin-top:auto;padding-top:6px}
+.truck-spec-link{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;padding:10px 0;border:0;border-top:1px solid #c5d8e82b;background:transparent;color:var(--ta-chrome);text-align:left;font:600 15px/1.3 var(--font-display);text-transform:uppercase;letter-spacing:.04em}
+.truck-spec-link:hover{color:var(--ta-gold-light)}
+.truck-card-actions .button{width:100%;justify-content:space-between;font-size:16px}
+.truck-spec-backdrop{position:fixed;inset:0;z-index:110;display:flex;align-items:center;justify-content:center;padding:28px;background:#020810d9;backdrop-filter:blur(8px)}
+.truck-spec-modal{position:relative;width:min(1120px,100%);max-height:90dvh;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding:38px;background:linear-gradient(145deg,#102b44,#081a2c);border:1px solid #c5d8e83b;border-top:3px solid var(--ta-gold-light);box-shadow:0 32px 100px #02081099;animation:hero-in .3s var(--motion-ease) both}
+.truck-spec-modal .dialog-close{position:sticky;top:0;float:right;z-index:3;width:44px;height:44px;background:#071729f5;margin:0 0 -44px 0}
+.truck-spec-top{padding-right:56px;margin-bottom:28px}
+.truck-spec-top>.eyebrow{font-size:10px;margin-bottom:12px}
+.truck-spec-top h2{font:800 clamp(34px,4vw,54px)/1 var(--font-display);text-transform:uppercase;margin:0 0 12px}
+.truck-spec-top>p:last-child{font-size:16px;color:#9ab2c6;margin:0}
+.truck-spec-layout{display:grid;grid-template-columns:1fr 1.1fr;gap:32px;align-items:start}
+.truck-spec-photo{position:sticky;top:4px;min-width:0}
+.truck-spec-photo .gallery-open{height:300px}
+.truck-spec-detail{min-width:0}
+.truck-spec-detail h3{font-size:24px;margin:0 0 20px}
+.truck-spec-detail .spec-table{font-size:12px;line-height:1.6}
+.truck-spec-detail .spec-table th{width:40%;vertical-align:top}
+.truck-spec-detail .spec-table td{overflow-wrap:anywhere}
+.truck-spec-note{margin:22px 0 0;font-size:13px;line-height:1.65;color:#8da7bb}
+.truck-spec-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;padding-top:24px;border-top:1px solid #c5d8e826}
+.truck-spec-actions .button{gap:28px}
+.dialog .dialog-close{position:sticky;top:0;float:right;right:auto;z-index:3;width:44px;height:44px;margin:0 0 -44px 0;background:#071729f5}
+.selected-truck-summary{display:grid;grid-template-columns:120px minmax(0,1fr);gap:18px;margin-bottom:26px;padding:16px;background:#071729;border:1px solid #c5d8e826}
+.selected-truck-summary>img{width:120px;height:110px;object-fit:cover}
+.selected-truck-summary .eyebrow{font-size:9px;letter-spacing:.1em;margin:0 0 8px}
+.selected-truck-summary h3{font-size:25px;margin:0 0 7px}
+.selected-truck-summary>div>p:not(.eyebrow){font-size:12px;margin:0 0 12px;color:#8da7bb}
+.selected-truck-summary dl{margin:0;font-size:11px;line-height:1.6}
+.selected-truck-summary dl>div{display:flex;justify-content:space-between;gap:16px;padding:3px 0;border-top:1px solid #c5d8e812}
+.selected-truck-summary dt{color:#8da7bb}
+.selected-truck-summary dd{margin:0;color:#d7e4ef;text-align:right}
+@media(max-width:1100px) and (min-width:769px){.truck-menu-trigger{font-size:13px}.truck-menu-panel{right:-12px}.gallery-toolbar{padding-inline:6px}.gallery-count{min-width:28px}.gallery-arrow{min-width:30px}.gallery-play{min-width:24px}.gallery-dots>button{width:24px}.truck-content{padding:20px}}
+@media(max-width:768px){
+ .header-enquiry{display:flex;align-items:stretch}
+ .header-enquiry>.button{width:100%}
+ .truck-menu-trigger{width:100%;justify-content:space-between;padding:16px 8px;min-height:48px}
+ .truck-menu-panel{position:static;width:100%;padding:12px 14px;border-top-width:1px;box-shadow:none;animation:none;margin-bottom:8px}
+ .truck-menu-panel>button{min-height:72px}
+ .truck-menu-panel>button>img{width:60px;height:44px}
+ .truck-menu-panel strong{font-size:22px}
+ .truck-menu-panel small{font-size:11px}
+ .gallery-open{height:250px}
+ .gallery-arrow{min-width:44px}
+ .gallery-play{min-width:36px}
+ .gallery-dots>button{width:34px}
+ .gallery-caption{font-size:10px}
+ .truck-spec-backdrop{padding:12px 12px calc(12px + env(safe-area-inset-bottom))}
+ .truck-spec-modal{padding:22px;max-height:94dvh;scrollbar-gutter:auto}
+ .truck-spec-top{padding-right:42px;margin-bottom:22px}
+ .truck-spec-top h2{font-size:36px}
+ .truck-spec-layout{grid-template-columns:1fr;gap:24px}
+ .truck-spec-photo{position:static}
+ .truck-spec-photo .gallery-open{height:230px}
+ .truck-spec-detail .spec-table{font-size:12px}
+ .truck-spec-actions{gap:10px;display:grid;grid-template-columns:1fr;margin-top:24px}
+ .truck-spec-actions .button{width:100%}
+ .selected-truck-summary{grid-template-columns:1fr;padding:14px;gap:14px}
+ .selected-truck-summary>img{width:100%;height:140px}
+ .selected-truck-summary h3{font-size:26px}
+ .selected-truck-summary dl{font-size:11px}
+ .dialog{padding-bottom:30px}
+}
+@media(max-width:360px){.truck-spec-modal{padding:18px}.truck-spec-top h2{font-size:32px}.truck-spec-photo .gallery-open{height:200px}.truck-spec-detail .spec-table th{width:37%;padding-right:8px}.truck-spec-detail .spec-table{font-size:11px}.truck-menu-panel{padding-inline:10px}.truck-menu-panel>button{gap:10px}}
+@media(prefers-reduced-motion:reduce){.gallery-image{transition:none;transform:none}.truck-spec-modal,.truck-menu-panel{animation:none}}
+
+/* Glassy, rounded "The range" dropdown with smooth browsing. */
+.truck-menu-panel{
+ background:rgba(7,23,41,.62);
+ -webkit-backdrop-filter:blur(22px) saturate(150%);
+ backdrop-filter:blur(22px) saturate(150%);
+ border:1px solid rgba(240,160,32,.28);
+ border-top:2px solid var(--ta-gold-light);
+ border-radius:20px;
+ padding:14px;
+ box-shadow:0 30px 80px rgba(2,8,16,.55),inset 0 1px 0 rgba(255,255,255,.06);
+ animation:menu-drop .26s cubic-bezier(.22,.61,.36,1) both;
+ transform-origin:top right;
+}
+@keyframes menu-drop{from{opacity:0;transform:translateY(-10px) scale(.97)}to{opacity:1;transform:none}}
+.truck-menu-panel>.eyebrow{margin:2px 8px 10px}
+.truck-menu-panel>button,.truck-menu-panel>a{
+ border-radius:14px;
+ padding:10px;
+ border-bottom:1px solid transparent;
+ transition:background .22s ease,transform .22s ease,color .18s ease;
+}
+.truck-menu-panel>button:hover,.truck-menu-panel>a:hover{
+ background:rgba(240,160,32,.12);
+ transform:translateX(4px);
+ border-bottom-color:transparent;
+}
+.truck-menu-panel>button:focus-visible,.truck-menu-panel>a:focus-visible{background:rgba(240,160,32,.16);outline:2px solid var(--ta-gold-light);outline-offset:2px;border-radius:14px}
+.truck-menu-panel>button>img,.truck-menu-panel>a>img{border-radius:10px;transition:transform .28s ease,box-shadow .28s ease}
+.truck-menu-panel>button:hover>img,.truck-menu-panel>a:hover>img{transform:scale(1.05);box-shadow:0 6px 18px rgba(0,0,0,.45)}
+.truck-menu-trigger{transition:color .2s ease}
+.truck-menu-trigger>span{transition:transform .25s ease}
+
+/* Smooth hover for the top navigation links. */
+.site-header nav>a{position:relative;transition:color .2s ease}
+.site-header nav>a::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:2px;background:var(--ta-gold-light);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.site-header nav>a:hover::after,.site-header nav>a:focus-visible::after{transform:scaleX(1)}
+
+@media(max-width:768px){.site-header nav.is-open{background:rgba(7,23,41,.9);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border-radius:0 0 20px 20px}}
+
+/* "More" dropdown: the dealership pages, reusing the glass panel of "The range". */
+.more-menu-panel{right:0;width:300px}
+.more-menu-panel>a{display:block;min-height:0;padding:12px 10px;border-bottom:1px solid rgba(197,216,232,.1);color:var(--ta-chrome);font:800 16px/1.2 var(--font-display);text-transform:uppercase;letter-spacing:.02em}
+.more-menu-panel>a strong{display:block;font:inherit;color:inherit;letter-spacing:inherit}
+.more-menu-panel>a small{display:block;margin-top:4px;font:400 12px/1.45 var(--font-body);color:#8da7bb;text-transform:none;letter-spacing:0}
+.more-menu-panel>a:last-child{border-bottom:0}
+.more-menu-panel>a:hover{color:var(--ta-gold-light);background:rgba(240,160,32,.12);transform:translateX(4px)}
+@media(max-width:768px){.more-menu-panel{width:100%;right:auto}.more-menu-panel>a{font-size:15px;padding:11px 8px}}
+

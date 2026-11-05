@@ -1,0 +1,4 @@
+// @vitest-environment node
+import {describe,it,expect} from 'vitest';
+import {validateEnquiry} from '../lib/enquiry';
+describe('enquiry validation',()=>{it('accepts valid details and trims strings',()=>{const r=validateEnquiry({name:' Test Operator ',email:'test@example.com',phone:'0820748725',model:'SITRAK C7H',message:'Book a drive',consent:true});expect(r.ok).toBe(true);expect(r.data?.name).toBe('Test Operator');});it('rejects malformed and oversized values',()=>{expect(validateEnquiry({name:'x'.repeat(121),email:'bad',message:'x'.repeat(2001),consent:'true'}).ok).toBe(false);});it('rejects missing contact and consent',()=>{const r=validateEnquiry({});expect(r.ok).toBe(false);if(!r.ok){expect(r.errors.name).toBeTruthy();expect(r.errors.email).toBeTruthy();expect(r.errors.consent).toBeTruthy();}});});

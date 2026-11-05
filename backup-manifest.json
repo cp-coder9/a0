@@ -1,0 +1,2779 @@
+{
+  "files": [
+    {
+      "path": "source/.editorconfig",
+      "bytes": 1594,
+      "sha256": "498e5916d5247acbf7ebfc0c846d297ce2d8bea04f3634fb4ac796ca1bb7df5c"
+    },
+    {
+      "path": "source/.gitattributes",
+      "bytes": 1559,
+      "sha256": "f1236dbf51baa47a48cdb4427426e0a93ec438a332308f215f4d8817c69d778d"
+    },
+    {
+      "path": "source/next-env.d.ts",
+      "bytes": 295,
+      "sha256": "1b59d4c6b83807db275d43f3cf2cc8e9323f465fab764eea091cc5becd5bad37"
+    },
+    {
+      "path": "source/next.config.ts",
+      "bytes": 1179,
+      "sha256": "9813643073da3f76fd098b5cbfc5bd671bc2a64ba05d5ac84be31b865463d964"
+    },
+    {
+      "path": "source/package-lock.json",
+      "bytes": 112692,
+      "sha256": "7d5bbb9d02ce9c6bd529e73b0aa50a5b2faa9c00059621dcd49296aa0b49948b"
+    },
+    {
+      "path": "source/package.json",
+      "bytes": 631,
+      "sha256": "402085366206aac73a2fb6ecac5bbf61921186dfbbdd6134fefa9342a5b25e85"
+    },
+    {
+      "path": "source/tsconfig.json",
+      "bytes": 724,
+      "sha256": "8c48411a03244d03365ae254d9db9a70dd4c8b081a07d0ade2cfa3b2f5cef0f5"
+    },
+    {
+      "path": "source/vitest.config.ts",
+      "bytes": 178,
+      "sha256": "32b88af94b5d7e3b93b612945e85c9515eda2e6c997d4db7f3be48839b67ec3e"
+    },
+    {
+      "path": "source/app/apple-icon.png",
+      "bytes": 18066,
+      "sha256": "5df3ba6ebc39faf5c7620b354006d6e4979127c92fc18c431fb18f2a970b844a"
+    },
+    {
+      "path": "source/app/fleet-discovery.css",
+      "bytes": 5090,
+      "sha256": "30176174f19bc3b4abbb0bca8f6e645385850a95ab9268e7b4a5266b8ab9a2c2"
+    },
+    {
+      "path": "source/app/fonts.css",
+      "bytes": 1669,
+      "sha256": "b86ebf1fd4cecf4720df2ce71ac39009027067f3de1778b4ad0b99a7f572549e"
+    },
+    {
+      "path": "source/app/globals.css",
+      "bytes": 12118,
+      "sha256": "d05278f21cabc93af080f35e2033b246c373d635704e97fee857dcc7a16a7dbf"
+    },
+    {
+      "path": "source/app/hero-carousel.css",
+      "bytes": 7577,
+      "sha256": "9a7bbfc284cfff214d5e4688b301ea9beec2241db85c54aab10e0592c09567ed"
+    },
+    {
+      "path": "source/app/icon.png",
+      "bytes": 59907,
+      "sha256": "68879ddb47d6b29667756eb808270f10c9768a88c972313bd14c20178aee6623"
+    },
+    {
+      "path": "source/app/intro-splash.css",
+      "bytes": 8378,
+      "sha256": "baa5382f3affab7e7c5e2d5c89894afbea5d02f84cf6fe4f74aadf26c33aab29"
+    },
+    {
+      "path": "source/app/layout.tsx",
+      "bytes": 1460,
+      "sha256": "68004c75c67729b0347c5e27fc818cb859bb3eaea255acd144ec796b91dc0b9c"
+    },
+    {
+      "path": "source/app/motion.css",
+      "bytes": 10670,
+      "sha256": "a50a9287bb7143fd83526f8ef2687794ead6d7211fb126927ea0a79a8ecdb3c9"
+    },
+    {
+      "path": "source/app/page.tsx",
+      "bytes": 7334,
+      "sha256": "1a8f0c1cf2620e9892125fa2c09aa574d1b18887a6aa5b7cbed8226e5e35d632"
+    },
+    {
+      "path": "source/app/robots.ts",
+      "bytes": 676,
+      "sha256": "7d6357ceaa79fac0b154be5be08c563b804020927cc2109e9e409abac3f56d3a"
+    },
+    {
+      "path": "source/app/sitemap.ts",
+      "bytes": 1511,
+      "sha256": "af95e21bfe33938b3abafe270189301dbafeaf4ecc25cdc7d81eb339054b5cc0"
+    },
+    {
+      "path": "source/app/tokens.css",
+      "bytes": 8190,
+      "sha256": "ac3943524bf1c92668dd4d570f1021e7b6c05d0eb832af8941803f234cbe6956"
+    },
+    {
+      "path": "source/app/truck-experience.css",
+      "bytes": 12190,
+      "sha256": "dba02b3a5033f5f6bfbc1f9fcdbb5d5f73b5feebe6d2010a33af730f76caefeb"
+    },
+    {
+      "path": "source/app/truck-explorer.css",
+      "bytes": 5085,
+      "sha256": "04255b9c2da6b920fbb7a4240bd3a33dd9bf6e74eb6275d84dcd8ae017f7e753"
+    },
+    {
+      "path": "source/components/AttentionScroller.tsx",
+      "bytes": 2742,
+      "sha256": "3218eef94b556fd9d15d6ff6fbcfc9866807d4dd1b591422cb043f0a4679a854"
+    },
+    {
+      "path": "source/components/BrandLogo.tsx",
+      "bytes": 342,
+      "sha256": "1a2d24784ce09189a451e9c212d03fda7f7c34f34cf398a430d2aa36d383a561"
+    },
+    {
+      "path": "source/components/cabin-panorama.css",
+      "bytes": 2555,
+      "sha256": "795a7f86fec05a1bfca394a4808e986a0d2d3d7262ff9587d073abbe9de0b916"
+    },
+    {
+      "path": "source/components/CabinPanorama.tsx",
+      "bytes": 6958,
+      "sha256": "36980f00056c7a71e09de4d5a398913111cd4dfcb8d317845a8e0cba61c800fd"
+    },
+    {
+      "path": "source/components/CountUp.tsx",
+      "bytes": 1966,
+      "sha256": "86fbffb9c0cb4fc7080b42bbccce3cbce3e08f6c9600b5a032b69c883388bcad"
+    },
+    {
+      "path": "source/components/dealer-locator.css",
+      "bytes": 3902,
+      "sha256": "98f408d1c2f2e406a383dac9d60f558b2f6f359c695434b831f00e35725e9c40"
+    },
+    {
+      "path": "source/components/DealerLinks.tsx",
+      "bytes": 1321,
+      "sha256": "c149d0df15b0a09d71f610a2daac108ddebc2155d526d66b449589859a40492c"
+    },
+    {
+      "path": "source/components/DealerLocator.tsx",
+      "bytes": 3527,
+      "sha256": "f68981837417e025325000d4697b730fbb7f50facabc068e6236bc26c95447dd"
+    },
+    {
+      "path": "source/components/editorial.css",
+      "bytes": 1497,
+      "sha256": "bc50148929a88be93654840268525f25ac6c4cf551d8b3f1cd0f76460c4ef6b4"
+    },
+    {
+      "path": "source/components/Enquiry.tsx",
+      "bytes": 5876,
+      "sha256": "fb6e185149406bbd3dbc38424f3cb9d5407e80c29ab29a6aacbb0032e03a7692"
+    },
+    {
+      "path": "source/components/FleetGuide.tsx",
+      "bytes": 5042,
+      "sha256": "71bc820bda11797dbaac7937d363f13fb0e515a14f4a70ee284c44fb1e4b0965"
+    },
+    {
+      "path": "source/components/Header.tsx",
+      "bytes": 5747,
+      "sha256": "ac66366820f64c1bc227dabb9b8ec201924fb5de135a24402fc90db95f2519fc"
+    },
+    {
+      "path": "source/components/Hero.tsx",
+      "bytes": 7783,
+      "sha256": "11273a040290a2ba1dd70a37e40dc18fd05cdec30dbe1654e450e878d0ea0c1e"
+    },
+    {
+      "path": "source/components/light-section.css",
+      "bytes": 2178,
+      "sha256": "38b5b5b6020e5fb56b3ae5706e505350a93e0ef6e0c9b151fefea1b0f9b66563"
+    },
+    {
+      "path": "source/components/LightSection.tsx",
+      "bytes": 1562,
+      "sha256": "58f80a27a3dce0f3c7aad7f375c6f5a9553c3c6c4b0ed07cf1813e24aaf591e1"
+    },
+    {
+      "path": "source/components/MagneticButtons.tsx",
+      "bytes": 1400,
+      "sha256": "b4bea33a2ca35c50ad3654edace75a1bac7f4be5fdae9ce61b89f4010741e343"
+    },
+    {
+      "path": "source/components/mouse-truck.css",
+      "bytes": 600,
+      "sha256": "b2c3a88e00e22fd67d61e7a86ea43e75db6003555c723d8ccb84ad9986dab70c"
+    },
+    {
+      "path": "source/components/MouseTruck.tsx",
+      "bytes": 1892,
+      "sha256": "dab8428d065660c19f8c39540234d46bafb69fa2f578be66418e0b2e77fb4c0f"
+    },
+    {
+      "path": "source/components/PhoneNumber.module.css",
+      "bytes": 431,
+      "sha256": "53c4d230fda3e7a5978c2500b7da51610639d0f2bd64f03009948c69b9ff935c"
+    },
+    {
+      "path": "source/components/PhoneNumber.tsx",
+      "bytes": 505,
+      "sha256": "ee19112bfe2f5f08685dae00c929e5402305871ff0f23acb7d7e0d0780d6b623"
+    },
+    {
+      "path": "source/components/photo-band.css",
+      "bytes": 1854,
+      "sha256": "41fe0af7dbf3d8981bfdbfcbcb5d7f52308089cedf36b563cdfbaf580db3737b"
+    },
+    {
+      "path": "source/components/PhotoBand.tsx",
+      "bytes": 1131,
+      "sha256": "13c8132ea20c2a1314454203203af2cf9e6eaa66273d9acb0694f6d0cbdaf705"
+    },
+    {
+      "path": "source/components/Primitives.tsx",
+      "bytes": 3712,
+      "sha256": "4c2d65a75da7c49b6c9de5738c373295132c230ce342a806af51f49506a6f361"
+    },
+    {
+      "path": "source/components/real-cockpit.css",
+      "bytes": 602,
+      "sha256": "813844325388fd057472a7446acc5a6b339e0e5cbda33890deab4f22ffb4b645"
+    },
+    {
+      "path": "source/components/SelectedTruckSummary.tsx",
+      "bytes": 1349,
+      "sha256": "8396e2f44b42f1eab016d35712c3fafe07bcb9bc88f86c7b7adc47f019489741"
+    },
+    {
+      "path": "source/components/site-brand.css",
+      "bytes": 1071,
+      "sha256": "a87fb0b05ce60da4fe1741f0d247c210abbfd09c0c1cdfe4ce2dddb3eb9b38ed"
+    },
+    {
+      "path": "source/components/SiteMotion.tsx",
+      "bytes": 1906,
+      "sha256": "2a056cd54ab5bdfe4543aee44cf0e2450879e5d8cadcd8779d15d2546ce44eec"
+    },
+    {
+      "path": "source/components/truck-illustration.css",
+      "bytes": 1523,
+      "sha256": "4b5d805f07670e89d372f476a81c2c6936246f0af601c792b0e1560a78920dc0"
+    },
+    {
+      "path": "source/components/truck-tour.css",
+      "bytes": 2611,
+      "sha256": "b0a9786ef7f8d71a69900a7edf2aeb43f864bb1e328cd61dfc50adaf3accc893"
+    },
+    {
+      "path": "source/components/TruckExperience.tsx",
+      "bytes": 3855,
+      "sha256": "468c616397e550199716b666363676d48721f7ea92f33d8365bf6f3183b353e3"
+    },
+    {
+      "path": "source/components/TruckGallery.tsx",
+      "bytes": 4181,
+      "sha256": "6bfa2c6e0f5b2f30b5f342fc3c212f6304e77f97409814123ea68d7da0268ac6"
+    },
+    {
+      "path": "source/components/TruckIllustration.tsx",
+      "bytes": 16155,
+      "sha256": "1867d90972ba6606750eb30a4bf70e865c340ccc2b5d53fc439304a743aa19d9"
+    },
+    {
+      "path": "source/components/TruckRangeCard.tsx",
+      "bytes": 1189,
+      "sha256": "37ff511bc3f1f341623a5aaf8d6f36f118c261f59853c65a4c55cd420de66f43"
+    },
+    {
+      "path": "source/components/TruckReferenceViewer.tsx",
+      "bytes": 7919,
+      "sha256": "c442ef578a2e029bf5e53f70a7e9e262560a49a357748544b3dbfed81d986ab8"
+    },
+    {
+      "path": "source/components/TruckTechnicalDescription.tsx",
+      "bytes": 845,
+      "sha256": "4886010c907b15dd67a14d544cec6c522461ba178c52c898ff57cbae56b3984f"
+    },
+    {
+      "path": "source/components/TruckTourNavigation.tsx",
+      "bytes": 1334,
+      "sha256": "ee052e9964b1d562ae1ae6a6c7d3869bbefeb6a1770dee61894978e4f30fa2b2"
+    },
+    {
+      "path": "source/lib/cabin-panorama-renderer.ts",
+      "bytes": 2474,
+      "sha256": "2107e74a2935e76b25b22a5a96056a93b22250b29341513c0173f44bcc26692f"
+    },
+    {
+      "path": "source/lib/enquiry-mail.ts",
+      "bytes": 2328,
+      "sha256": "e79d89c76bb2dcb6e598c8975d27e57004600dfd52e8e67e6d83917ae6dd8a1f"
+    },
+    {
+      "path": "source/lib/enquiry.ts",
+      "bytes": 1165,
+      "sha256": "2e0933e3d5d7a235673bc76558ff52c801722d2e66b874398fe473a2bf4d756a"
+    },
+    {
+      "path": "source/lib/hero-trucks.ts",
+      "bytes": 2825,
+      "sha256": "64a7523125b3ae016bd4a33c2a795b892d0d328f569cb0fcb559b2e39038fe2e"
+    },
+    {
+      "path": "source/lib/range-specifications.json",
+      "bytes": 58835,
+      "sha256": "0976a104f4949e1c5a6b7b3721d8d39a0afa79d351424d452e009e83e04f3bd1"
+    },
+    {
+      "path": "source/lib/redirect-rules.ts",
+      "bytes": 19324,
+      "sha256": "f21284903b41f07ddf6b6b70d974c33b9eea1849f8288d08a52f4149b600be48"
+    },
+    {
+      "path": "source/lib/truck-3d.ts",
+      "bytes": 25069,
+      "sha256": "7d2307d19222273904f1a50d8a285022a3428717db9ee398bfea006d0604636f"
+    },
+    {
+      "path": "source/lib/truck-catalog.ts",
+      "bytes": 7240,
+      "sha256": "2467a6f2dc52fd9e62a04db36e32acfd851317d0dc3101093453e4ab5a5ab828"
+    },
+    {
+      "path": "source/lib/truck-range.ts",
+      "bytes": 3372,
+      "sha256": "a909273e4a51efcc652399eae423afe4883b24d1cfca576957b239da15ff1fd8"
+    },
+    {
+      "path": "source/lib/truck-references.ts",
+      "bytes": 2050,
+      "sha256": "a5a620666be82f1b1e17eb8a8671c293c96240a5cd80581d6f7f6c647c93f186"
+    },
+    {
+      "path": "source/lib/truck-renderer.ts",
+      "bytes": 892,
+      "sha256": "0b1d990d5770a96cb62af7cfb59a08a48fb7d8eeef5bdcd8bad0f3bd30d5d7de"
+    },
+    {
+      "path": "source/lib/truck-technical.ts",
+      "bytes": 1260,
+      "sha256": "b6dfa6ed9d37a4afe00fc6abc6714ef119f92cedfa360f251e7ec870afdeffa5"
+    },
+    {
+      "path": "source/lib/truck-tour.ts",
+      "bytes": 974,
+      "sha256": "3eb0e6891d83104ac460992b0c1382f1d8a78bec47d2c1a99409f5fc25ef99c8"
+    },
+    {
+      "path": "source/php/enquiries.php",
+      "bytes": 4482,
+      "sha256": "d0d644a554688e2ed3d49e0b4c54bf66b6d5e622dd1e739981a20dae4314a72a"
+    },
+    {
+      "path": "source/php/enquiry-config.sample.php",
+      "bytes": 657,
+      "sha256": "37d45875d6dc286c1ca36727ea1b34d88489c7c207453328a5f4071fcb71d01f"
+    },
+    {
+      "path": "source/php/enquiry-mail.php",
+      "bytes": 4502,
+      "sha256": "0764fba1a783796aa1b29d13267b2a7e9c7b4fbe8303479103b1621ce2af275c"
+    },
+    {
+      "path": "source/scripts/build-php.mjs",
+      "bytes": 10472,
+      "sha256": "e70c2f2d29edff47c3fd083c0a91f545d8ecb6b2e85a1ec1af602dded0409d5f"
+    },
+    {
+      "path": "source/scripts/import-layout.py",
+      "bytes": 3758,
+      "sha256": "8640c7d6fa6b159653cff9423dc2611ed8247dd1c744acef9d839b4b028fa149"
+    },
+    {
+      "path": "source/scripts/make-brand-assets.py",
+      "bytes": 8456,
+      "sha256": "124f3eecff10691b63b2ec3d83378f0ca7cca1a5a236f553cac23d724449e864"
+    },
+    {
+      "path": "source/scripts/make-dns-handover-docx.py",
+      "bytes": 10412,
+      "sha256": "d518c5b758a03283a34a6f8abe5f2eab150dbc71fad3bfa0a21d12e7f6592e64"
+    },
+    {
+      "path": "source/scripts/package-deploy.mjs",
+      "bytes": 5129,
+      "sha256": "3a2145cb43fce669c509075a7b218c1a772d22fcee3abba2b3332c3db4792602"
+    },
+    {
+      "path": "source/scripts/redirect-map.mjs",
+      "bytes": 901,
+      "sha256": "f8f21717c65cf32937ba387667ca8038f5bf83aa2549a1fee900e1326fe3677f"
+    },
+    {
+      "path": "source/scripts/smoke.py",
+      "bytes": 3048,
+      "sha256": "55236dd118bf7c825273ad6eab24946e271df71681c630e6d8ba0eb2dd085e7c"
+    },
+    {
+      "path": "source/tests/api.test.ts",
+      "bytes": 1252,
+      "sha256": "6e3030f8799b902f7e35c0b9ccfccbcbc8041194b32c7e2ab5048ccdf77277a3"
+    },
+    {
+      "path": "source/tests/attention-scroller.test.tsx",
+      "bytes": 2947,
+      "sha256": "4da58585eb6192a25cd00572a729eb56b4d4b3cd9cddb6408ff9843244a06df3"
+    },
+    {
+      "path": "source/tests/cabin-panorama-renderer.test.ts",
+      "bytes": 2126,
+      "sha256": "5e938e9abe408e5a7747a60700b10d58836c0745c843cc89b555c8d96c73e877"
+    },
+    {
+      "path": "source/tests/cabin-panorama.test.tsx",
+      "bytes": 2641,
+      "sha256": "da8f3751c76479b0adaabfaac53df71a8bb1bc4d61d89dff5ad68859394c772c"
+    },
+    {
+      "path": "source/tests/contact-phone.test.tsx",
+      "bytes": 1541,
+      "sha256": "0758e779398d0989015aace04ce0d4d08dcdfd8bc4a39c482cf49bf3e2a962ad"
+    },
+    {
+      "path": "source/tests/count-up.test.tsx",
+      "bytes": 1432,
+      "sha256": "d39d93c38aed2f3b0ae57e57ebd54a2f0c4c8a6459fb849b9f973ee5fba5eaec"
+    },
+    {
+      "path": "source/tests/enquiry-delivery-ui.test.tsx",
+      "bytes": 3366,
+      "sha256": "921c92ac1afd54115476fd2805e45b5f575ff1fcc161abe029b9bbe824f58799"
+    },
+    {
+      "path": "source/tests/enquiry-public-origin.test.ts",
+      "bytes": 1045,
+      "sha256": "5561c5b48489a7b2323b063275c0097e2399d2d482d77e568caf3a69c3010a83"
+    },
+    {
+      "path": "source/tests/enquiry-smtp.test.ts",
+      "bytes": 6883,
+      "sha256": "08dd6b4218eba3993135a1c34f1c7e8669068d7d900a31e774322fe4b832d536"
+    },
+    {
+      "path": "source/tests/enquiry-truck-information.test.tsx",
+      "bytes": 932,
+      "sha256": "b4593e03a8ecf705273d6a9c9ef6e9762ba5c7fb1450585b7253cc7731c4cfde"
+    },
+    {
+      "path": "source/tests/enquiry.test.ts",
+      "bytes": 816,
+      "sha256": "a12a655c34ad9c2dc93458bddc99870792a789906122e793e0bf98ecee95ab69"
+    },
+    {
+      "path": "source/tests/fleet-guide.test.tsx",
+      "bytes": 1847,
+      "sha256": "092e0952ace05cdf73500b94d3200fe8e8002af7f72c63545f94190c83fb7a16"
+    },
+    {
+      "path": "source/tests/floating-socials.test.tsx",
+      "bytes": 558,
+      "sha256": "5fa0bdc30cb63c1a050a95d2e6491772d57ecf220d8bfd5a727b655a2a81c810"
+    },
+    {
+      "path": "source/tests/hero-carousel-accessibility.test.tsx",
+      "bytes": 1423,
+      "sha256": "194d5a06a9bbdebc2fe85b4f2b54a7fa1c398ab3c8b8ed3f9dbfa05ea9ab8d04"
+    },
+    {
+      "path": "source/tests/hero-carousel.test.tsx",
+      "bytes": 2132,
+      "sha256": "fb276f54a6628f5a99bac82659575b2136696c2519cc233a2e6c47961c551906"
+    },
+    {
+      "path": "source/tests/hero.test.tsx",
+      "bytes": 903,
+      "sha256": "7631e3051da2bfcc9f965a319214923c193b4a9ee4708c9b3ca2b40087c864cf"
+    },
+    {
+      "path": "source/tests/intro-count-up.test.tsx",
+      "bytes": 1107,
+      "sha256": "8b06280746f4e87fb8e262eaa2331d62ae263aec54a031c3c03763deee0c7813"
+    },
+    {
+      "path": "source/tests/intro-splash.test.tsx",
+      "bytes": 4776,
+      "sha256": "be1df9775ef2afd6f4a0a26e5fa0cbe66fa69af0efaaa05fb579ce909cfebf65"
+    },
+    {
+      "path": "source/tests/navigation.test.tsx",
+      "bytes": 704,
+      "sha256": "cbb9b1b2dea91804c272f9aa2d817f7c3f959b64dc45d9284bb3b5d1e65ab18a"
+    },
+    {
+      "path": "source/tests/range-content.test.ts",
+      "bytes": 355,
+      "sha256": "6ea181f2202c1f05d084980e53748cbc49986f9f3c9c8baa2b5deabd3e71d9bf"
+    },
+    {
+      "path": "source/tests/range-specifications.test.tsx",
+      "bytes": 6178,
+      "sha256": "e3f66c7cb7ee57ddfbd452ac66eab35b918d56b7963097dac057993965a7922a"
+    },
+    {
+      "path": "source/tests/real-cockpit.test.tsx",
+      "bytes": 4272,
+      "sha256": "446a61285e8235a14b0d7d4d32d856cd385e278582445ac07161692e26163f21"
+    },
+    {
+      "path": "source/tests/redirect-map.test.ts",
+      "bytes": 3682,
+      "sha256": "60c8b512fefb04aabdefae5e73909291234a83746bd8bf37e76206bf2db804b2"
+    },
+    {
+      "path": "source/tests/setup.ts",
+      "bytes": 422,
+      "sha256": "71e63ae2732c17c7505a3d017831a906fcdf68e64c5a985b0365de39609baff8"
+    },
+    {
+      "path": "source/tests/site-logo.test.tsx",
+      "bytes": 889,
+      "sha256": "c5dce041e02666d8828724a437559fa1c34df7142f8932d4cfa692978e24875f"
+    },
+    {
+      "path": "source/tests/site-motion.test.tsx",
+      "bytes": 1372,
+      "sha256": "23eee854e7da564c40dbd9ba3c2aac6d742eb7624351d84f71047225fba8da55"
+    },
+    {
+      "path": "source/tests/specifications-placement.test.tsx",
+      "bytes": 965,
+      "sha256": "866ea7ffc8ffd6370e7192d2279771d98dad32668cbea6cc5fd71664c85dcb80"
+    },
+    {
+      "path": "source/tests/truck-3d.test.ts",
+      "bytes": 1526,
+      "sha256": "51ef76a77d8d6b07e29295e60c1b14175fb9fae72971268db0daf7fc59ff7329"
+    },
+    {
+      "path": "source/tests/truck-dropdown-click.test.tsx",
+      "bytes": 570,
+      "sha256": "e89572b86cf6278009b99e482b3c379750f5098e0652a841e2334cc779adc5d5"
+    },
+    {
+      "path": "source/tests/truck-dropdown.test.tsx",
+      "bytes": 821,
+      "sha256": "1d8dd9813ab99cdea66f59d6fc732c2242ac815eb40d6abaa1da295845b8f7b6"
+    },
+    {
+      "path": "source/tests/truck-experience.test.tsx",
+      "bytes": 1102,
+      "sha256": "a9d7875e096d7d90ea43390c695d38bcd9df7c74d5a0ddc0545ca9ec0e184ea1"
+    },
+    {
+      "path": "source/tests/truck-gallery.test.tsx",
+      "bytes": 1057,
+      "sha256": "ea00e716caefff663906b756cb7661d8f51e8e7ddb6fc53444f97194fb434f8d"
+    },
+    {
+      "path": "source/tests/truck-geometry.test.ts",
+      "bytes": 2887,
+      "sha256": "b25d0b1afa4c5fc02d52fc315c708fe023ed2d451491d324ea0fcf4665bd4b67"
+    },
+    {
+      "path": "source/tests/truck-reference-viewer.test.tsx",
+      "bytes": 4616,
+      "sha256": "34803bdc795bbe39615bb43d567c7f06aa830bc99336b96d447f4d9989bd6c6f"
+    },
+    {
+      "path": "source/tests/truck-renderer.test.ts",
+      "bytes": 1449,
+      "sha256": "191467c5662813815403091323ead5ccdc0abba96eeaf0e30cb6b76fb9b8a390"
+    },
+    {
+      "path": "source/tests/truck-tour-integration.test.tsx",
+      "bytes": 3919,
+      "sha256": "5bd70d2bd5ec2f2b1a57a24b5f94a9b18d180163e2a674e67336edd6ac449423"
+    },
+    {
+      "path": "source/tests/truck-tour-navigation.test.tsx",
+      "bytes": 1351,
+      "sha256": "03f6b60c23f0d755e6d7eb8c906546dbd99867d34f3d05f1153c9b64318829a4"
+    },
+    {
+      "path": "source/tests/truck-tour.test.ts",
+      "bytes": 1212,
+      "sha256": "4dbb047c73c3e4d417d36e8da1cd6e4b45456ac6dfce47f6404aa1c41fa55633"
+    },
+    {
+      "path": "source/tests/ui.test.tsx",
+      "bytes": 664,
+      "sha256": "abe2fa25ec3f6c8e7b1eeeb4c9431fbdf7aed8362857a5ffc250cd129ca852cf"
+    },
+    {
+      "path": "source/tests/fixtures/legacy-paths.json",
+      "bytes": 2686,
+      "sha256": "9e075b8a4e4127c2b8edc14e0562655d3a73f232775f33fb0c71bc3f713131a4"
+    },
+    {
+      "path": "source/tests/showroom/browser-acceptance.py",
+      "bytes": 10154,
+      "sha256": "0b3bbfa927a8d8e787bb346c4c4c1a5cedc4120e8ac442977c690bdd20747be5"
+    },
+    {
+      "path": "source/tests/showroom/browser-carousel.py",
+      "bytes": 8708,
+      "sha256": "e78cc32a1f78d6ecd1922a321d11057c23c5a6a8957247080685f7c978e0d1b7"
+    },
+    {
+      "path": "source/tests/showroom/browser-integration.py",
+      "bytes": 4583,
+      "sha256": "f640f320c9a8d8114e94238d0323f7e97c9620ecd364144c351e33f85e1e19be"
+    },
+    {
+      "path": "source/tests/showroom/export-carousel-contract.mjs",
+      "bytes": 637,
+      "sha256": "9af3d8d10006fbe2e14b076050742207115d18e262b85afc4d4fa132cbef354f"
+    },
+    {
+      "path": "source/tests/showroom/glb-matrix-check.py",
+      "bytes": 4568,
+      "sha256": "2ceccd96731e1f48c74b7ee99e1385f584d9cb4b0a3821dec147ccc48c76244b"
+    },
+    {
+      "path": "source/tests/showroom/held-retest.mjs",
+      "bytes": 13180,
+      "sha256": "83df79de1f526660a03e64437cd515bbd82f66af940234311581706874f53f7e"
+    },
+    {
+      "path": "source/tests/showroom/hero-model-carousel.test.tsx",
+      "bytes": 8208,
+      "sha256": "a00f8d0a96fb3bc8e4e4f5f3c4cd4fdb1356bfc0be6b35ed8a468e4bf00c83ae"
+    },
+    {
+      "path": "source/tests/showroom/legacy-input-identity.py",
+      "bytes": 964,
+      "sha256": "71d91fa0b97456e44a973a6684d3c98be944ad9c76c51e6256cb8c08f41f1535"
+    },
+    {
+      "path": "source/tests/showroom/partial-retest.py",
+      "bytes": 12760,
+      "sha256": "b225683fbdaecefd3b425cd618ee40cff8ae1934eafa95d60680edc6f22ae19d"
+    },
+    {
+      "path": "source/tests/showroom/preview-flag-check.py",
+      "bytes": 4672,
+      "sha256": "f2ec4c385ec0e3c6afd71ff78537f804fb7d8b412acbc5d9c1501c34124dbd1c"
+    },
+    {
+      "path": "source/tests/showroom/README.md",
+      "bytes": 4877,
+      "sha256": "c8a7776a889dc28c056db0773f5eb0ae9fabc75f70db7e20fb92d4af0271e91d"
+    },
+    {
+      "path": "source/tests/showroom/served-artefact-resolve.py",
+      "bytes": 7176,
+      "sha256": "82f236a64cacf91b7a1f50f2bd614104e60f9549427d23a7d81c4a7490b02610"
+    },
+    {
+      "path": "source/tests/showroom/source-identity.py",
+      "bytes": 1362,
+      "sha256": "999930a50c927cd4aa5a49829f78ad456742e71866490281f88661cb2b6a73fe"
+    },
+    {
+      "path": "source/tests/showroom/styled-preflight.py",
+      "bytes": 20029,
+      "sha256": "4aa2c895ca445b82d52d5233deb7d5b3574d0cfcf61b633533d52ca532c3a221"
+    },
+    {
+      "path": "source/tests/showroom/__pycache__/styled-preflight.cpython-314.pyc",
+      "bytes": 24010,
+      "sha256": "a242adb2b3ca06b71d0f7c88c99bbea813a6f37bde27cc8bbdb6e40eb82f757f"
+    },
+    {
+      "path": "source/tests/fixtures/smtp/cert.pem",
+      "bytes": 1090,
+      "sha256": "1c2626e1add47966f51166738f8ef2fdf5e60a20dba2169c713247407366a7a5"
+    },
+    {
+      "path": "source/tests/fixtures/smtp/key.pem",
+      "bytes": 1704,
+      "sha256": "5464951849411e4e53c0ddf753281f1fae552da3eec5801d13b2ccba813c8a6a"
+    },
+    {
+      "path": "source/public/assets/band-lineup-v1.jpg",
+      "bytes": 225256,
+      "sha256": "b348cad291a305d5147a30221eaf92e15fbffbbf02243e60f934c1e49dd66b8f"
+    },
+    {
+      "path": "source/public/assets/card-sitrak-c7h.jpg",
+      "bytes": 79391,
+      "sha256": "9785957b3764f738240b19778d794d2658ff804339b74fc7da8e984c147c4620"
+    },
+    {
+      "path": "source/public/assets/g7h-alt.png",
+      "bytes": 3311390,
+      "sha256": "6c8787ff1372ae97e2dd9308f8bce161dc993274f0498b7aa17be860d23401a0"
+    },
+    {
+      "path": "source/public/assets/g7h.png",
+      "bytes": 1176351,
+      "sha256": "89a4fddcfd13d2bf764a90acb86098fcad5f9b7790baa2e9883f3876ab4d9164"
+    },
+    {
+      "path": "source/public/assets/g7s.png",
+      "bytes": 1345478,
+      "sha256": "5d616077a45c8e0c36e8cb91f382efa12781099ff6360b345d4ec590e7a60280"
+    },
+    {
+      "path": "source/public/assets/grill-mesh.jpg",
+      "bytes": 21594,
+      "sha256": "0eb7e44b41e9da7ebdab900f553ac6319f88f3bf6ca03175cb904693ed887056"
+    },
+    {
+      "path": "source/public/assets/grill.png",
+      "bytes": 954803,
+      "sha256": "d8d2daffd2208848f8ba0836a266e9992ec2318240617331426d728c6581a224"
+    },
+    {
+      "path": "source/public/assets/hero-c7h-v2.jpg",
+      "bytes": 203178,
+      "sha256": "62963377d581caa72df5773859475911b465f2fee9c927e96d24da6608c2f836"
+    },
+    {
+      "path": "source/public/assets/hero-howo-max-road.jpg",
+      "bytes": 169784,
+      "sha256": "aaa924fab17cc87c71d1181fd238b20593ab0842225ab5025d4b49fb1e5b5062"
+    },
+    {
+      "path": "source/public/assets/hero-sitrak-c7h.jpg",
+      "bytes": 203178,
+      "sha256": "62963377d581caa72df5773859475911b465f2fee9c927e96d24da6608c2f836"
+    },
+    {
+      "path": "source/public/assets/howo-7-tipper-wide.png",
+      "bytes": 143078,
+      "sha256": "27b2b8ec5a6e742bd97f73d3ba0015743226d36c26dea9642d85da2ace3b6c9f"
+    },
+    {
+      "path": "source/public/assets/howo-7-tipper.png",
+      "bytes": 84615,
+      "sha256": "9b3e38c1b323aad7909a3065b5196fefd7695291dcf6f702d0bf040801593499"
+    },
+    {
+      "path": "source/public/assets/howo-max-front.png",
+      "bytes": 3827244,
+      "sha256": "077daa68cb3c1c7d316b10dec4f3a2c043c75237f5a481bb18bdd3392c3eef3f"
+    },
+    {
+      "path": "source/public/assets/howo-max-rear.png",
+      "bytes": 2010070,
+      "sha256": "2090cbf4edb0dd1dd5c7824bbe745e859ec8fb63c94284544b093609a3bd633f"
+    },
+    {
+      "path": "source/public/assets/howo-max-road-crop.jpg",
+      "bytes": 175985,
+      "sha256": "4d3b789e98c57a741f336b450115469a25005885ed4c6c58e444250ed760db06"
+    },
+    {
+      "path": "source/public/assets/howo-max-side.png",
+      "bytes": 2213231,
+      "sha256": "929816c1e9b043e7199c2f1214934d257edfd3ccf93e37b80e5a4a7e5bff6a3a"
+    },
+    {
+      "path": "source/public/assets/logo-chrome-navy.png",
+      "bytes": 315279,
+      "sha256": "d9338c03e6a5b55dd5d6f2cc8215c22ecd27847b151f6bf29c1be74685b5131f"
+    },
+    {
+      "path": "source/public/assets/logo-trukafrik-mark.png",
+      "bytes": 203993,
+      "sha256": "416e1ad23e0a852e66824ce8fe9980ba0224b54fb70b6401765e0ce61c8acc15"
+    },
+    {
+      "path": "source/public/assets/sitrak-c7h-tractor.png",
+      "bytes": 70852,
+      "sha256": "5646b495af0bbe81eefadd3160b62866871d12ba6bbc266172e058cf5f95bae8"
+    },
+    {
+      "path": "source/public/assets/sitrak-c9h-tractor.png",
+      "bytes": 871000,
+      "sha256": "155cce41c7efae6c723d38f063d908733aba68ef5e5fd8bac40eeb301ebdc937"
+    },
+    {
+      "path": "source/public/basis/basis_transcoder.js",
+      "bytes": 57529,
+      "sha256": "8478b5b6d6b74e7d3082b89f6417321d8d1dc0307f2b30d4484bb11b441696a1"
+    },
+    {
+      "path": "source/public/basis/basis_transcoder.wasm",
+      "bytes": 527333,
+      "sha256": "6cf17dc889352c42e9acf8897107978d127005fe3386c36a0e3845e27967630a"
+    },
+    {
+      "path": "source/public/fonts/brand-0.ttf",
+      "bytes": 81740,
+      "sha256": "639ac4d54919fd167b6ab52cb5daec616b5c7f60ae0a1cbad4e81936d13d3b24"
+    },
+    {
+      "path": "source/public/fonts/brand-1.ttf",
+      "bytes": 82624,
+      "sha256": "a35caa4687f434d66453c1fe423d7074cfa9fd7ab80c19b0780f3862887d2fc9"
+    },
+    {
+      "path": "source/public/fonts/brand-2.ttf",
+      "bytes": 81924,
+      "sha256": "91c841fdfa8e7b94ffedbb983a363947ba6ed720f3bbf0c71d48b618053655bc"
+    },
+    {
+      "path": "source/public/fonts/brand-3.ttf",
+      "bytes": 85876,
+      "sha256": "c15439e7a03af5714282ec1780ff7b0214ec6a7db96300b54928dbcd2569ca0c"
+    },
+    {
+      "path": "source/public/fonts/brand-4.ttf",
+      "bytes": 85776,
+      "sha256": "74103fd6d41bc32c63aa2e6eb3db619ddb80ce9ca1b1420d5548a23b8ee5d154"
+    },
+    {
+      "path": "source/public/fonts/brand-5.ttf",
+      "bytes": 86636,
+      "sha256": "0d85af813fc3ed87db0c6265515689b2eef5cbaf7aab17922528dfc95a2cd73f"
+    },
+    {
+      "path": "source/public/fonts/brand-6.ttf",
+      "bytes": 87120,
+      "sha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7"
+    },
+    {
+      "path": "source/public/fonts/brand-7.ttf",
+      "bytes": 87556,
+      "sha256": "73bc9e17231e9073780d3c81574c7253cecd5645c93544df1a935054b39a364f"
+    },
+    {
+      "path": "source/public/fonts/brand-8.ttf",
+      "bytes": 88228,
+      "sha256": "0ec6b3cca2df54f108f8dc239597e0eab386343a230afad8a0f445c7d21c3e77"
+    },
+    {
+      "path": "source/public/fonts/brand-9.ttf",
+      "bytes": 41912,
+      "sha256": "5f6b57538a1a35469a038dc3073003cebc4c101ad7b3c219e9555a3b3c0a81d2"
+    },
+    {
+      "path": "source/public/intro/sitrak-truk-afrik-white.png",
+      "bytes": 50574,
+      "sha256": "bf81474a7385a1736140035afc31313795c71af87f8deaeb4f4d90f02615c61d"
+    },
+    {
+      "path": "source/public/intro/sitrak-truk-afrik.png",
+      "bytes": 919574,
+      "sha256": "c8d707fc175f4fb200b3a96b78aa120103a785f7697547a40dad0295568d6127"
+    },
+    {
+      "path": "source/public/intro/supplied-logo-original.png",
+      "bytes": 1126621,
+      "sha256": "f4514b931a36bb1d6644ffe1e553166c97daf404d0e09e1467786850faa85092"
+    },
+    {
+      "path": "source/public/models/c7h.glb",
+      "bytes": 50810436,
+      "sha256": "36b75fcf17db57d3af9f638da68295e6450ca9d660de2c8839062abc41b68641"
+    },
+    {
+      "path": "source/public/models/engine-reference.glb",
+      "bytes": 50194396,
+      "sha256": "824361bf0cd4050b7404394766c8567ceebdf7c8f11c3e6f1cb84c5d985614f9"
+    },
+    {
+      "path": "source/public/models/g7h-desktop.glb",
+      "bytes": 4971740,
+      "sha256": "d935548072d1eac3802bddc8ae013011c1577ebd2a3c9fc129d5ab65aa250ee2"
+    },
+    {
+      "path": "source/public/models/g7h-mobile.glb",
+      "bytes": 2653912,
+      "sha256": "0ba73de6259e97e126c8a9ac2212e596663498bb332fe2072a34cb5533878ed7"
+    },
+    {
+      "path": "source/public/models/g7h.glb",
+      "bytes": 1564996,
+      "sha256": "818bc4e3e771cc86146dba6c323f6e4c85557b227d8eb2bc6b5baabd2690f30f"
+    },
+    {
+      "path": "source/public/models/g7s-desktop.glb",
+      "bytes": 5127516,
+      "sha256": "fe5376dc6ebf4da2c7e90b0d886e139a7ff6d7f05186c594e793e08664c1cfbb"
+    },
+    {
+      "path": "source/public/models/g7s-mobile.glb",
+      "bytes": 2793568,
+      "sha256": "9615b84a9d60dc3b138b76f1a7423e603efb0af50a9700b2f9ac20e6fa142d9e"
+    },
+    {
+      "path": "source/public/models/g7s.glb",
+      "bytes": 1669240,
+      "sha256": "b495733cddd31cb26b46632145e8a8631522f3def503bd0eea6cecb8776fd86d"
+    },
+    {
+      "path": "source/public/models/howo-mixer-desktop.glb",
+      "bytes": 5184664,
+      "sha256": "a26be27014245eae530ba1e37630808b4e65aced8576f50c6124e81078b20ac7"
+    },
+    {
+      "path": "source/public/models/howo-mixer-mobile.glb",
+      "bytes": 2824028,
+      "sha256": "b7bc4c7aea081a76cf17ae6b164bfa163727af7673e4049ca7aedcfb3040df56"
+    },
+    {
+      "path": "source/public/models/howo-tipper-desktop.glb",
+      "bytes": 5123348,
+      "sha256": "48b440dedea9d7cc329e9f8544029dc46f0a0cbf03da62d3733732f73ef2135f"
+    },
+    {
+      "path": "source/public/models/howo-tipper-mobile.glb",
+      "bytes": 2807720,
+      "sha256": "2254d8434f360d57605a382c74d317e8ac15f504365013743cb4e76baeaa1bc1"
+    },
+    {
+      "path": "source/public/models/howo-water-desktop.glb",
+      "bytes": 5145472,
+      "sha256": "e83fc821eff376651e4138eecccafc51fcb140a53ccce97148a63aaa0ff4595b"
+    },
+    {
+      "path": "source/public/models/howo-water-mobile.glb",
+      "bytes": 2795964,
+      "sha256": "c12e85bc6e204a4fd81ae9653c55dc9806baf90a142d2947ae681f69b37622e6"
+    },
+    {
+      "path": "source/public/og/og-default.png",
+      "bytes": 93977,
+      "sha256": "b2cda8dfb01a47901c0fda0ee80edef93c3ae4cbedf60eacf1961e302a62f2d1"
+    },
+    {
+      "path": "source/public/tokens/base.css",
+      "bytes": 1121,
+      "sha256": "7441f490923785606994f906842adb5b4d0041c2fe51569a7a1935025be1c658"
+    },
+    {
+      "path": "source/public/tokens/colors.css",
+      "bytes": 3104,
+      "sha256": "44ac2f38de09c91fcc21a55dcf81f45cda3727a720168c38587e44b99f7b6a27"
+    },
+    {
+      "path": "source/public/tokens/elevation.css",
+      "bytes": 482,
+      "sha256": "71ae394c40ded7751e64a46b51129b5b2f0ae6d64743d10fcff436a6c111c138"
+    },
+    {
+      "path": "source/public/tokens/fonts.css",
+      "bytes": 381,
+      "sha256": "b2165a3db49b898b431cec238e22e61b85433e8b150f53b8a0a4507d0af4673b"
+    },
+    {
+      "path": "source/public/tokens/motion.css",
+      "bytes": 573,
+      "sha256": "530428304bad0fc4c5f6e41ed7552774c9dff9b37c89c03dc2e5a6f807d54d5e"
+    },
+    {
+      "path": "source/public/tokens/spacing.css",
+      "bytes": 702,
+      "sha256": "41523a3d96f91b41bd33e20638efa028f585ec2d69e54f5ac40cee64a5575557"
+    },
+    {
+      "path": "source/public/tokens/typography.css",
+      "bytes": 2016,
+      "sha256": "142ab361b70b09d62272876d8ecb8e34ac6fde6a6ceaa482eb5aae4cac1ac06a"
+    },
+    {
+      "path": "source/public/uploads/5\u6c55\u5fb7\u5361.jpg",
+      "bytes": 1909857,
+      "sha256": "84ff8916ff292210eef42ff475b1d2272aed8a06ae960d0df8a1f24ebdaafb34"
+    },
+    {
+      "path": "source/public/uploads/BCO.b02f793f-3dc9-440b-b193-7fbaa7ffa4f1-7373019a.png",
+      "bytes": 2184918,
+      "sha256": "7373019aab0da94591a579f2105e1c256c782993f63d1cf91d5425fa3e3cf78c"
+    },
+    {
+      "path": "source/public/uploads/BCO.b02f793f-3dc9-440b-b193-7fbaa7ffa4f1.png",
+      "bytes": 2184918,
+      "sha256": "7373019aab0da94591a579f2105e1c256c782993f63d1cf91d5425fa3e3cf78c"
+    },
+    {
+      "path": "source/public/uploads/br.pdf",
+      "bytes": 2057782,
+      "sha256": "db0622b7a88679ad5554ca3ac0c6af6dfb65e3ee63064e450d0ff2c3cdbf86be"
+    },
+    {
+      "path": "source/public/uploads/brochure-contact-sheet.png",
+      "bytes": 3117078,
+      "sha256": "831eaf32a8dd2a1bb69d4dd0369c570745f238a231228dd20de41887d37a9b37"
+    },
+    {
+      "path": "source/public/uploads/C9H-64\u7275\u5f15\u8f66.png",
+      "bytes": 4259530,
+      "sha256": "e02a3c743dee0e37b67d2ba4e47f257167b75d5711a42f818499f3dac0dc7c27"
+    },
+    {
+      "path": "source/public/uploads/c9h-cutout.png",
+      "bytes": 4259530,
+      "sha256": "e02a3c743dee0e37b67d2ba4e47f257167b75d5711a42f818499f3dac0dc7c27"
+    },
+    {
+      "path": "source/public/uploads/HOWO MAX \u7275\u5f15\u8f66 6\u00d74 (2).jpg",
+      "bytes": 5829799,
+      "sha256": "e46efdf74db6ee3b9c44d63c0389711b2ad67f9f7b5e630cc605c8d6ae49d373"
+    },
+    {
+      "path": "source/public/uploads/HOWO MAX \u7275\u5f15\u8f66 6\u00d74 \u84dd.jpg",
+      "bytes": 6743282,
+      "sha256": "886b7a28e69db1c4a65917548d28424abde3e769913c431bdc073bf8ae84caaf"
+    },
+    {
+      "path": "source/public/uploads/howo-max-blue.jpg",
+      "bytes": 6743282,
+      "sha256": "886b7a28e69db1c4a65917548d28424abde3e769913c431bdc073bf8ae84caaf"
+    },
+    {
+      "path": "source/public/uploads/howo-max-road.jpg",
+      "bytes": 5829799,
+      "sha256": "e46efdf74db6ee3b9c44d63c0389711b2ad67f9f7b5e630cc605c8d6ae49d373"
+    },
+    {
+      "path": "source/public/uploads/logo-standalone-src.png",
+      "bytes": 255116,
+      "sha256": "e58304438b0d41bc9c196bff913d1305bcd5851ef8692b543f5afcea9577946b"
+    },
+    {
+      "path": "source/public/uploads/Sitrak Main Brochure.pdf",
+      "bytes": 6425384,
+      "sha256": "e49cde1ba14630c8d9349967eb6591ff507bd22d52f2e9a1d8425774d3d017d8"
+    },
+    {
+      "path": "source/public/uploads/sitrak-studio.jpg",
+      "bytes": 1909857,
+      "sha256": "84ff8916ff292210eef42ff475b1d2272aed8a06ae960d0df8a1f24ebdaafb34"
+    },
+    {
+      "path": "source/public/uploads/TrukAfrik_Brand_Guidelines_v1.0.pdf",
+      "bytes": 591321,
+      "sha256": "2f1040b715ed1c81446fad620ce7976c640d16028c0711ca69442cfe1b735d63"
+    },
+    {
+      "path": "source/public/uploads/photos/big1.jpeg",
+      "bytes": 145236,
+      "sha256": "a0d2501a94461d76335f0c463bc511cc2e2c221f535aa6a8b41e92a1426fa4ec"
+    },
+    {
+      "path": "source/public/uploads/photos/big2.jpeg",
+      "bytes": 165848,
+      "sha256": "c574bb78325c4433885083039d37fb5854b29c4bd9bb92da270524a689744837"
+    },
+    {
+      "path": "source/public/uploads/photos/big3.jpeg",
+      "bytes": 309278,
+      "sha256": "af57a1bd7e2c3c0c3d49a3db815e6caf25ba72c6615736e16021bd8922850e1a"
+    },
+    {
+      "path": "source/public/uploads/photos/big4.jpeg",
+      "bytes": 103579,
+      "sha256": "663ea92637153700e901118201528ec786a2cc70ee9b6ff503e0cbd64640a31c"
+    },
+    {
+      "path": "source/public/assets/events/SITRAK_Event_Recap_poster.jpg",
+      "bytes": 99734,
+      "sha256": "c2416767d4e50d1278ab56301ce15375dcd13b824f0e0423c796b6df663cd430"
+    },
+    {
+      "path": "source/public/assets/events/SITRAK_Event_Recap_web.mp4",
+      "bytes": 19345364,
+      "sha256": "770eb6679affd011b0d074a1768e8b657ff099200fdfb0aa97d7407dbab58a08"
+    },
+    {
+      "path": "source/public/assets/gallery/c7h-cab.jpg",
+      "bytes": 89014,
+      "sha256": "3401b1bf3ec70b1e50fff66cfb7414777de35bd29ea7498f737c432df2557495"
+    },
+    {
+      "path": "source/public/assets/gallery/howo-max-blue.jpg",
+      "bytes": 352286,
+      "sha256": "f622a36883f0c42c479fa0be1142a45726d61df9cc29b227423a106aa6757b40"
+    },
+    {
+      "path": "source/public/assets/gallery/howo7-cab.jpg",
+      "bytes": 53910,
+      "sha256": "eb73077aefa112806f1e8aa783d396416b503a77e297c5428f6f11db30dff1dd"
+    },
+    {
+      "path": "source/public/assets/logos/sitrak-trukafrik-banner-blue.png",
+      "bytes": 135839,
+      "sha256": "2eb8df43c6e54d8daf4fdcdb7a7823dbfd5a5ee2879167518a26668d092e7ca9"
+    },
+    {
+      "path": "source/public/assets/logos/sitrak-trukafrik-chrome-navy.png",
+      "bytes": 315279,
+      "sha256": "d9338c03e6a5b55dd5d6f2cc8215c22ecd27847b151f6bf29c1be74685b5131f"
+    },
+    {
+      "path": "source/public/assets/logos/sitrak-trukafrik-chrome-steel.png",
+      "bytes": 515574,
+      "sha256": "4496b033fd85baa7279ffcf83f6e6e73567f9d10f5c8685648a47b013338e5fa"
+    },
+    {
+      "path": "source/public/assets/logos/sitrak-trukafrik-primary-light.png",
+      "bytes": 1230065,
+      "sha256": "63009a2d11d4cc95ac1f0af31af1c145863a323f2183dc3c5dc23fef9791807c"
+    },
+    {
+      "path": "source/public/assets/logos/trukafrik-standalone-chrome-dark.png",
+      "bytes": 255116,
+      "sha256": "e58304438b0d41bc9c196bff913d1305bcd5851ef8692b543f5afcea9577946b"
+    },
+    {
+      "path": "source/public/assets/panoramas/howo-max-cabin-360.jpg",
+      "bytes": 266627,
+      "sha256": "1266b9f9f369020dd22c29ec4f3b16d79cac2a00f03284d2233569aab0f906fd"
+    },
+    {
+      "path": "source/public/assets/panoramas/sitrak-c7h-interior-panorama.jpg",
+      "bytes": 274778,
+      "sha256": "322b0d1773c4711ffaeaab88fda713c6c7d8acb04ebd55325b18ed8d9e4ef982"
+    },
+    {
+      "path": "source/public/assets/references/c7h-cockpit.webp",
+      "bytes": 441062,
+      "sha256": "5538af2c5b7693b9c25d78bab036a7a815b02ac134b90a0eed5810cf81d2fcaf"
+    },
+    {
+      "path": "source/public/assets/references/c7h-mc13-reference.webp",
+      "bytes": 80328,
+      "sha256": "c6bcda3354a4696fbd5d2c4d3e5f754c87855a55f5faa82941ce3e8d5722fa65"
+    },
+    {
+      "path": "source/public/assets/references/howo-max-cockpit.webp",
+      "bytes": 222368,
+      "sha256": "5e271f5618a15b0a71f2079ade81ac4f6811ea4368e70f72c44e077dc437d788"
+    },
+    {
+      "path": "source/public/assets/references/howo-max-engine.webp",
+      "bytes": 81444,
+      "sha256": "4e033bae364b9970ad3400a7de2e8e94b2e690d1c068205fb5418d68e379adaa"
+    },
+    {
+      "path": "source/public/assets/trucks/howo-64300-water.webp",
+      "bytes": 167606,
+      "sha256": "11db09cba72a7b978d737de3493c0f79534d514b5666957620bc20bc264dc62b"
+    },
+    {
+      "path": "source/public/assets/trucks/howo-64330-tipper.webp",
+      "bytes": 320682,
+      "sha256": "676dfd0f4bece1ff5bb38d57e739234ccbf192ebe51e4052a0374f5dbd1dd4f6"
+    },
+    {
+      "path": "source/public/assets/trucks/howo-64330-water.webp",
+      "bytes": 151902,
+      "sha256": "5bcc2d0e27499d004e5bdb88e50d0ce26a4184f8409331a1508c16cdf77e4739"
+    },
+    {
+      "path": "source/public/assets/trucks/howo-64336-tipper.webp",
+      "bytes": 208560,
+      "sha256": "5836331b6e63d106d94aabf7209b8156947197fe0655bc92e2662d817a71fb18"
+    },
+    {
+      "path": "source/public/assets/trucks/howo-84340-mixer.webp",
+      "bytes": 154046,
+      "sha256": "ac7fa1d23493e5810d05e8ebb4ff39ed88f7b2e7663f649463f61dca9fb8cf79"
+    },
+    {
+      "path": "source/public/assets/trucks/howo-84350-tipper.webp",
+      "bytes": 95290,
+      "sha256": "bda4f207dc208dc00e5600538940eaa8fa3d8c86c81802c24e4ad5a1b2d14392"
+    },
+    {
+      "path": "source/public/assets/trucks/howo-84371-tipper.webp",
+      "bytes": 107444,
+      "sha256": "6cc2cdaf1b7df6464120d46ab71be7c72ebaf84661027af52e71e75d8a3e08b6"
+    },
+    {
+      "path": "source/public/assets/trucks/howo-max.webp",
+      "bytes": 119772,
+      "sha256": "23d5a570b8853b0ae85f237b66418a1fbde2375742d31fc7e38dcc343e28df13"
+    },
+    {
+      "path": "source/public/assets/trucks/sitrak-g7h.webp",
+      "bytes": 105244,
+      "sha256": "1febbecbc3cc7394b5e1c311f84fb8546238895baa407b10c75b87525bdecf91"
+    },
+    {
+      "path": "source/public/assets/trucks/sitrak-g7s.webp",
+      "bytes": 122294,
+      "sha256": "81a476ea3f265bb9452c399a5264115589ca35ebc5f61198c8b301c090ec2202"
+    },
+    {
+      "path": "source/public/assets/hero/metallic-v5/SITRAK_Hero_Continuous_desktop.mp4",
+      "bytes": 10256074,
+      "sha256": "782ca5035af6c818943a2654c1b9247a56f855767a41a050c0ac57f44b0b63ca"
+    },
+    {
+      "path": "source/public/assets/hero/metallic-v5/SITRAK_Hero_Continuous_mobile.mp4",
+      "bytes": 3055167,
+      "sha256": "1b515d5ea36064dbc05c05af95be2649f703a582ed795afe921610cd6ace812b"
+    },
+    {
+      "path": "source/public/assets/hero/metallic-v5/SITRAK_Hero_Poster_desktop.jpg",
+      "bytes": 121847,
+      "sha256": "367788ed1ba96bcb50b3a0afc29acaac165e6ae9da76f2e9a7dc4b9c8d9f9951"
+    },
+    {
+      "path": "source/public/assets/hero/metallic-v5/SITRAK_Hero_Poster_g7h_desktop.jpg",
+      "bytes": 121847,
+      "sha256": "367788ed1ba96bcb50b3a0afc29acaac165e6ae9da76f2e9a7dc4b9c8d9f9951"
+    },
+    {
+      "path": "source/public/assets/hero/metallic-v5/SITRAK_Hero_Poster_g7h_mobile.jpg",
+      "bytes": 76385,
+      "sha256": "1df168043b54d587279518b4056c4205a2e8f83d9ebaf482605d1fcdf2c5fa4b"
+    },
+    {
+      "path": "source/public/assets/hero/metallic-v5/SITRAK_Hero_Poster_g7s_desktop.jpg",
+      "bytes": 128110,
+      "sha256": "fff1dce3738742ae66485fa4fed7c2c2aa2af56450f9e1b77ce3470e0723a40d"
+    },
+    {
+      "path": "source/public/assets/hero/metallic-v5/SITRAK_Hero_Poster_g7s_mobile.jpg",
+      "bytes": 79851,
+      "sha256": "ada13a1335c449e18e1df58edd561ff0344148dadb78ed590d47cf6579a78446"
+    },
+    {
+      "path": "source/public/assets/hero/metallic-v5/SITRAK_Hero_Poster_howo-64330-tipper_desktop.jpg",
+      "bytes": 208626,
+      "sha256": "276309aa1800dd78edde3676cc2691dec81b57ca9b28feea19b7b4ea0eb07c10"
+    },
+    {
+      "path": "source/public/assets/hero/metallic-v5/SITRAK_Hero_Poster_howo-64330-tipper_mobile.jpg",
+      "bytes": 103809,
+      "sha256": "dd8caf41c2688acfd2a7f8fe59e6cc26223071e26312d6f2c874e3b0534aaab2"
+    },
+    {
+      "path": "source/public/assets/hero/metallic-v5/SITRAK_Hero_Poster_howo-max_desktop.jpg",
+      "bytes": 184878,
+      "sha256": "7e4584e1df306500636fd7859ec8bc226744c2bc613f55aeb7413083cb58c412"
+    },
+    {
+      "path": "source/public/assets/hero/metallic-v5/SITRAK_Hero_Poster_howo-max_mobile.jpg",
+      "bytes": 80154,
+      "sha256": "d0a52e3032e2e366d7fcc552514cebab841fc1b4f74e0f7534ac579ef93f75d7"
+    },
+    {
+      "path": "source/public/assets/hero/metallic-v5/SITRAK_Hero_Poster_mobile.jpg",
+      "bytes": 76385,
+      "sha256": "1df168043b54d587279518b4056c4205a2e8f83d9ebaf482605d1fcdf2c5fa4b"
+    },
+    {
+      "path": "source/components/intro/intro-controller.d.mts",
+      "bytes": 388,
+      "sha256": "ba34b25ba488c59bcf6b0f315f88beba42109b7b1ba045fb85bf3860be37c1e0"
+    },
+    {
+      "path": "source/components/intro/intro-controller.mjs",
+      "bytes": 1366,
+      "sha256": "1e017764c5ff0ad934d95b12ce9838c20a1099f1a5b8acf2acd481962a18df42"
+    },
+    {
+      "path": "source/components/intro/IntroSplash.tsx",
+      "bytes": 5574,
+      "sha256": "403a9d71eb8d5242a1694716a322f9f20b582c097a4d5ead9cb60c8b8f8e3266"
+    },
+    {
+      "path": "source/components/intro/metal-audio.d.mts",
+      "bytes": 143,
+      "sha256": "25c81f970e33e3d61cb1d2f8aa69ef48bf1a0ebb04c5709d4f52a40651d2900f"
+    },
+    {
+      "path": "source/components/intro/metal-audio.mjs",
+      "bytes": 2103,
+      "sha256": "b9e352f62d1ae8edde9d7f99809ee9987b3e5a60de6b5e0bbd59d9b92abdba7b"
+    },
+    {
+      "path": "source/components/pages/subpage.css",
+      "bytes": 2508,
+      "sha256": "d4904dfc8f4de9e7afb1b04c2aae93054298991d30d33dcf06d4a2431771b635"
+    },
+    {
+      "path": "source/components/pages/SubPage.tsx",
+      "bytes": 1800,
+      "sha256": "920e8ac8b20584a90972e754110b38954bb8cb0b37b29fe11f694cf0699f9952"
+    },
+    {
+      "path": "source/components/showroom/anatomy-hotspots.css",
+      "bytes": 8591,
+      "sha256": "1b9c5d416a521baa566d83e091ab8b2082cf1c526144c8a660e7f70a1f556453"
+    },
+    {
+      "path": "source/components/showroom/AnatomyHotspots.test.tsx",
+      "bytes": 5164,
+      "sha256": "82f1f332f5c5f67c847d84aa662da97880ab302228c53d59173fd089fa9f1c39"
+    },
+    {
+      "path": "source/components/showroom/AnatomyHotspots.tsx",
+      "bytes": 10842,
+      "sha256": "6e1fb565338240c7ee8ed01c966d14d937ad37ca7739c57b2c2d8592c553391d"
+    },
+    {
+      "path": "source/components/showroom/approval-binding.test.tsx",
+      "bytes": 5379,
+      "sha256": "b41ae339e2a13f25c73ae76c71fa4c4b126b6c71596d443226d61fb6f0ef8c22"
+    },
+    {
+      "path": "source/components/showroom/CabinRecovery.test.tsx",
+      "bytes": 1875,
+      "sha256": "59d7f7f91e7712e907aedfb6ff6e2cebec21dcdc1c565685990ef95021fae02b"
+    },
+    {
+      "path": "source/components/showroom/capture-3102.mjs",
+      "bytes": 5718,
+      "sha256": "679a9054e947d74deecbcd4e55feda0c19cce1f6377861e029843fcaa0a64d1c"
+    },
+    {
+      "path": "source/components/showroom/capture-evidence.mjs",
+      "bytes": 4723,
+      "sha256": "7bae5c73cd1c4493d7e125db75e213b53baf3f001fe45ac76ab4fe56ea9e7246"
+    },
+    {
+      "path": "source/components/showroom/capture-glb-render.mjs",
+      "bytes": 4503,
+      "sha256": "e62c69cf5b655ca59b5215c931468f30b0825f3116f086840f1b359d17aafbf3"
+    },
+    {
+      "path": "source/components/showroom/capture-glb-shell.mjs",
+      "bytes": 4833,
+      "sha256": "837b8e25a8201f730f50a701992b82e60defe1b2716198320c4fd4938cd59dea"
+    },
+    {
+      "path": "source/components/showroom/capture-glb-truck.mjs",
+      "bytes": 2436,
+      "sha256": "88a878687973f108ff5edd305cc2352dea57720f7ea3b54a7d7bc06e7942baec"
+    },
+    {
+      "path": "source/components/showroom/capture-home-scrolled.mjs",
+      "bytes": 1609,
+      "sha256": "cbc52afed327624ebbd9a5efe6ddb701ce5ace9b1bd1749a281a1d691cf6ac60"
+    },
+    {
+      "path": "source/components/showroom/capture-shell.mjs",
+      "bytes": 4799,
+      "sha256": "72787ef0c61dfd0297f4cadf303566a8b77f8d9579bbc4218c921cb090e601ec"
+    },
+    {
+      "path": "source/components/showroom/compare-range.css",
+      "bytes": 4645,
+      "sha256": "ef9f27425aeb6f4bd7a49e1eaa0057502dc315ecba6987854984c3d511ba92b1"
+    },
+    {
+      "path": "source/components/showroom/CompareRange.test.tsx",
+      "bytes": 2185,
+      "sha256": "fedf20491d522c61f3935d70325a3710a9c607a2050b6d32119701f2c36c2a5e"
+    },
+    {
+      "path": "source/components/showroom/CompareRange.tsx",
+      "bytes": 3411,
+      "sha256": "0757d76bd7269692e089af25e45ddc03ee26ae550bc8ec4be1e110ba88b0b88e"
+    },
+    {
+      "path": "source/components/showroom/contact-register.test.tsx",
+      "bytes": 1597,
+      "sha256": "30c55cfbef2686efd9aafa1a73ece202281eb5d611026c42cd3ea8618ff3b7de"
+    },
+    {
+      "path": "source/components/showroom/contact-register.ts",
+      "bytes": 2193,
+      "sha256": "56e6fac0d51ded2eaeeb809f32c1c0d3bfea7d7b489025af128190dd28c96027"
+    },
+    {
+      "path": "source/components/showroom/floating-socials.css",
+      "bytes": 5331,
+      "sha256": "c43f08797217aacd21c307f80b9b07f7935374b883720a6523772880583db72f"
+    },
+    {
+      "path": "source/components/showroom/FloatingSocialLinks.test.tsx",
+      "bytes": 2691,
+      "sha256": "02905ba38b514ae26bacc4fca7d45856b16365684088c1c4a9f4e3bf56fce21b"
+    },
+    {
+      "path": "source/components/showroom/FloatingSocialLinks.tsx",
+      "bytes": 3588,
+      "sha256": "4947ac30033648e88ba25996aabfb142e9a5d5086118c72a38bf9918e2693e41"
+    },
+    {
+      "path": "source/components/showroom/glb-loader.ts",
+      "bytes": 12014,
+      "sha256": "f1ac7b65277c7fc509107c1c851da8194aa5aa6151c32bb7a9497a0cd6d8826d"
+    },
+    {
+      "path": "source/components/showroom/glb-preflight.mjs",
+      "bytes": 5380,
+      "sha256": "65ff420448874069cef701e48653902a593ce96f53d5b5ecb6b3bc8f7eadb4f6"
+    },
+    {
+      "path": "source/components/showroom/HeaderRoute.test.tsx",
+      "bytes": 590,
+      "sha256": "4b1ee2ea0ca8e46e9707e91f9ae27c43cb39ba223a35f60d153855190430ad15"
+    },
+    {
+      "path": "source/components/showroom/HeroFailures.test.tsx",
+      "bytes": 2315,
+      "sha256": "499ff4076aef9613830f34fbef04fa7dc4bd0ebb567720f4dc323d0b4b899f64"
+    },
+    {
+      "path": "source/components/showroom/HomeClaims.test.tsx",
+      "bytes": 3044,
+      "sha256": "22a0cc013f7b49fadd4bab53fef24934be35eb808ba234e6bf53a21380639c86"
+    },
+    {
+      "path": "source/components/showroom/HomeDiscovery.test.tsx",
+      "bytes": 1015,
+      "sha256": "ebb28ec4e0fbb2e5ff455e6db4dcedb2a1385c6a6887e4ecb0901d5b2131cb26"
+    },
+    {
+      "path": "source/components/showroom/ImageCopy.test.tsx",
+      "bytes": 1586,
+      "sha256": "a6d61a3c6b58271581a4770cbbdf466dd117300f1aa4243dcc593e4cfa083aa2"
+    },
+    {
+      "path": "source/components/showroom/IntroOptional.test.tsx",
+      "bytes": 1214,
+      "sha256": "80ca94d710c17ca4c34aa606834d524aa7e306cbc40ec715b4629460a8ff2694"
+    },
+    {
+      "path": "source/components/showroom/IntroReplay.tsx",
+      "bytes": 887,
+      "sha256": "777ece12706e68cfff285d13a1ef43ceb19403beeff17c7b396e2b372988ef04"
+    },
+    {
+      "path": "source/components/showroom/ktx2-target.d.ts",
+      "bytes": 557,
+      "sha256": "55e16257f0a96635f2cf193ade00a21deb0be4504007f459ffeb6b18b5e47232"
+    },
+    {
+      "path": "source/components/showroom/ktx2-target.mjs",
+      "bytes": 1485,
+      "sha256": "d28e864a6be09007ba3778f053f3080061a71d43ebe152daee7135a22caa255b"
+    },
+    {
+      "path": "source/components/showroom/model-derivatives.ts",
+      "bytes": 3069,
+      "sha256": "a484e8c1297f457e89b4d600e41e8d785b85ca92ac54ff2152693d193d4edfdd"
+    },
+    {
+      "path": "source/components/showroom/official-company-links.css",
+      "bytes": 585,
+      "sha256": "039d36660f481bd8114a4b4be360a92d103215064ce340cc336f05cf419b6125"
+    },
+    {
+      "path": "source/components/showroom/official-links.ts",
+      "bytes": 897,
+      "sha256": "4da0a276e38b6d46d2d61045320b825b120bf9f922a0046338f31fbe275e52ca"
+    },
+    {
+      "path": "source/components/showroom/OfficialCompanyLinks.tsx",
+      "bytes": 561,
+      "sha256": "84980bec641e4b9161919a414feb05897e35ca319745e23705672a4311151b59"
+    },
+    {
+      "path": "source/components/showroom/OfficialLinks.test.tsx",
+      "bytes": 4075,
+      "sha256": "52c1b23afe5fa21684e9a3bbac6601918bed669172530fa74d42bb04da3d0f78"
+    },
+    {
+      "path": "source/components/showroom/range-specifications.css",
+      "bytes": 10332,
+      "sha256": "c6d36800bf903d3c3930d781d5a075c32978ac43a3fd3d38dba24f4bbe07e2fb"
+    },
+    {
+      "path": "source/components/showroom/RangeSpecifications.tsx",
+      "bytes": 8855,
+      "sha256": "b42e99fcf04ce279f68fc8229f3d50378018c72e7df1566b20ff49f808d33e09"
+    },
+    {
+      "path": "source/components/showroom/run-preflight.mjs",
+      "bytes": 1190,
+      "sha256": "06d39f329b6590bcb3fd5fade47c1dd2b5316499d76c4dde831a4a677babf4ab"
+    },
+    {
+      "path": "source/components/showroom/SharedFooter.test.tsx",
+      "bytes": 2951,
+      "sha256": "5206cc1ab6e269567e67e67c763403c2a60aa631f45c685a45e2ed037304c092"
+    },
+    {
+      "path": "source/components/showroom/SharedImageryCopy.test.tsx",
+      "bytes": 2537,
+      "sha256": "17b822bf4adc9bfe813f90b3959c462c539b73659a401356ad6b0cdc2e78d08b"
+    },
+    {
+      "path": "source/components/showroom/showroom.css",
+      "bytes": 17565,
+      "sha256": "d138b62f0bf8758d7e49511a94f3489c98eeec0ad0a04324321a931d4b36b05c"
+    },
+    {
+      "path": "source/components/showroom/ShowroomDialog.tsx",
+      "bytes": 2241,
+      "sha256": "2d107c6860558b62a6b28bf26bbc4ce557b67a42dc58fe2063f3a94be281b3c9"
+    },
+    {
+      "path": "source/components/showroom/ShowroomDiscovery.test.tsx",
+      "bytes": 998,
+      "sha256": "a0e30600efa17f5157d0aa84f2b871f86de9620a9725b3281738594bf28082ae"
+    },
+    {
+      "path": "source/components/showroom/ShowroomDiscovery.tsx",
+      "bytes": 3293,
+      "sha256": "f4ce1ba8809e60986a44e824275c041bc3b7f8d9861ab70fe1df61715dbe6153"
+    },
+    {
+      "path": "source/components/showroom/supplied-glb-viewer.css",
+      "bytes": 1487,
+      "sha256": "a87bc795a081c1e8872721d2dc2f53e1fee691f9e5e272b1b3fe9c2ae371ff21"
+    },
+    {
+      "path": "source/components/showroom/SUPPLIED-MODELS-WRITE-LOG.md",
+      "bytes": 26362,
+      "sha256": "dd6663681edaf0cadeb09733d116648824afff527dd4a936a7f3135c7d090bd3"
+    },
+    {
+      "path": "source/components/showroom/supplied-models.invariants.test.ts",
+      "bytes": 2294,
+      "sha256": "0083b18df2145c7f905155fb7f24b9e89c0150d822d3750ebd042b56ef730df1"
+    },
+    {
+      "path": "source/components/showroom/supplied-models.ts",
+      "bytes": 6774,
+      "sha256": "570eac10c960f0d6eba6d6e273cc89eedeeb377be5afe501783041971c54b722"
+    },
+    {
+      "path": "source/components/showroom/SuppliedGlbViewer.test.tsx",
+      "bytes": 6111,
+      "sha256": "9a5b4699af929d39c5f685f247b33b0e9a2e032f3d6e6b793616fa056418fb1b"
+    },
+    {
+      "path": "source/components/showroom/SuppliedGlbViewer.tsx",
+      "bytes": 7548,
+      "sha256": "4c2652948d5f3225d688cd8e5a59b13b3abb882b5317533d2f12ca5b1d20786c"
+    },
+    {
+      "path": "source/components/showroom/truck-exterior-gallery.css",
+      "bytes": 1184,
+      "sha256": "a409366a8b80c144cb5521d12dd0480d2173615a8eec905013ec10e8915acf5a"
+    },
+    {
+      "path": "source/components/showroom/truck-model-3d.css",
+      "bytes": 2062,
+      "sha256": "318cfaf2d86fc771e615caaa5327dc0d565dc6bc463554beb0b06069f7a0c3b9"
+    },
+    {
+      "path": "source/components/showroom/TruckExteriorGallery.test.tsx",
+      "bytes": 2035,
+      "sha256": "04d71eba59a51f2db99e5fbf64b389f4678aa1c00d892a57488326576a64b4e2"
+    },
+    {
+      "path": "source/components/showroom/TruckExteriorGallery.tsx",
+      "bytes": 2618,
+      "sha256": "6cbacc8f803d93d66db0a58ba25fb02da93409a78be03c2f5ba6d64da28fa04d"
+    },
+    {
+      "path": "source/components/showroom/TruckModel3D.tsx",
+      "bytes": 4641,
+      "sha256": "9c542ddc6e9edc0dd32233aaaf644ef57f0beee0b7d6231a199078aa586d4995"
+    },
+    {
+      "path": "source/components/showroom/TruckShowroom.tsx",
+      "bytes": 11215,
+      "sha256": "0a87df6371f48461b53bad36b6820f11da93f905bfb8b61b7f9a997a36d36238"
+    },
+    {
+      "path": "source/components/showroom/verify-cabin-main.mjs",
+      "bytes": 9024,
+      "sha256": "05bca3f822b5a18d051756c602b1708305cdb813824eda7949f3834a1265c4d3"
+    },
+    {
+      "path": "source/components/showroom/verify-claims-corrections.mjs",
+      "bytes": 5511,
+      "sha256": "8e3a236d960a70c7fd972ab5a86852cc783c57d1c3e8c21e7f8eab0eb8f3f71e"
+    },
+    {
+      "path": "source/components/showroom/verify-hero-failures.mjs",
+      "bytes": 5432,
+      "sha256": "8e07d3350b276a2e0787297af7e83fc691b38a71fd692267700ba0d9a3a8a06d"
+    },
+    {
+      "path": "source/components/showroom/verify-hero-restoration.mjs",
+      "bytes": 5256,
+      "sha256": "0836ad45e95676e16ae9726c73e15ae91970af65600ae27a3a6bb9eb251bc05a"
+    },
+    {
+      "path": "source/components/showroom/verify-intro-footer.mjs",
+      "bytes": 5860,
+      "sha256": "b2e07b0996b6446f32c608a8fff7b81d1a43da8c65d5e5ae2188dcfe37614fba"
+    },
+    {
+      "path": "source/components/showroom/verify-model-image-baseline.mjs",
+      "bytes": 4643,
+      "sha256": "64545dbfeae564cc0dc5bd293b4a09321c8295d6bda4d8003da120e16732dbc5"
+    },
+    {
+      "path": "source/components/showroom/verify-official-links-fixture.mjs",
+      "bytes": 6418,
+      "sha256": "bcec73afd0f953ae9d72935282d022f0d60a8a91be47b0cc69b5c0f10fb5e81b"
+    },
+    {
+      "path": "source/components/showroom/verify-preserved-socials.mjs",
+      "bytes": 8505,
+      "sha256": "b53457714f00be3131a788fb4509d6c05fcd16e2d69cfd4c4fba3586c420e0b8"
+    },
+    {
+      "path": "source/components/showroom/verify-preview-build.mjs",
+      "bytes": 2848,
+      "sha256": "1780728be5a7e34c62e140627a7a3673480537bcc3dfd127882bbe371b3fab5c"
+    },
+    {
+      "path": "source/components/showroom/verify-range-alignment.mjs",
+      "bytes": 6139,
+      "sha256": "ed910f8693b22d5f7630ef0f8bd2eaaf53d7d9e91445036030fb1852ff99eff9"
+    },
+    {
+      "path": "source/components/showroom/verify-registry-invariants.mjs",
+      "bytes": 7124,
+      "sha256": "f9cf58d549cba79e6e88dd8b16c88fd3cd349dc11fde1255f7b0248394a593bf"
+    },
+    {
+      "path": "source/components/showroom/verify-shared-copy.mjs",
+      "bytes": 6380,
+      "sha256": "a9e6f37169f05b17ac2d4417df1a17b0c7f54cbfe4e135dfe610961f383a0667"
+    },
+    {
+      "path": "source/app/about/page.tsx",
+      "bytes": 2667,
+      "sha256": "f9c9aecf5ef8868a620f11c6286602bd3e81411e5ad2a950589b7619d8f77ac0"
+    },
+    {
+      "path": "source/app/finance/page.tsx",
+      "bytes": 2206,
+      "sha256": "d3f8ff04f8201a1488afccc2a96c070fa9238b2248bf25c00f45e993bb28d87c"
+    },
+    {
+      "path": "source/app/parts/page.tsx",
+      "bytes": 2500,
+      "sha256": "e63a688935fe35f0d12568c211f26240afbee88efb9b38b7b395da1e31f23548"
+    },
+    {
+      "path": "source/app/pre-owned/page.tsx",
+      "bytes": 2500,
+      "sha256": "f9d825a28a4326d3b684b0d33ea379fcc12747bc0fe60fe4da6ad6785d74c3fe"
+    },
+    {
+      "path": "source/app/privacy-policy/page.tsx",
+      "bytes": 4293,
+      "sha256": "825a13c998f7f73767d143489369da0ebdcef578638e5bd7cfb42adf1abab1df"
+    },
+    {
+      "path": "source/app/range/page.tsx",
+      "bytes": 1201,
+      "sha256": "add9a1aac185e6c847f624c8d70b772602eb1a618e6a4395bf54e65065140e1c"
+    },
+    {
+      "path": "source/app/models/g7h/page.tsx",
+      "bytes": 910,
+      "sha256": "818ac19d9bbdded888343397ac7dcd93b504c437916ca51bec89a4f12357441c"
+    },
+    {
+      "path": "source/app/models/g7s/page.tsx",
+      "bytes": 910,
+      "sha256": "5bf211a3fc996eab75c70c7262574d0efa69c0d6087181f6496150b189ff7cd1"
+    },
+    {
+      "path": "source/app/models/howo-64330-tipper/page.tsx",
+      "bytes": 953,
+      "sha256": "27ef4aef5b4b6d510b0b9d1bdd8723cbb087fc4e160e90ad280940a3717796cd"
+    },
+    {
+      "path": "source/app/models/howo-max/page.tsx",
+      "bytes": 922,
+      "sha256": "4d1f258caeb5cb0c53aab2baa5bbb9c5817b5d8268d1c0c09a81f65ded405ce5"
+    },
+    {
+      "path": "source/app/models/howo-tapa/page.tsx",
+      "bytes": 926,
+      "sha256": "661fcb3e4be6bf240b2af09d1f080a48e542e074bd71e68a6413ea8e305418b1"
+    },
+    {
+      "path": "source/app/api/enquiries/route.ts",
+      "bytes": 1195,
+      "sha256": "25e8293614a98c795bf211aaccf01d7f322d602fc59ceffd906de9f95ce29907"
+    },
+    {
+      "path": "deployed/public_html/.htaccess",
+      "bytes": 7297,
+      "sha256": "15ae394a6e59c6974f8fbceaeec61b20f02a3d26d79fd914f2d90d6587bde3cf"
+    },
+    {
+      "path": "deployed/public_html/404.html",
+      "bytes": 19777,
+      "sha256": "393e78a4292f4c15aed81ac938df7f6e77e344e9d0151eecfce5d50607e25772"
+    },
+    {
+      "path": "deployed/public_html/about.html",
+      "bytes": 30324,
+      "sha256": "f0cbe3529cbcf3f5d91ecc4650a544b9d37cdc37b599138b23cd2ee5a0150355"
+    },
+    {
+      "path": "deployed/public_html/about.txt",
+      "bytes": 16119,
+      "sha256": "8ef73e8431eaa7ef093f3e187ea35a728def5a822e85e3cb39d073304be7956b"
+    },
+    {
+      "path": "deployed/public_html/apple-icon.png",
+      "bytes": 18066,
+      "sha256": "5df3ba6ebc39faf5c7620b354006d6e4979127c92fc18c431fb18f2a970b844a"
+    },
+    {
+      "path": "deployed/public_html/events.html",
+      "bytes": 26740,
+      "sha256": "1af9e494a3c37f76bff2777a620721a2b3986ed59a540c865f0ded51647e940b"
+    },
+    {
+      "path": "deployed/public_html/events.txt",
+      "bytes": 14141,
+      "sha256": "d8e658b2655940e0620bf1ce27af213e67de64e26070709ce3d4fa57ebbee33a"
+    },
+    {
+      "path": "deployed/public_html/finance.html",
+      "bytes": 30067,
+      "sha256": "615bf0c68ecb95f69b512d1e9308f2f70b20f7b987acf108611461528ca0c878"
+    },
+    {
+      "path": "deployed/public_html/finance.txt",
+      "bytes": 15961,
+      "sha256": "b18e32c7c24bdd106ed4bd02e62688bbcfa79a3f7e1e0e17961c8e938af57af0"
+    },
+    {
+      "path": "deployed/public_html/icon.png",
+      "bytes": 59907,
+      "sha256": "68879ddb47d6b29667756eb808270f10c9768a88c972313bd14c20178aee6623"
+    },
+    {
+      "path": "deployed/public_html/index.html",
+      "bytes": 105685,
+      "sha256": "45c8aab531d119f37462a2228dd50b473a99842f5ffd40756c15e404c44b9ad7"
+    },
+    {
+      "path": "deployed/public_html/index.txt",
+      "bytes": 31587,
+      "sha256": "1cc4a9cb80b6cc6436945e2d816e1e39c6b00cc92698101ee3643f965324afc0"
+    },
+    {
+      "path": "deployed/public_html/parts.html",
+      "bytes": 29960,
+      "sha256": "b852db12f1ffaf5ee16527b08518316dd648f1b73e091e4822daef613b3ff31d"
+    },
+    {
+      "path": "deployed/public_html/parts.txt",
+      "bytes": 15931,
+      "sha256": "85af8ac5122fa09043c1a7a84bb564c885c0cb9a5067404837c924622d941032"
+    },
+    {
+      "path": "deployed/public_html/pre-owned.html",
+      "bytes": 29612,
+      "sha256": "acbb89a5deeb18aeaf7f623e97e54128a724317c4008f0465448a5003c01e011"
+    },
+    {
+      "path": "deployed/public_html/pre-owned.txt",
+      "bytes": 15755,
+      "sha256": "aec9253c621ae2b141becd38c64824fc1741d77af84e22ed2441b502be07048c"
+    },
+    {
+      "path": "deployed/public_html/privacy-policy.html",
+      "bytes": 33834,
+      "sha256": "35e21f898087dd4bd295a5e8f9363ad862823b8a439d51989822f22dea69aafd"
+    },
+    {
+      "path": "deployed/public_html/privacy-policy.txt",
+      "bytes": 17654,
+      "sha256": "566a48f45e5aeb3d6dc195cb749fa542213da615619b934264591fcd86a1d5a4"
+    },
+    {
+      "path": "deployed/public_html/range.html",
+      "bytes": 200633,
+      "sha256": "9a4752031e129dfd2ec696476cfb1c732760c4a17f38dccb864a920573153576"
+    },
+    {
+      "path": "deployed/public_html/range.txt",
+      "bytes": 115206,
+      "sha256": "e32f27d6a017833b4d612cd8369d8de4abd0b8432fbf11643c6bda3bab85ae98"
+    },
+    {
+      "path": "deployed/public_html/robots.txt",
+      "bytes": 119,
+      "sha256": "1ce2e8171dfd67d051116a30b69a6f9c9e363c4becf400933fadc08974fed6f7"
+    },
+    {
+      "path": "deployed/public_html/sitemap.xml",
+      "bytes": 2063,
+      "sha256": "9410ca8b61929ab89ff1363b4b51532ae5547af946c731111b1874a7bf7581fb"
+    },
+    {
+      "path": "deployed/public_html/_not-found.html",
+      "bytes": 19777,
+      "sha256": "393e78a4292f4c15aed81ac938df7f6e77e344e9d0151eecfce5d50607e25772"
+    },
+    {
+      "path": "deployed/public_html/_not-found.txt",
+      "bytes": 11597,
+      "sha256": "8386fc0b97bb2f0e9b66b9c232a448dc496194df457ab3106ffc37a94a06ee27"
+    },
+    {
+      "path": "deployed/public_html/__next._full.txt",
+      "bytes": 31587,
+      "sha256": "1cc4a9cb80b6cc6436945e2d816e1e39c6b00cc92698101ee3643f965324afc0"
+    },
+    {
+      "path": "deployed/public_html/__next._tree.txt",
+      "bytes": 861,
+      "sha256": "2fb1e76a3e75b92c1c647d249d77a4b5a99e251860af8f600df15f582d2d7550"
+    },
+    {
+      "path": "deployed/public_html/__next.__PAGE__.txt",
+      "bytes": 29648,
+      "sha256": "45e5d025123564cea96f9751b9c09bee4b87c28ba42f24dc441f4e6e6524d65e"
+    },
+    {
+      "path": "deployed/public_html/api/enquiries.php",
+      "bytes": 4482,
+      "sha256": "d0d644a554688e2ed3d49e0b4c54bf66b6d5e622dd1e739981a20dae4314a72a"
+    },
+    {
+      "path": "deployed/public_html/api/enquiry-mail.php",
+      "bytes": 4502,
+      "sha256": "0764fba1a783796aa1b29d13267b2a7e9c7b4fbe8303479103b1621ce2af275c"
+    },
+    {
+      "path": "deployed/public_html/assets/band-lineup-v1.jpg",
+      "bytes": 225256,
+      "sha256": "b348cad291a305d5147a30221eaf92e15fbffbbf02243e60f934c1e49dd66b8f"
+    },
+    {
+      "path": "deployed/public_html/assets/card-sitrak-c7h.jpg",
+      "bytes": 79391,
+      "sha256": "9785957b3764f738240b19778d794d2658ff804339b74fc7da8e984c147c4620"
+    },
+    {
+      "path": "deployed/public_html/assets/g7h-alt.png",
+      "bytes": 3311390,
+      "sha256": "6c8787ff1372ae97e2dd9308f8bce161dc993274f0498b7aa17be860d23401a0"
+    },
+    {
+      "path": "deployed/public_html/assets/g7h.png",
+      "bytes": 1176351,
+      "sha256": "89a4fddcfd13d2bf764a90acb86098fcad5f9b7790baa2e9883f3876ab4d9164"
+    },
+    {
+      "path": "deployed/public_html/assets/g7s.png",
+      "bytes": 1345478,
+      "sha256": "5d616077a45c8e0c36e8cb91f382efa12781099ff6360b345d4ec590e7a60280"
+    },
+    {
+      "path": "deployed/public_html/assets/grill-mesh.jpg",
+      "bytes": 21594,
+      "sha256": "0eb7e44b41e9da7ebdab900f553ac6319f88f3bf6ca03175cb904693ed887056"
+    },
+    {
+      "path": "deployed/public_html/assets/grill.png",
+      "bytes": 954803,
+      "sha256": "d8d2daffd2208848f8ba0836a266e9992ec2318240617331426d728c6581a224"
+    },
+    {
+      "path": "deployed/public_html/assets/hero-c7h-v2.jpg",
+      "bytes": 203178,
+      "sha256": "62963377d581caa72df5773859475911b465f2fee9c927e96d24da6608c2f836"
+    },
+    {
+      "path": "deployed/public_html/assets/hero-howo-max-road.jpg",
+      "bytes": 169784,
+      "sha256": "aaa924fab17cc87c71d1181fd238b20593ab0842225ab5025d4b49fb1e5b5062"
+    },
+    {
+      "path": "deployed/public_html/assets/hero-sitrak-c7h.jpg",
+      "bytes": 203178,
+      "sha256": "62963377d581caa72df5773859475911b465f2fee9c927e96d24da6608c2f836"
+    },
+    {
+      "path": "deployed/public_html/assets/howo-7-tipper-wide.png",
+      "bytes": 143078,
+      "sha256": "27b2b8ec5a6e742bd97f73d3ba0015743226d36c26dea9642d85da2ace3b6c9f"
+    },
+    {
+      "path": "deployed/public_html/assets/howo-7-tipper.png",
+      "bytes": 84615,
+      "sha256": "9b3e38c1b323aad7909a3065b5196fefd7695291dcf6f702d0bf040801593499"
+    },
+    {
+      "path": "deployed/public_html/assets/howo-max-footer-1280.webp",
+      "bytes": 50924,
+      "sha256": "3ed88d4bce1d79e708b1fb8c1b13b94cb1a8eb7120dd403e02d34358f2f62279"
+    },
+    {
+      "path": "deployed/public_html/assets/howo-max-footer-720.webp",
+      "bytes": 22700,
+      "sha256": "c796903fb01d127923ab6863ce774e29e5115fcab379c7437f6d0bf0cee29fef"
+    },
+    {
+      "path": "deployed/public_html/assets/howo-max-front.png",
+      "bytes": 3827244,
+      "sha256": "077daa68cb3c1c7d316b10dec4f3a2c043c75237f5a481bb18bdd3392c3eef3f"
+    },
+    {
+      "path": "deployed/public_html/assets/howo-max-rear.png",
+      "bytes": 2010070,
+      "sha256": "2090cbf4edb0dd1dd5c7824bbe745e859ec8fb63c94284544b093609a3bd633f"
+    },
+    {
+      "path": "deployed/public_html/assets/howo-max-road-crop.jpg",
+      "bytes": 175985,
+      "sha256": "4d3b789e98c57a741f336b450115469a25005885ed4c6c58e444250ed760db06"
+    },
+    {
+      "path": "deployed/public_html/assets/howo-max-side.png",
+      "bytes": 2213231,
+      "sha256": "929816c1e9b043e7199c2f1214934d257edfd3ccf93e37b80e5a4a7e5bff6a3a"
+    },
+    {
+      "path": "deployed/public_html/assets/logo-chrome-navy.png",
+      "bytes": 315279,
+      "sha256": "d9338c03e6a5b55dd5d6f2cc8215c22ecd27847b151f6bf29c1be74685b5131f"
+    },
+    {
+      "path": "deployed/public_html/assets/logo-trukafrik-mark.png",
+      "bytes": 203993,
+      "sha256": "416e1ad23e0a852e66824ce8fe9980ba0224b54fb70b6401765e0ce61c8acc15"
+    },
+    {
+      "path": "deployed/public_html/assets/sitrak-c7h-tractor.png",
+      "bytes": 70852,
+      "sha256": "5646b495af0bbe81eefadd3160b62866871d12ba6bbc266172e058cf5f95bae8"
+    },
+    {
+      "path": "deployed/public_html/assets/sitrak-c9h-tractor.png",
+      "bytes": 871000,
+      "sha256": "155cce41c7efae6c723d38f063d908733aba68ef5e5fd8bac40eeb301ebdc937"
+    },
+    {
+      "path": "deployed/public_html/basis/basis_transcoder.js",
+      "bytes": 57529,
+      "sha256": "8478b5b6d6b74e7d3082b89f6417321d8d1dc0307f2b30d4484bb11b441696a1"
+    },
+    {
+      "path": "deployed/public_html/basis/basis_transcoder.wasm",
+      "bytes": 527333,
+      "sha256": "6cf17dc889352c42e9acf8897107978d127005fe3386c36a0e3845e27967630a"
+    },
+    {
+      "path": "deployed/public_html/fonts/brand-0.ttf",
+      "bytes": 81740,
+      "sha256": "639ac4d54919fd167b6ab52cb5daec616b5c7f60ae0a1cbad4e81936d13d3b24"
+    },
+    {
+      "path": "deployed/public_html/fonts/brand-1.ttf",
+      "bytes": 82624,
+      "sha256": "a35caa4687f434d66453c1fe423d7074cfa9fd7ab80c19b0780f3862887d2fc9"
+    },
+    {
+      "path": "deployed/public_html/fonts/brand-2.ttf",
+      "bytes": 81924,
+      "sha256": "91c841fdfa8e7b94ffedbb983a363947ba6ed720f3bbf0c71d48b618053655bc"
+    },
+    {
+      "path": "deployed/public_html/fonts/brand-3.ttf",
+      "bytes": 85876,
+      "sha256": "c15439e7a03af5714282ec1780ff7b0214ec6a7db96300b54928dbcd2569ca0c"
+    },
+    {
+      "path": "deployed/public_html/fonts/brand-4.ttf",
+      "bytes": 85776,
+      "sha256": "74103fd6d41bc32c63aa2e6eb3db619ddb80ce9ca1b1420d5548a23b8ee5d154"
+    },
+    {
+      "path": "deployed/public_html/fonts/brand-5.ttf",
+      "bytes": 86636,
+      "sha256": "0d85af813fc3ed87db0c6265515689b2eef5cbaf7aab17922528dfc95a2cd73f"
+    },
+    {
+      "path": "deployed/public_html/fonts/brand-6.ttf",
+      "bytes": 87120,
+      "sha256": "7dde307fa887fc65ff5830cfada77a7decc5dae8d3c816c9d39ba3f1af1c4ed7"
+    },
+    {
+      "path": "deployed/public_html/fonts/brand-7.ttf",
+      "bytes": 87556,
+      "sha256": "73bc9e17231e9073780d3c81574c7253cecd5645c93544df1a935054b39a364f"
+    },
+    {
+      "path": "deployed/public_html/fonts/brand-8.ttf",
+      "bytes": 88228,
+      "sha256": "0ec6b3cca2df54f108f8dc239597e0eab386343a230afad8a0f445c7d21c3e77"
+    },
+    {
+      "path": "deployed/public_html/fonts/brand-9.ttf",
+      "bytes": 41912,
+      "sha256": "5f6b57538a1a35469a038dc3073003cebc4c101ad7b3c219e9555a3b3c0a81d2"
+    },
+    {
+      "path": "deployed/public_html/intro/sitrak-truk-afrik-white.png",
+      "bytes": 50574,
+      "sha256": "bf81474a7385a1736140035afc31313795c71af87f8deaeb4f4d90f02615c61d"
+    },
+    {
+      "path": "deployed/public_html/intro/sitrak-truk-afrik.png",
+      "bytes": 919574,
+      "sha256": "c8d707fc175f4fb200b3a96b78aa120103a785f7697547a40dad0295568d6127"
+    },
+    {
+      "path": "deployed/public_html/intro/supplied-logo-original.png",
+      "bytes": 1126621,
+      "sha256": "f4514b931a36bb1d6644ffe1e553166c97daf404d0e09e1467786850faa85092"
+    },
+    {
+      "path": "deployed/public_html/models/c7h.glb",
+      "bytes": 50810436,
+      "sha256": "36b75fcf17db57d3af9f638da68295e6450ca9d660de2c8839062abc41b68641"
+    },
+    {
+      "path": "deployed/public_html/models/engine-reference.glb",
+      "bytes": 50194396,
+      "sha256": "824361bf0cd4050b7404394766c8567ceebdf7c8f11c3e6f1cb84c5d985614f9"
+    },
+    {
+      "path": "deployed/public_html/models/g7h-desktop.glb",
+      "bytes": 4971740,
+      "sha256": "d935548072d1eac3802bddc8ae013011c1577ebd2a3c9fc129d5ab65aa250ee2"
+    },
+    {
+      "path": "deployed/public_html/models/g7h-mobile.glb",
+      "bytes": 2653912,
+      "sha256": "0ba73de6259e97e126c8a9ac2212e596663498bb332fe2072a34cb5533878ed7"
+    },
+    {
+      "path": "deployed/public_html/models/g7h.glb",
+      "bytes": 1564996,
+      "sha256": "818bc4e3e771cc86146dba6c323f6e4c85557b227d8eb2bc6b5baabd2690f30f"
+    },
+    {
+      "path": "deployed/public_html/models/g7h.html",
+      "bytes": 26683,
+      "sha256": "b06d578296e4bc1461dc673f4a633a837952b43d45d37f70861df61141fa5c48"
+    },
+    {
+      "path": "deployed/public_html/models/g7h.txt",
+      "bytes": 13194,
+      "sha256": "86b729f942b037cec3d8a27e2605ac6293eeee6280f23ef4d0e3d194c744007d"
+    },
+    {
+      "path": "deployed/public_html/models/g7s-desktop.glb",
+      "bytes": 5127516,
+      "sha256": "fe5376dc6ebf4da2c7e90b0d886e139a7ff6d7f05186c594e793e08664c1cfbb"
+    },
+    {
+      "path": "deployed/public_html/models/g7s-mobile.glb",
+      "bytes": 2793568,
+      "sha256": "9615b84a9d60dc3b138b76f1a7423e603efb0af50a9700b2f9ac20e6fa142d9e"
+    },
+    {
+      "path": "deployed/public_html/models/g7s.glb",
+      "bytes": 1669240,
+      "sha256": "b495733cddd31cb26b46632145e8a8631522f3def503bd0eea6cecb8776fd86d"
+    },
+    {
+      "path": "deployed/public_html/models/g7s.html",
+      "bytes": 26687,
+      "sha256": "2c0bb38e32f70a5d2a9ff5dfdb4a8784edb00687a0273166f8c842933c2aab80"
+    },
+    {
+      "path": "deployed/public_html/models/g7s.txt",
+      "bytes": 13194,
+      "sha256": "9980792f37d557d4daab9387870315de3c5bee8e1f3b62feab76efa80b065d80"
+    },
+    {
+      "path": "deployed/public_html/models/howo-64330-tipper.html",
+      "bytes": 26392,
+      "sha256": "8d4369cfd5e999adb99015f5fe8b3acf9b931a0a32e6862b6aaba35c2daef82e"
+    },
+    {
+      "path": "deployed/public_html/models/howo-64330-tipper.txt",
+      "bytes": 13038,
+      "sha256": "4e94ce8b8e16bd8cd620c3c42c5804f147eeedbbac66fdb94a49435f8d94941b"
+    },
+    {
+      "path": "deployed/public_html/models/howo-max.html",
+      "bytes": 26816,
+      "sha256": "6cee97e42c0060ac25edf4b82c7572b7eb5b0465ea6607cc8b96e1847303a8ee"
+    },
+    {
+      "path": "deployed/public_html/models/howo-max.txt",
+      "bytes": 13212,
+      "sha256": "330550a1afc832f0d3c106f7a7373ec0fa2f626b40f56ce2b583aaa0ebcf0c00"
+    },
+    {
+      "path": "deployed/public_html/models/howo-mixer-desktop.glb",
+      "bytes": 5184664,
+      "sha256": "a26be27014245eae530ba1e37630808b4e65aced8576f50c6124e81078b20ac7"
+    },
+    {
+      "path": "deployed/public_html/models/howo-mixer-mobile.glb",
+      "bytes": 2824028,
+      "sha256": "b7bc4c7aea081a76cf17ae6b164bfa163727af7673e4049ca7aedcfb3040df56"
+    },
+    {
+      "path": "deployed/public_html/models/howo-tapa.html",
+      "bytes": 26844,
+      "sha256": "ee61a17a5d23efe76c686d0f2b38ddb6ae85e689acf3cb6aeaa63b361c905b52"
+    },
+    {
+      "path": "deployed/public_html/models/howo-tapa.txt",
+      "bytes": 13217,
+      "sha256": "94e967206905b80ca97b0d7f3d793bd4be4dfbcf4cfff5ee613ea81171dab250"
+    },
+    {
+      "path": "deployed/public_html/models/howo-tipper-desktop.glb",
+      "bytes": 5123348,
+      "sha256": "48b440dedea9d7cc329e9f8544029dc46f0a0cbf03da62d3733732f73ef2135f"
+    },
+    {
+      "path": "deployed/public_html/models/howo-tipper-mobile.glb",
+      "bytes": 2807720,
+      "sha256": "2254d8434f360d57605a382c74d317e8ac15f504365013743cb4e76baeaa1bc1"
+    },
+    {
+      "path": "deployed/public_html/models/howo-water-desktop.glb",
+      "bytes": 5145472,
+      "sha256": "e83fc821eff376651e4138eecccafc51fcb140a53ccce97148a63aaa0ff4595b"
+    },
+    {
+      "path": "deployed/public_html/models/howo-water-mobile.glb",
+      "bytes": 2795964,
+      "sha256": "c12e85bc6e204a4fd81ae9653c55dc9806baf90a142d2947ae681f69b37622e6"
+    },
+    {
+      "path": "deployed/public_html/og/og-default.png",
+      "bytes": 93977,
+      "sha256": "b2cda8dfb01a47901c0fda0ee80edef93c3ae4cbedf60eacf1961e302a62f2d1"
+    },
+    {
+      "path": "deployed/public_html/tokens/base.css",
+      "bytes": 1121,
+      "sha256": "7441f490923785606994f906842adb5b4d0041c2fe51569a7a1935025be1c658"
+    },
+    {
+      "path": "deployed/public_html/tokens/colors.css",
+      "bytes": 3104,
+      "sha256": "44ac2f38de09c91fcc21a55dcf81f45cda3727a720168c38587e44b99f7b6a27"
+    },
+    {
+      "path": "deployed/public_html/tokens/elevation.css",
+      "bytes": 482,
+      "sha256": "71ae394c40ded7751e64a46b51129b5b2f0ae6d64743d10fcff436a6c111c138"
+    },
+    {
+      "path": "deployed/public_html/tokens/fonts.css",
+      "bytes": 381,
+      "sha256": "b2165a3db49b898b431cec238e22e61b85433e8b150f53b8a0a4507d0af4673b"
+    },
+    {
+      "path": "deployed/public_html/tokens/motion.css",
+      "bytes": 573,
+      "sha256": "530428304bad0fc4c5f6e41ed7552774c9dff9b37c89c03dc2e5a6f807d54d5e"
+    },
+    {
+      "path": "deployed/public_html/tokens/spacing.css",
+      "bytes": 702,
+      "sha256": "41523a3d96f91b41bd33e20638efa028f585ec2d69e54f5ac40cee64a5575557"
+    },
+    {
+      "path": "deployed/public_html/tokens/typography.css",
+      "bytes": 2016,
+      "sha256": "142ab361b70b09d62272876d8ecb8e34ac6fde6a6ceaa482eb5aae4cac1ac06a"
+    },
+    {
+      "path": "deployed/public_html/uploads/5\u6c55\u5fb7\u5361.jpg",
+      "bytes": 1909857,
+      "sha256": "84ff8916ff292210eef42ff475b1d2272aed8a06ae960d0df8a1f24ebdaafb34"
+    },
+    {
+      "path": "deployed/public_html/uploads/BCO.b02f793f-3dc9-440b-b193-7fbaa7ffa4f1-7373019a.png",
+      "bytes": 2184918,
+      "sha256": "7373019aab0da94591a579f2105e1c256c782993f63d1cf91d5425fa3e3cf78c"
+    },
+    {
+      "path": "deployed/public_html/uploads/BCO.b02f793f-3dc9-440b-b193-7fbaa7ffa4f1.png",
+      "bytes": 2184918,
+      "sha256": "7373019aab0da94591a579f2105e1c256c782993f63d1cf91d5425fa3e3cf78c"
+    },
+    {
+      "path": "deployed/public_html/uploads/br.pdf",
+      "bytes": 2057782,
+      "sha256": "db0622b7a88679ad5554ca3ac0c6af6dfb65e3ee63064e450d0ff2c3cdbf86be"
+    },
+    {
+      "path": "deployed/public_html/uploads/brochure-contact-sheet.png",
+      "bytes": 3117078,
+      "sha256": "831eaf32a8dd2a1bb69d4dd0369c570745f238a231228dd20de41887d37a9b37"
+    },
+    {
+      "path": "deployed/public_html/uploads/C9H-64\u7275\u5f15\u8f66.png",
+      "bytes": 4259530,
+      "sha256": "e02a3c743dee0e37b67d2ba4e47f257167b75d5711a42f818499f3dac0dc7c27"
+    },
+    {
+      "path": "deployed/public_html/uploads/c9h-cutout.png",
+      "bytes": 4259530,
+      "sha256": "e02a3c743dee0e37b67d2ba4e47f257167b75d5711a42f818499f3dac0dc7c27"
+    },
+    {
+      "path": "deployed/public_html/uploads/HOWO MAX \u7275\u5f15\u8f66 6\u00d74 (2).jpg",
+      "bytes": 5829799,
+      "sha256": "e46efdf74db6ee3b9c44d63c0389711b2ad67f9f7b5e630cc605c8d6ae49d373"
+    },
+    {
+      "path": "deployed/public_html/uploads/HOWO MAX \u7275\u5f15\u8f66 6\u00d74 \u84dd.jpg",
+      "bytes": 6743282,
+      "sha256": "886b7a28e69db1c4a65917548d28424abde3e769913c431bdc073bf8ae84caaf"
+    },
+    {
+      "path": "deployed/public_html/uploads/howo-max-blue.jpg",
+      "bytes": 6743282,
+      "sha256": "886b7a28e69db1c4a65917548d28424abde3e769913c431bdc073bf8ae84caaf"
+    },
+    {
+      "path": "deployed/public_html/uploads/howo-max-road.jpg",
+      "bytes": 5829799,
+      "sha256": "e46efdf74db6ee3b9c44d63c0389711b2ad67f9f7b5e630cc605c8d6ae49d373"
+    },
+    {
+      "path": "deployed/public_html/uploads/logo-standalone-src.png",
+      "bytes": 255116,
+      "sha256": "e58304438b0d41bc9c196bff913d1305bcd5851ef8692b543f5afcea9577946b"
+    },
+    {
+      "path": "deployed/public_html/uploads/Sitrak Main Brochure.pdf",
+      "bytes": 6425384,
+      "sha256": "e49cde1ba14630c8d9349967eb6591ff507bd22d52f2e9a1d8425774d3d017d8"
+    },
+    {
+      "path": "deployed/public_html/uploads/sitrak-studio.jpg",
+      "bytes": 1909857,
+      "sha256": "84ff8916ff292210eef42ff475b1d2272aed8a06ae960d0df8a1f24ebdaafb34"
+    },
+    {
+      "path": "deployed/public_html/uploads/TrukAfrik_Brand_Guidelines_v1.0.pdf",
+      "bytes": 591321,
+      "sha256": "2f1040b715ed1c81446fad620ce7976c640d16028c0711ca69442cfe1b735d63"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/0-i19kefm9ogd.js",
+      "bytes": 1442,
+      "sha256": "a6372ca7cc64bd8f414e16c5ffa7af4e46358298338e7eedda312d08bcf68618"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/00te4moh563zu.js",
+      "bytes": 18907,
+      "sha256": "8e10bf5cb5eaea918e11f4076ff6de1fb0cdd0eca1ddd0b4d524a0e0b2527dcc"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/02n8udidv7j4l-disclaimers-a48a6754bf-hero-metallic-final-797f7bb5ff.js",
+      "bytes": 34215,
+      "sha256": "797f7bb5ff1c61067a9c58fa2d6c4e92c9bb039333f26cccd0f4ed88f58177e5"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/02n8udidv7j4l-disclaimers-a48a6754bf-hero-metallic-final-fbcbfc3069.js",
+      "bytes": 34348,
+      "sha256": "fbcbfc3069e03d63751648cb892d3f14c4e7900103122965527597962d4b85f0"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/02n8udidv7j4l-disclaimers-a48a6754bf.js",
+      "bytes": 34090,
+      "sha256": "10791682484c25d625c32addb973be20ce13ccb510c744060408ebc7c5b5c36f"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/084p9l-7lhn99-disclaimers-408470d212-labels-676c6d7fd0-spec-gaps-b5ef873a00-hero-metallic-final-611a4880a2.js",
+      "bytes": 25595,
+      "sha256": "611a4880a26754fd8faea3605560f82eb118fc77c2e530dfc50cbcc82c6a9faf"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/084p9l-7lhn99-disclaimers-408470d212-labels-676c6d7fd0-spec-gaps-b5ef873a00-hero-metallic-final-7684c6ed42.js",
+      "bytes": 25498,
+      "sha256": "7684c6ed4255564505b4564c9b56b2a91856cebcb7a188fc96248bbab76398bf"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/084p9l-7lhn99-disclaimers-408470d212-labels-676c6d7fd0-spec-gaps-b5ef873a00.js",
+      "bytes": 25706,
+      "sha256": "b5ef873a00787ab06a01307b2ffe25cb883c9e3db893732fae9ff24a74c6c3b6"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/084p9l-7lhn99-disclaimers-408470d212-spec-labels-final-00ddbc75cd-spec-gaps-b5ef873a00-hero-metallic-final-611a4880a2.js",
+      "bytes": 25595,
+      "sha256": "611a4880a26754fd8faea3605560f82eb118fc77c2e530dfc50cbcc82c6a9faf"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/084p9l-7lhn99-disclaimers-408470d212-spec-labels-final-00ddbc75cd-spec-gaps-b5ef873a00-hero-metallic-final-7684c6ed42.js",
+      "bytes": 25498,
+      "sha256": "7684c6ed4255564505b4564c9b56b2a91856cebcb7a188fc96248bbab76398bf"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/084p9l-7lhn99-disclaimers-408470d212-spec-labels-final-00ddbc75cd-spec-gaps-b5ef873a00.js",
+      "bytes": 25706,
+      "sha256": "b5ef873a00787ab06a01307b2ffe25cb883c9e3db893732fae9ff24a74c6c3b6"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/09-bgepyikpej.js",
+      "bytes": 81094,
+      "sha256": "417d614a6bbd3397d60da2bf5ac8a8ae23008d66eb4906a98c4db7ec491b432f"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/0cz1d0mv5g_q7.js",
+      "bytes": 112594,
+      "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/0uqq5n7qk4px6.css",
+      "bytes": 2378,
+      "sha256": "c176def77fd82b7ac99ac33519a2ce297b36bb241b8d998baa2922125044f8f5"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/0zzhk1_ifvz2b.js",
+      "bytes": 321551,
+      "sha256": "5aee087961f6f67aa8c47ac0a8751bcb99979f91090b6ae4ee57abf176ad3851"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/11_9xj9vrccac.css",
+      "bytes": 1184,
+      "sha256": "010a7a9a39767a3880e8aa90ddb3d27d728dc480bc37996206b95eb228584161"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/14zyz0rev-1py.css",
+      "bytes": 2022,
+      "sha256": "6e495eeb35a5d79540c3af944aefc479acb67511db5cae64f7c2b9aa2427b71b"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/19wg2q9r2_sev.js",
+      "bytes": 21767,
+      "sha256": "303ede97611efb988007954b1a9d59044dec4e6f40ebd88a5dbf080a8bc7feba"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/1g5f1jywxc6no.css",
+      "bytes": 603,
+      "sha256": "68669acee1a0f5c7c245150be1cf862e9be8c15239b57799af05d3f917ecebfe"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/1j71-lr846dcd.js",
+      "bytes": 181018,
+      "sha256": "82c9eca7b618a14931ff3ce3ab9a5b11b7d3a4276535b8d8c60a17c3fe3e6e49"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/1mk_ivgm46une.css",
+      "bytes": 7290,
+      "sha256": "72c22f896d4dac733c43cf1073217d54f7863833612c8be9126ef005c0c4cba6"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/1prgihf0g4qfw-disclaimers-456170ddea-spec-gaps-3de1c661aa.js",
+      "bytes": 48351,
+      "sha256": "3de1c661aaaa49dff2a81e8494a3a0528383648bc048d5d594c684cfe74ea55b"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/1x3wob0edoha1.css",
+      "bytes": 581,
+      "sha256": "9bcdf27b0ed3706d6ad9afb176aa0ac1b6093649976004a9ec972c680152ea1f"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/1xht4liysk0oi.css",
+      "bytes": 914,
+      "sha256": "bfe7a7ac33a46775a3c3a3b0460df7d535360a465d9497e4775ed7183860dac7"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/23766vmp_5rf1.js",
+      "bytes": 214,
+      "sha256": "9e26651f96edeb7466ba440550aeea85362a2a25f9da272885f0e38b77e13d45"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/2786nu-ekh_74.js",
+      "bytes": 6697,
+      "sha256": "ea3ee7cf2a3bbdb57441cc77033e5d587256d8bd59fa93b0c6608b11bb355c1f"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/2ggbnoayyopxo.css",
+      "bytes": 15901,
+      "sha256": "4040f7fa92ab84e95a9d958b424b1f22de7c98e5c4e2f385cd24a5e39b7742be"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/2je2d3os2qupz.js",
+      "bytes": 6940,
+      "sha256": "b1d155d755ec2b0f5fe60bfc4417d649c3e03f2c3660203ebdc1b0ef8bb1a7c7"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/2khxl0v1q4i6n.js",
+      "bytes": 229820,
+      "sha256": "885fd68a19ca1dc00018cae690b07cd463371a463f04f8b34b5590a3fec18a33"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/2qro_iz6xry65.js",
+      "bytes": 369608,
+      "sha256": "491974a840d129c8526e7db2726c58e88563fe0f88da51720501de8f9c5f0b5c"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/2wqnx9cbt05ha-disclaimers-9596f48681-labels-75d167e371-spec-gaps-d5438235b0-hero-metallic-final-3f70f35511.js",
+      "bytes": 27863,
+      "sha256": "3f70f3551165912d7e7ce1589a68509e131acaa24052a2a17d3befa177dd350d"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/2wqnx9cbt05ha-disclaimers-9596f48681-labels-75d167e371-spec-gaps-d5438235b0-hero-metallic-final-5171b84ca3.js",
+      "bytes": 27960,
+      "sha256": "5171b84ca33b9de064e15771a54f217f2d90f986f720842f66fca59f3d77a530"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/2wqnx9cbt05ha-disclaimers-9596f48681-labels-75d167e371-spec-gaps-d5438235b0-hero-metallic-final-f3040e7d85.js",
+      "bytes": 27815,
+      "sha256": "f3040e7d85bb6ee41aa25df0bad144bd34d58b200c00f34108323ea3f20426e8"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/2wqnx9cbt05ha-disclaimers-9596f48681-labels-75d167e371-spec-gaps-d5438235b0.js",
+      "bytes": 28071,
+      "sha256": "d5438235b0996c0bb6cbbb040a4168779adf67497a1e220226836da8ef8d0da0"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/2xax_132fin0d.js",
+      "bytes": 8152,
+      "sha256": "1079af18eee56fe263e1740c5c587fc5bb2cff0d949521db379952d2e3044e92"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/2zs881qnc9sm2.css",
+      "bytes": 8297,
+      "sha256": "24c8fe0a0114e38ffce6c5817629bd5488f5dbb968c1fe405e8f1a38e62159b3"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/302tjxh4b7-q-.js",
+      "bytes": 2103,
+      "sha256": "757318f861e350dd031fb6c98e6edc5a02d0686bd0a221944d01dc14e6cd851c"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/31wwdxjw5yrwb.css",
+      "bytes": 4596,
+      "sha256": "58e3c5260bde91206e8d0926525c28513ca7e3764a18757a83ce481eed373e37"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/3283np91pp-qr-disclaimers-efacf83230-labels-ad2f9e1d0e-spec-gaps-096b415910-hero-metallic-final-a50acedc85.js",
+      "bytes": 14565,
+      "sha256": "936e96b77715de4c81fe91ae28e4f6efc327547d771c4b61d0d2df4b03ca61ab"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/3283np91pp-qr-disclaimers-efacf83230-labels-ad2f9e1d0e-spec-gaps-096b415910.js",
+      "bytes": 14534,
+      "sha256": "a50acedc8576b61fdd47ba1b66148874210f51f25743994fb07c6f926771e0fc"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/3283np91pp-qr-disclaimers-efacf83230-spec-labels-final-8fb2a626cf-spec-gaps-6f2833d989-hero-metallic-final-2d758342b2.js",
+      "bytes": 14576,
+      "sha256": "6dcbbec8348d65df1ef79e8f73e94b471a93db008f49277d775d0919dd215eba"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/3283np91pp-qr-disclaimers-efacf83230-spec-labels-final-8fb2a626cf-spec-gaps-6f2833d989.js",
+      "bytes": 14545,
+      "sha256": "2d758342b2abfd9a3bc7505968e876be61e0e36f3911ae598909ca663ecc8ff4"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/35xj7qs6kxjpp.js",
+      "bytes": 518060,
+      "sha256": "2160854dade3b747b29fba100290a97fe2308e1f320849cf87ab2e7f29897234"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/39252_3mbtmll.js",
+      "bytes": 4878,
+      "sha256": "d937dda561a68effd1008ca95627c2e63fa36ed4da33d21f0900409deef30808"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/3fy8pias5wmzj-compare-f232d145e6-eventsnav-cb905e25ab-spec-labels-final-05dc88a586-spec-gaps-730d48369b-comparison-wording-fc8aed8fb0-hero-metallic-final-628bccdf4d.js",
+      "bytes": 43055,
+      "sha256": "628bccdf4d386db556cfd90d0895e670fb67864bf3c3e12425f4c17c49f3a669"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/3fy8pias5wmzj-compare-f232d145e6-eventsnav-cb905e25ab-spec-labels-final-05dc88a586-spec-gaps-730d48369b-comparison-wording-fc8aed8fb0.js",
+      "bytes": 41533,
+      "sha256": "fc8aed8fb0efbdfa2f50e899df744d804e547dd222b3d56240458d02856d5b9a"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/3m_tiq0y31t7t.css",
+      "bytes": 470,
+      "sha256": "ea55e1a258088621053edb3cc808de6f53f16dc70d532a7f4100bac18c360a41"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/3n3noy6a2xr6c.js",
+      "bytes": 791,
+      "sha256": "f2f48540d943ef8a0fbd321ab48c5b1de1f7b7191190905b3f5286e47d8c4163"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/3oibhy_knen6p.css",
+      "bytes": 64249,
+      "sha256": "2b88cd24be4208fbd234a4982af6632435d1463a91c5f7ef5ad7525fbbb28dfc"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/3qderbt5909yp.css",
+      "bytes": 2567,
+      "sha256": "93b822b80f9fa3ce342f57fbfa2f64abd87f066333541dd390eee969a509a400"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/3re7ecddywhc-.css",
+      "bytes": 12487,
+      "sha256": "2739626449e4b3c4e1fafce5d8e59538c42d11e30dd6acb3a6d00fcdc729c998"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/3vk4mdo5ki_wo.js",
+      "bytes": 214,
+      "sha256": "2e4989a0723e9df6d0e667dc5a5a6bc3c807d0a9cd124080bd111f2d6fa7b8c0"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/3xewj1sf9c61i.js",
+      "bytes": 42855,
+      "sha256": "5a75cd9a3495bfed3e9e4ed7e04cae9c4b86f6f2bbf2f70577e494460b735601"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/3xpy511jn_qay.css",
+      "bytes": 1310,
+      "sha256": "ef17ce62b189388144a1e157e845fb464a2cf5dae4d366afa74ada55bbcbddc5"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/3y9hbgukbixc7.js",
+      "bytes": 4148,
+      "sha256": "c4f3c12a9a856992238074a8f64546a2df55fd243a59b2846f60a938151ae357"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/401w-9b38zke8.js",
+      "bytes": 32732,
+      "sha256": "4d31410e89e72b94864faae150e5a2819ca384879e4e08f09e56b7b77ee1ad6c"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/44_yvyh_0zsn7.js",
+      "bytes": 22192,
+      "sha256": "6d526a1e715ed927d107313ea676ff64c199faddc3da264f929cf38dbad9001c"
+    },
+    {
+      "path": "deployed/public_html/_next/static/chunks/turbopack-3-ry682tkyiqk.js",
+      "bytes": 10030,
+      "sha256": "8bbb58cbfd4633c1d828c6bc37bc32abc768a149c01b1dfc4f5131fd81274551"
+    },
+    {
+      "path": "deployed/public_html/uploads/photos/big1.jpeg",
+      "bytes": 145236,
+      "sha256": "a0d2501a94461d76335f0c463bc511cc2e2c221f535aa6a8b41e92a1426fa4ec"
+    },
+    {
+      "path": "deployed/public_html/uploads/photos/big2.jpeg",
+      "bytes": 165848,
+      "sha256": "c574bb78325c4433885083039d37fb5854b29c4bd9bb92da270524a689744837"
+    },
+    {
+      "path": "deployed/public_html/uploads/photos/big3.jpeg",
+      "bytes": 309278,
+      "sha256": "af57a1bd7e2c3c0c3d49a3db815e6caf25ba72c6615736e16021bd8922850e1a"
+    },
+    {
+      "path": "deployed/public_html/uploads/photos/big4.jpeg",
+      "bytes": 103579,
+      "sha256": "663ea92637153700e901118201528ec786a2cc70ee9b6ff503e0cbd64640a31c"
+    },
+    {
+      "path": "deployed/public_html/assets/events/SITRAK_Event_Recap_poster.jpg",
+      "bytes": 99734,
+      "sha256": "c2416767d4e50d1278ab56301ce15375dcd13b824f0e0423c796b6df663cd430"
+    },
+    {
+      "path": "deployed/public_html/assets/events/SITRAK_Event_Recap_web.mp4",
+      "bytes": 19345364,
+      "sha256": "770eb6679affd011b0d074a1768e8b657ff099200fdfb0aa97d7407dbab58a08"
+    },
+    {
+      "path": "deployed/public_html/assets/gallery/c7h-cab.jpg",
+      "bytes": 89014,
+      "sha256": "3401b1bf3ec70b1e50fff66cfb7414777de35bd29ea7498f737c432df2557495"
+    },
+    {
+      "path": "deployed/public_html/assets/gallery/howo-max-blue.jpg",
+      "bytes": 352286,
+      "sha256": "f622a36883f0c42c479fa0be1142a45726d61df9cc29b227423a106aa6757b40"
+    },
+    {
+      "path": "deployed/public_html/assets/gallery/howo7-cab.jpg",
+      "bytes": 53910,
+      "sha256": "eb73077aefa112806f1e8aa783d396416b503a77e297c5428f6f11db30dff1dd"
+    },
+    {
+      "path": "deployed/public_html/assets/logos/sitrak-trukafrik-banner-blue.png",
+      "bytes": 135839,
+      "sha256": "2eb8df43c6e54d8daf4fdcdb7a7823dbfd5a5ee2879167518a26668d092e7ca9"
+    },
+    {
+      "path": "deployed/public_html/assets/logos/sitrak-trukafrik-chrome-navy.png",
+      "bytes": 315279,
+      "sha256": "d9338c03e6a5b55dd5d6f2cc8215c22ecd27847b151f6bf29c1be74685b5131f"
+    },
+    {
+      "path": "deployed/public_html/assets/logos/sitrak-trukafrik-chrome-steel.png",
+      "bytes": 515574,
+      "sha256": "4496b033fd85baa7279ffcf83f6e6e73567f9d10f5c8685648a47b013338e5fa"
+    },
+    {
+      "path": "deployed/public_html/assets/logos/sitrak-trukafrik-primary-light.png",
+      "bytes": 1230065,
+      "sha256": "63009a2d11d4cc95ac1f0af31af1c145863a323f2183dc3c5dc23fef9791807c"
+    },
+    {
+      "path": "deployed/public_html/assets/logos/trukafrik-standalone-chrome-dark.png",
+      "bytes": 255116,
+      "sha256": "e58304438b0d41bc9c196bff913d1305bcd5851ef8692b543f5afcea9577946b"
+    },
+    {
+      "path": "deployed/public_html/assets/panoramas/howo-max-cabin-360.jpg",
+      "bytes": 266627,
+      "sha256": "1266b9f9f369020dd22c29ec4f3b16d79cac2a00f03284d2233569aab0f906fd"
+    },
+    {
+      "path": "deployed/public_html/assets/panoramas/sitrak-c7h-interior-panorama.jpg",
+      "bytes": 274778,
+      "sha256": "322b0d1773c4711ffaeaab88fda713c6c7d8acb04ebd55325b18ed8d9e4ef982"
+    },
+    {
+      "path": "deployed/public_html/assets/references/c7h-cockpit.webp",
+      "bytes": 441062,
+      "sha256": "5538af2c5b7693b9c25d78bab036a7a815b02ac134b90a0eed5810cf81d2fcaf"
+    },
+    {
+      "path": "deployed/public_html/assets/references/c7h-mc13-reference.webp",
+      "bytes": 80328,
+      "sha256": "c6bcda3354a4696fbd5d2c4d3e5f754c87855a55f5faa82941ce3e8d5722fa65"
+    },
+    {
+      "path": "deployed/public_html/assets/references/howo-max-cockpit.webp",
+      "bytes": 222368,
+      "sha256": "5e271f5618a15b0a71f2079ade81ac4f6811ea4368e70f72c44e077dc437d788"
+    },
+    {
+      "path": "deployed/public_html/assets/references/howo-max-engine.webp",
+      "bytes": 81444,
+      "sha256": "4e033bae364b9970ad3400a7de2e8e94b2e690d1c068205fb5418d68e379adaa"
+    },
+    {
+      "path": "deployed/public_html/assets/trucks/howo-64300-water.webp",
+      "bytes": 167606,
+      "sha256": "11db09cba72a7b978d737de3493c0f79534d514b5666957620bc20bc264dc62b"
+    },
+    {
+      "path": "deployed/public_html/assets/trucks/howo-64330-tipper.webp",
+      "bytes": 320682,
+      "sha256": "676dfd0f4bece1ff5bb38d57e739234ccbf192ebe51e4052a0374f5dbd1dd4f6"
+    },
+    {
+      "path": "deployed/public_html/assets/trucks/howo-64330-water.webp",
+      "bytes": 151902,
+      "sha256": "5bcc2d0e27499d004e5bdb88e50d0ce26a4184f8409331a1508c16cdf77e4739"
+    },
+    {
+      "path": "deployed/public_html/assets/trucks/howo-64336-tipper.webp",
+      "bytes": 208560,
+      "sha256": "5836331b6e63d106d94aabf7209b8156947197fe0655bc92e2662d817a71fb18"
+    },
+    {
+      "path": "deployed/public_html/assets/trucks/howo-84340-mixer.webp",
+      "bytes": 154046,
+      "sha256": "ac7fa1d23493e5810d05e8ebb4ff39ed88f7b2e7663f649463f61dca9fb8cf79"
+    },
+    {
+      "path": "deployed/public_html/assets/trucks/howo-84350-tipper.webp",
+      "bytes": 95290,
+      "sha256": "bda4f207dc208dc00e5600538940eaa8fa3d8c86c81802c24e4ad5a1b2d14392"
+    },
+    {
+      "path": "deployed/public_html/assets/trucks/howo-84371-tipper.webp",
+      "bytes": 107444,
+      "sha256": "6cc2cdaf1b7df6464120d46ab71be7c72ebaf84661027af52e71e75d8a3e08b6"
+    },
+    {
+      "path": "deployed/public_html/assets/trucks/howo-max.webp",
+      "bytes": 119772,
+      "sha256": "23d5a570b8853b0ae85f237b66418a1fbde2375742d31fc7e38dcc343e28df13"
+    },
+    {
+      "path": "deployed/public_html/assets/trucks/sitrak-g7h.webp",
+      "bytes": 105244,
+      "sha256": "1febbecbc3cc7394b5e1c311f84fb8546238895baa407b10c75b87525bdecf91"
+    },
+    {
+      "path": "deployed/public_html/assets/trucks/sitrak-g7s.webp",
+      "bytes": 122294,
+      "sha256": "81a476ea3f265bb9452c399a5264115589ca35ebc5f61198c8b301c090ec2202"
+    },
+    {
+      "path": "deployed/public_html/assets/hero/metallic-v5/SITRAK_Hero_Continuous_desktop.mp4",
+      "bytes": 10256074,
+      "sha256": "782ca5035af6c818943a2654c1b9247a56f855767a41a050c0ac57f44b0b63ca"
+    },
+    {
+      "path": "deployed/public_html/assets/hero/metallic-v5/SITRAK_Hero_Continuous_mobile.mp4",
+      "bytes": 3055167,
+      "sha256": "1b515d5ea36064dbc05c05af95be2649f703a582ed795afe921610cd6ace812b"
+    },
+    {
+      "path": "deployed/public_html/assets/hero/metallic-v5/SITRAK_Hero_Poster_desktop.jpg",
+      "bytes": 121847,
+      "sha256": "367788ed1ba96bcb50b3a0afc29acaac165e6ae9da76f2e9a7dc4b9c8d9f9951"
+    },
+    {
+      "path": "deployed/public_html/assets/hero/metallic-v5/SITRAK_Hero_Poster_g7h_desktop.jpg",
+      "bytes": 121847,
+      "sha256": "367788ed1ba96bcb50b3a0afc29acaac165e6ae9da76f2e9a7dc4b9c8d9f9951"
+    },
+    {
+      "path": "deployed/public_html/assets/hero/metallic-v5/SITRAK_Hero_Poster_g7h_mobile.jpg",
+      "bytes": 76385,
+      "sha256": "1df168043b54d587279518b4056c4205a2e8f83d9ebaf482605d1fcdf2c5fa4b"
+    },
+    {
+      "path": "deployed/public_html/assets/hero/metallic-v5/SITRAK_Hero_Poster_g7s_desktop.jpg",
+      "bytes": 128110,
+      "sha256": "fff1dce3738742ae66485fa4fed7c2c2aa2af56450f9e1b77ce3470e0723a40d"
+    },
+    {
+      "path": "deployed/public_html/assets/hero/metallic-v5/SITRAK_Hero_Poster_g7s_mobile.jpg",
+      "bytes": 79851,
+      "sha256": "ada13a1335c449e18e1df58edd561ff0344148dadb78ed590d47cf6579a78446"
+    },
+    {
+      "path": "deployed/public_html/assets/hero/metallic-v5/SITRAK_Hero_Poster_howo-64330-tipper_desktop.jpg",
+      "bytes": 208626,
+      "sha256": "276309aa1800dd78edde3676cc2691dec81b57ca9b28feea19b7b4ea0eb07c10"
+    },
+    {
+      "path": "deployed/public_html/assets/hero/metallic-v5/SITRAK_Hero_Poster_howo-64330-tipper_mobile.jpg",
+      "bytes": 103809,
+      "sha256": "dd8caf41c2688acfd2a7f8fe59e6cc26223071e26312d6f2c874e3b0534aaab2"
+    },
+    {
+      "path": "deployed/public_html/assets/hero/metallic-v5/SITRAK_Hero_Poster_howo-max_desktop.jpg",
+      "bytes": 184878,
+      "sha256": "7e4584e1df306500636fd7859ec8bc226744c2bc613f55aeb7413083cb58c412"
+    },
+    {
+      "path": "deployed/public_html/assets/hero/metallic-v5/SITRAK_Hero_Poster_howo-max_mobile.jpg",
+      "bytes": 80154,
+      "sha256": "d0a52e3032e2e366d7fcc552514cebab841fc1b4f74e0f7534ac579ef93f75d7"
+    },
+    {
+      "path": "deployed/public_html/assets/hero/metallic-v5/SITRAK_Hero_Poster_mobile.jpg",
+      "bytes": 76385,
+      "sha256": "1df168043b54d587279518b4056c4205a2e8f83d9ebaf482605d1fcdf2c5fa4b"
+    }
+  ],
+  "file_count": 554,
+  "bytes": 524420590,
+  "known_secret_scan_passed": true,
+  "private_settings_excluded": true,
+  "source_build_reconciliation_required": true
+}

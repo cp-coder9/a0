@@ -1,0 +1,48 @@
+:root{
+  --font-display:"Barlow Condensed",'Arial Narrow',sans-serif;
+  --font-body:"Barlow",system-ui,sans-serif;
+  --font-mono:"Share Tech Mono",ui-monospace,monospace;
+
+  /* weights as used in the brand kit */
+  --weight-hero:900; /* @kind font */      /* display / hero */
+  --weight-section:700; /* @kind font */   /* section headings, taglines */
+  --weight-sub:600; /* @kind font */       /* card titles, product names */
+  --weight-body:400; /* @kind font */
+  --weight-body-light:300; /* @kind font */
+
+  /* type scale — condensed display steps */
+  --size-hero-xl:96px;
+  --size-hero:72px;
+  --size-display:56px;
+  --size-section:40px;
+  --size-subsection:28px;
+  --size-card-title:22px;
+  --size-body-lg:18px;
+  --size-body:16px;
+  --size-body-sm:14px;
+  --size-caption:12px;
+  --size-micro:11px;
+
+  --leading-hero:0.92; /* @kind font */
+  --leading-display:0.98; /* @kind font */
+  --leading-heading:1.06; /* @kind font */
+  --leading-body:1.55; /* @kind font */
+  --leading-caption:1.4; /* @kind font */
+
+  /* tracking — brand uses wide tracking on mono/label runs */
+  --track-hero:-0.01em; /* @kind font */
+  --track-heading:0; /* @kind font */
+  --track-tagline:0.06em; /* @kind font */
+  --track-label:0.18em; /* @kind font */
+  --track-mono:0.12em; /* @kind font */
+
+  /* composed roles */
+  --type-hero:var(--weight-hero) var(--size-hero)/var(--leading-hero) var(--font-display);
+  --type-section:var(--weight-section) var(--size-section)/var(--leading-heading) var(--font-display);
+  --type-sub:var(--weight-sub) var(--size-subsection)/var(--leading-heading) var(--font-display);
+  --type-card-title:var(--weight-sub) var(--size-card-title)/1.2 var(--font-display);
+  --type-body:var(--weight-body) var(--size-body)/var(--leading-body) var(--font-body);
+  --type-body-lg:var(--weight-body) var(--size-body-lg)/var(--leading-body) var(--font-body);
+  --type-caption:400 var(--size-caption)/var(--leading-caption) var(--font-mono);
+  --type-spec:400 var(--size-body-sm)/1.5 var(--font-mono);
+}

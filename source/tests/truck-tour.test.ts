@@ -1,0 +1,6 @@
+import {expect,it} from 'vitest';
+import {tourScenes,initialTour,tourReducer} from '../lib/truck-tour';
+it('preserves the last exterior while entering Interior and restores it on Return',()=>{let s=tourReducer(initialTour(),{type:'select',scene:4});s=tourReducer(s,{type:'select',scene:6});expect(s.lastExterior).toBe(4);expect(tourReducer(s,{type:'return'}).scene).toBe(4)});
+it('toggles List independently and rejects invalid persisted indices',()=>{const s=tourReducer(initialTour(),{type:'list'});expect(s.list).toBe(false);expect(tourReducer(s,{type:'select',scene:99})).toEqual(s)});
+it('labels camera presets consistently with actual left/right door coordinates',()=>{expect(tourScenes[0].position[0]).toBeLessThan(0);expect(tourScenes[2].position[0]).toBeGreaterThan(0);expect(tourScenes[3].position[0]).toBeGreaterThan(0);expect(tourScenes[5].position[0]).toBeLessThan(0)});
+it('provides seven named scenes and wraps navigation in both directions',()=>{expect(tourScenes.map(s=>s.name)).toEqual(['Front left','Front','Front right','Right','Rear','Left','Interior']);let s=initialTour();s=tourReducer(s,{type:'previous'});expect(s.scene).toBe(6);s=tourReducer(s,{type:'next'});expect(s.scene).toBe(0)});

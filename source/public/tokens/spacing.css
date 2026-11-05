@@ -1,0 +1,29 @@
+:root{
+  /* 4px base, industrial rhythm */
+  --space-0:0;
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:24px;
+  --space-6:32px;
+  --space-7:48px;
+  --space-8:64px;
+  --space-9:96px;
+  --space-10:128px;
+
+  --gutter:24px;
+  --section-pad-y:96px;
+  --section-pad-x:48px;
+  --card-pad:24px;
+  --container-max:1280px;
+  --measure:66ch; /* @kind other */
+
+  /* radii — the identity is engineered and near-square; chamfer, never pill */
+  --radius-0:0;
+  --radius-1:2px;
+  --radius-2:4px;
+  --radius-3:6px;
+  --radius-pill:999px;   /* badges/tags only */
+  --chamfer:polygon(14px 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%,0 14px); /* @kind other */
+}
