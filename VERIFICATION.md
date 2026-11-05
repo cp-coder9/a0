@@ -7,3 +7,5 @@ About, Finance, Parts and Pre-owned: rejected illustrative figures removed from 
 Events, privacy and range pages return HTTP 200. The privacy closing line is preserved. An empty JSON POST to the enquiry endpoint returns HTTP 400 with name, email and consent validation errors; no email was sent. Both enquiry PHP scripts and the private server mail configuration were hash-checked unchanged during deployment.
 
 The source build script uses PHP single-quoted serialization (only backslashes and apostrophes escaped); dummy dollar-sign round-trip and full local build passed. The local environment password still includes literal backslashes before dollar signs, unlike the live server value; generated private settings were not uploaded or committed.
+
+All range cards and their navigation payloads also have dealer-source notes, source/capture footers and copied-specification commentary removed; every specification table value was checked unchanged.

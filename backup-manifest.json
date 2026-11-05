@@ -1792,13 +1792,13 @@
     },
     {
       "path": "deployed/public_html/range.html",
-      "bytes": 200714,
-      "sha256": "6f2cbd9b0a7a51f3835a4a6c091e598c727200a1aaad0a6c5a52243b667ff5a4"
+      "bytes": 174382,
+      "sha256": "b335e618f9315eaef147f490749ad325e68ca315a8e84c359d52a5e21fec03ea"
     },
     {
       "path": "deployed/public_html/range.txt",
-      "bytes": 115260,
-      "sha256": "d417a7728c4098c1777f34de74b4fc28a2e01bd1cd1363ce990a473097763117"
+      "bytes": 100397,
+      "sha256": "67572689dd0cd19b956aa3b1d277c1ac6b449a1ab1742cb951847be45edea1e6"
     },
     {
       "path": "deployed/public_html/robots.txt",
@@ -2712,7 +2712,7 @@
     }
   ],
   "file_count": 542,
-  "bytes": 524107734,
+  "bytes": 524066539,
   "known_secret_scan_passed": true,
   "private_settings_excluded": true,
   "source_build_reconciliation_required": true
