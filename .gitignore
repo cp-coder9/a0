@@ -9,3 +9,6 @@
 **/enquiry-config.php
 *.bak*
 prepare_backup.py
+git-backup.ps1
+**/__pycache__/
+*.pyc

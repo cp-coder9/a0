@@ -1,0 +1,7 @@
+deployed/** -text
+*.mp4 binary
+*.webm binary
+*.glb binary
+*.png binary
+*.jpg binary
+*.webp binary
